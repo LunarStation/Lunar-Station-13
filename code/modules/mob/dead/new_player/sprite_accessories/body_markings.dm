@@ -206,6 +206,11 @@
 	icon_state = "tajaran"
 	covered_limbs = list("Head" = MATRIX_RED_GREEN, "Chest" = MATRIX_RED_GREEN, "Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
 
+/datum/sprite_accessory/mam_body_markings/teshari
+	name = "Teshari"
+	icon_state = "teshari"
+	covered_limbs = list("Left Leg" = MATRIX_RED, "Right Leg" = MATRIX_RED, "Left Arm" = MATRIX_RED, "Right Arm" = MATRIX_RED)
+
 /datum/sprite_accessory/mam_body_markings/tiger
 	name = "Tiger"
 	icon_state = "tiger"
