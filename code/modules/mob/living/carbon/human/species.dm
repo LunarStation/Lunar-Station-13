@@ -21,6 +21,8 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	var/name
 	// Default color. If mutant colors are disabled, this is the color that will be used by that race.
 	var/default_color = "#FFF"
+	// Max health of the species
+	var/max_health = 100
 
 	///Whether or not the race has sexual characteristics (biological genders). At the moment this is only FALSE for skeletons and shadows
 	var/sexes = TRUE
@@ -515,6 +517,15 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	if(ROBOTIC_LIMBS in species_traits)
 		for(var/obj/item/bodypart/B in C.bodyparts)
 			B.change_bodypart_status(BODYPART_HYBRID, FALSE, TRUE) // Makes all Bodyparts 'robotic'.
+
+	if(max_health)
+		// if someone is already below 0 health, just ignore their health
+		if(C.health <= 0)
+			return
+		var/health_percentage = C.health/100
+		var/new_health = max_health * health_percentage
+		C.maxHealth = max_health
+		C.health = new_health
 
 	SEND_SIGNAL(C, COMSIG_SPECIES_GAIN, src, old_species)
 

@@ -5,6 +5,7 @@
 	item_state = "lb_suit"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 10, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 35, "wound" = 5)
 	can_adjust = FALSE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/rnd/research_director/skirt
 	name = "research director's vest suitskirt"
@@ -84,6 +85,7 @@
 	icon_state = "robotics"
 	item_state = "robotics"
 	resistance_flags = NONE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/rnd/roboticist/sleek
 	name = "sleek roboticist's jumpsuit"
@@ -100,3 +102,4 @@
 	can_adjust = FALSE
 	fitted = FEMALE_UNIFORM_TOP
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list("teshari")

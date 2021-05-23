@@ -91,6 +91,7 @@
 	icon_state = "chaplain"
 	item_state = "bl_suit"
 	can_adjust = FALSE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/civilian/chaplain/skirt
 	name = "chaplain's jumpskirt"
@@ -107,6 +108,7 @@
 	desc = "A suit which is given only to the most <b>hardcore</b> cooks in space."
 	icon_state = "chef"
 	alt_covers_chest = TRUE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/civilian/chef/skirt
 	name = "cook's skirt"
@@ -123,6 +125,7 @@
 	icon_state = "hop"
 	item_state = "b_suit"
 	can_adjust = FALSE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/civilian/head_of_personnel/whimsy
 	name = "casual head of personnel's jumpsuit"
@@ -163,6 +166,7 @@
 	icon_state = "hydroponics"
 	item_state = "g_suit"
 	permeability_coefficient = 0.5
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/civilian/hydroponics/skirt
 	name = "botanist's jumpskirt"
@@ -179,6 +183,7 @@
 	name = "janitor's jumpsuit"
 	icon_state = "janitor"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 5)
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/civilian/janitor/skirt
 	name = "janitor's jumpskirt"
@@ -198,6 +203,7 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/civilian/janitor/maid/polychromic
 	icon_state = "polymaid"
@@ -217,6 +223,7 @@
 	name = "lawyer black suit"
 	icon_state = "lawyer_black"
 	item_state = "lawyer_black"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/civilian/lawyer/black/alt
 	name = "lawyer black suit"
@@ -265,6 +272,7 @@
 	name = "lawyer red suit"
 	icon_state = "lawyer_red"
 	item_state = "lawyer_red"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/civilian/lawyer/female/skirt
 	name = "female black suitskirt"
@@ -284,6 +292,7 @@
 	name = "lawyer blue suit"
 	icon_state = "lawyer_blue"
 	item_state = "lawyer_blue"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/civilian/lawyer/blue/skirt
 	name = "lawyer blue suitskirt"

@@ -31,6 +31,7 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 	mutantrace_variation = STYLE_DIGITIGRADE //The clown suit must look funny, no taur alpha masks where possible.
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/civilian/clown/blue
 	name = "blue clown suit"

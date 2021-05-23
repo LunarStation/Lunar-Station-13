@@ -41,6 +41,7 @@
 	icon_state = "black"
 	item_state = "bl_suit"
 	resistance_flags = NONE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/black/trackless
 	desc = "A black jumpsuit that has its sensors removed."
@@ -50,6 +51,7 @@
 	name = "black jumpskirt"
 	icon_state = "black_skirt"
 	item_state = "bl_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/black/ghost
 	item_flags = DROPDEL
@@ -66,6 +68,7 @@
 	desc = "A tasteful grey jumpsuit that reminds you of the good old days."
 	icon_state = "grey"
 	item_state = "gy_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/jumpskirt/grey
 	name = "grey jumpskirt"
@@ -87,6 +90,7 @@
 	name = "blue jumpsuit"
 	icon_state = "blue"
 	item_state = "b_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/jumpskirt/blue
 	name = "blue jumpskirt"
@@ -97,6 +101,7 @@
 	name = "green jumpsuit"
 	icon_state = "green"
 	item_state = "g_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/jumpskirt/green
 	name = "green jumpskirt"
@@ -108,6 +113,7 @@
 	desc = "Don't wear this near paranoid security officers."
 	icon_state = "orange"
 	item_state = "o_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/jumpskirt/orange
 	name = "orange jumpskirt"
@@ -119,6 +125,7 @@
 	icon_state = "pink"
 	desc = "Just looking at this makes you feel <i>fabulous</i>."
 	item_state = "p_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/jumpskirt/pink
 	name = "pink jumpskirt"
@@ -129,6 +136,7 @@
 	name = "red jumpsuit"
 	icon_state = "red"
 	item_state = "r_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/jumpskirt/red
 	name = "red jumpskirt"
@@ -139,6 +147,7 @@
 	name = "white jumpsuit"
 	icon_state = "white"
 	item_state = "w_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/jumpskirt/white
 	name = "white jumpskirt"
@@ -149,6 +158,7 @@
 	name = "yellow jumpsuit"
 	icon_state = "yellow"
 	item_state = "y_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/jumpskirt/yellow
 	name = "yellow jumpskirt"
@@ -159,6 +169,7 @@
 	name = "darkblue jumpsuit"
 	icon_state = "darkblue"
 	item_state = "b_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/jumpskirt/darkblue
 	name = "darkblue jumpskirt"
@@ -169,6 +180,7 @@
 	name = "teal jumpsuit"
 	icon_state = "teal"
 	item_state = "b_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/jumpskirt/teal
 	name = "teal jumpskirt"
@@ -179,6 +191,7 @@
 	name = "purple jumpsuit"
 	icon_state = "lightpurple"
 	item_state = "p_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/lightpurple/trackless
 	desc = "A magically colored jumpsuit. No sensors are attached!"
@@ -188,6 +201,7 @@
 	name = "lightpurple jumpskirt"
 	icon_state = "lightpurple_skirt"
 	item_state = "p_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/darkgreen
 	name = "darkgreen jumpsuit"
@@ -198,6 +212,7 @@
 	name = "darkgreen jumpskirt"
 	icon_state = "darkgreen_skirt"
 	item_state = "g_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/lightbrown
 	name = "lightbrown jumpsuit"
@@ -208,6 +223,7 @@
 	name = "lightbrown jumpskirt"
 	icon_state = "lightbrown_skirt"
 	item_state = "lb_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/brown
 	name = "brown jumpsuit"
@@ -218,6 +234,7 @@
 	name = "brown jumpskirt"
 	icon_state = "brown_skirt"
 	item_state = "lb_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/maroon
 	name = "maroon jumpsuit"
@@ -228,6 +245,7 @@
 	name = "maroon jumpskirt"
 	icon_state = "maroon_skirt"
 	item_state = "r_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/color/rainbow
 	name = "rainbow jumpsuit"

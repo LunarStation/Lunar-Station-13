@@ -124,6 +124,7 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/costume/maid/Initialize()
 	. = ..()

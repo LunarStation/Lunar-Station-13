@@ -30,11 +30,13 @@
 	name = "white pants"
 	desc = "Plain white pants. Boring."
 	icon_state = "whitepants"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/pants/red
 	name = "red pants"
 	desc = "Bright red pants. Overflowing with personality."
 	icon_state = "redpants"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/pants/black
 	name = "black pants"

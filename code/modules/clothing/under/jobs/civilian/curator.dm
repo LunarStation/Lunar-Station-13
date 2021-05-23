@@ -4,6 +4,7 @@
 	icon_state = "red_suit"
 	item_state = "red_suit"
 	can_adjust = FALSE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/civilian/curator/skirt
 	name = "sensible suitskirt"

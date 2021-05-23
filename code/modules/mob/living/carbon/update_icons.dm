@@ -109,8 +109,13 @@
 		inv.update_icon()
 
 	if(wear_neck)
+		var/neck_icon = 'icons/mob/clothing/neck.dmi'
+		if(istype(wear_neck, /obj/item/clothing/neck))
+			var/obj/item/clothing/neck/N = wear_neck
+			if(dna.species.id in N.species_alternative)
+				neck_icon = text2path("icons/mob/clothing/species/[dna.species.id]/neck.dmi")
 		if(!(head && (head.flags_inv & HIDENECK)))
-			overlays_standing[NECK_LAYER] = wear_neck.build_worn_icon(default_layer = NECK_LAYER, default_icon_file = 'icons/mob/clothing/neck.dmi', override_state = wear_neck.icon_state)
+			overlays_standing[NECK_LAYER] = wear_neck.build_worn_icon(default_layer = NECK_LAYER, default_icon_file = neck_icon, override_state = wear_neck.icon_state)
 		update_hud_neck(wear_neck)
 
 	apply_overlay(NECK_LAYER)
@@ -123,7 +128,13 @@
 		inv?.update_icon()
 
 	if(back)
-		overlays_standing[BACK_LAYER] = back.build_worn_icon(default_layer = BACK_LAYER, default_icon_file = 'icons/mob/clothing/back.dmi', override_state = back.icon_state)
+		var/back_icon = 'icons/mob/clothing/back.dmi'
+		if(istype(back, /obj/item/storage/backpack))
+			var/obj/item/storage/backpack/B = back
+			if(dna.species.id in B.species_alternative)
+				back_icon = text2path("icons/mob/clothing/species/[dna.species.id]/back.dmi")
+
+		overlays_standing[BACK_LAYER] = back.build_worn_icon(default_layer = BACK_LAYER, default_icon_file = back_icon, override_state = back.icon_state)
 		update_hud_back(back)
 
 	apply_overlay(BACK_LAYER)

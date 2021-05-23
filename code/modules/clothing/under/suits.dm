@@ -35,18 +35,21 @@
 	icon_state = "black_suit"
 	item_state = "bl_suit"
 	can_adjust = FALSE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/suit/black_really
 	name = "executive suit"
 	desc = "A formal black suit and red tie, intended for the station's finest."
 	icon_state = "really_black_suit"
 	item_state = "bl_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/suit/black/skirt
 	name = "executive suit"
 	desc = "A formal trouser suit for women, intended for the station's finest."
 	icon_state = "black_suit_fem"
 	item_state = "black_suit_fem"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/suit/green
 	name = "green suit"
@@ -54,36 +57,42 @@
 	icon_state = "green_suit"
 	item_state = "dg_suit"
 	can_adjust = FALSE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/suit/red
 	name = "red suit"
 	desc = "A red suit and blue tie. Somewhat formal."
 	icon_state = "red_suit"
 	item_state = "r_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/suit/charcoal
 	name = "charcoal suit"
 	desc = "A charcoal suit and red tie. Very professional."
 	icon_state = "charcoal_suit"
 	item_state = "charcoal_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/suit/navy
 	name = "navy suit"
 	desc = "A navy suit and red tie, intended for the station's finest."
 	icon_state = "navy_suit"
 	item_state = "navy_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/suit/burgundy
 	name = "burgundy suit"
 	desc = "A burgundy suit and black tie. Somewhat formal."
 	icon_state = "burgundy_suit"
 	item_state = "burgundy_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/suit/checkered
 	name = "checkered suit"
 	desc = "That's a very nice suit you have there. Shame if something were to happen to it, eh?"
 	icon_state = "checkered_suit"
 	item_state = "checkered_suit"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/under/suit/tan
 	name = "tan suit"

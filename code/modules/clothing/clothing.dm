@@ -65,6 +65,10 @@
 	///These are armor values that protect the clothing, taken from its armor datum. List updates on examine because it's currently only used to print armor ratings to chat in Topic().
 	var/list/durability_list = list()
 
+	///Lunar Station Edit
+	/// List of species ids that have alternate sprites for a specific clothing item
+	var/list/species_alternative = list()
+
 /obj/item/clothing/Initialize()
 	. = ..()
 	if(CHECK_BITFIELD(clothing_flags, VOICEBOX_TOGGLABLE))

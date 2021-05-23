@@ -162,6 +162,9 @@ There are several things that need to be remembered:
 					variant_flag |= clip_flag
 					mask = T.alpha_mask_state
 
+			if(dna.species.id in U.species_alternative)
+				alt_worn = text2path("icons/mob/clothing/species/[dna.species.id]/uniform.dmi")
+
 			var/mutable_appearance/uniform_overlay
 
 			var/gendered = (dna?.species.sexes && dna.features["body_model"] == FEMALE) ? U.fitted : NO_FEMALE_UNIFORM
@@ -225,7 +228,12 @@ There are several things that need to be remembered:
 				if(hud_used.inventory_shown)
 					client.screen += gloves
 			update_observer_view(gloves,1)
-			overlays_standing[GLOVES_LAYER] = gloves.build_worn_icon(default_layer = GLOVES_LAYER, default_icon_file = 'icons/mob/clothing/hands.dmi')
+			var/glove_icon = 'icons/mob/clothing/hands.dmi'
+			if(istype(gloves, /obj/item/clothing/gloves))
+				var/obj/item/clothing/gloves/G = gloves
+				if(dna.species.id in G.species_alternative)
+					glove_icon = text2path("icons/mob/clothing/species/[dna.species.id]/hands.dmi")
+			overlays_standing[GLOVES_LAYER] = gloves.build_worn_icon(default_layer = GLOVES_LAYER, default_icon_file = glove_icon)
 			gloves_overlay = overlays_standing[GLOVES_LAYER]
 			if(OFFSET_GLOVES in dna.species.offset_features)
 				gloves_overlay.pixel_x += dna.species.offset_features[OFFSET_GLOVES][1]
@@ -251,8 +259,13 @@ There are several things that need to be remembered:
 				if(hud_used.inventory_shown)			//if the inventory is open ...
 					client.screen += glasses				//Either way, add the item to the HUD
 			update_observer_view(glasses,1)
+			var/eyes_icon = 'icons/mob/clothing/eyes.dmi'
+			if(istype(glasses, /obj/item/clothing/glasses))
+				var/obj/item/clothing/glasses/G = glasses
+				if(dna.species.id in G.species_alternative)
+					eyes_icon = text2path("icons/mob/clothing/species/[dna.species.id]/eyes.dmi")
 			if(!(head && (head.flags_inv & HIDEEYES)) && !(wear_mask && (wear_mask.flags_inv & HIDEEYES)))
-				overlays_standing[GLASSES_LAYER] = glasses.build_worn_icon(default_layer = GLASSES_LAYER, default_icon_file = 'icons/mob/clothing/eyes.dmi', override_state = glasses.icon_state)
+				overlays_standing[GLASSES_LAYER] = glasses.build_worn_icon(default_layer = GLASSES_LAYER, default_icon_file = eyes_icon, override_state = glasses.icon_state)
 			var/mutable_appearance/glasses_overlay = overlays_standing[GLASSES_LAYER]
 			if(glasses_overlay)
 				if(OFFSET_GLASSES in dna.species.offset_features)
@@ -279,7 +292,12 @@ There are several things that need to be remembered:
 					client.screen += ears					//add it to the client's screen
 			update_observer_view(ears,1)
 
-			overlays_standing[EARS_LAYER] = ears.build_worn_icon(default_layer = EARS_LAYER, default_icon_file = 'icons/mob/ears.dmi')
+			var/ears_icon = 'icons/mob/ears.dmi'
+			if(istype(ears, /obj/item/clothing/ears))
+				var/obj/item/clothing/ears/E = ears
+				if(dna.species.id in E.species_alternative)
+					ears_icon = text2path("icons/mob/clothing/species/[dna.species.id]/ears.dmi")
+			overlays_standing[EARS_LAYER] = ears.build_worn_icon(default_layer = EARS_LAYER, default_icon_file = ears_icon)
 			var/mutable_appearance/ears_overlay = overlays_standing[EARS_LAYER]
 			if(OFFSET_EARS in dna.species.offset_features)
 				ears_overlay.pixel_x += dna.species.offset_features[OFFSET_EARS][1]
@@ -312,6 +330,8 @@ There are several things that need to be remembered:
 			update_observer_view(shoes,1)
 
 			var/alt_icon = S.mob_overlay_icon || 'icons/mob/clothing/feet.dmi'
+			if(dna.species.id in S.species_alternative)
+				alt_icon = text2path("icons/mob/clothing/species/[dna.species.id]/feet.dmi")
 			var/variation_flag = NONE
 			if((DIGITIGRADE in dna.species.species_traits) && S.mutantrace_variation & STYLE_DIGITIGRADE && !(S.mutantrace_variation & STYLE_NO_ANTHRO_ICON))
 				alt_icon = S.anthro_mob_worn_overlay || 'icons/mob/clothing/feet_digi.dmi'
@@ -379,6 +399,8 @@ There are several things that need to be remembered:
 				alt_icon = H.anthro_mob_worn_overlay || 'icons/mob/clothing/head_muzzled.dmi'
 				variation_flag |= STYLE_MUZZLE
 
+			if(dna.species.id in H.species_alternative)
+				alt_icon = text2path("icons/mob/clothing/species/[dna.species.id]/head.dmi")
 			overlays_standing[HEAD_LAYER] = H.build_worn_icon(HEAD_LAYER, alt_icon, FALSE, NO_FEMALE_UNIFORM, H.icon_state, variation_flag, FALSE)
 			var/mutable_appearance/head_overlay = overlays_standing[HEAD_LAYER]
 
@@ -403,7 +425,12 @@ There are several things that need to be remembered:
 				client.screen += belt
 			update_observer_view(belt)
 
-			overlays_standing[BELT_LAYER] = belt.build_worn_icon(default_layer = BELT_LAYER, default_icon_file = 'icons/mob/clothing/belt.dmi')
+			var/belt_icon = 'icons/mob/clothing/belt.dmi'
+			if(istype(belt, /obj/item/storage/belt))
+				var/obj/item/storage/belt/B = belt
+				if(dna.species.id in B.species_alternative)
+					belt_icon = text2path("icons/mob/clothing/species/[dna.species.id]/belt.dmi")
+			overlays_standing[BELT_LAYER] = belt.build_worn_icon(default_layer = BELT_LAYER, default_icon_file = belt_icon)
 			var/mutable_appearance/belt_overlay = overlays_standing[BELT_LAYER]
 			if(OFFSET_BELT in dna.species.offset_features)
 				belt_overlay.pixel_x += dna.species.offset_features[OFFSET_BELT][1]
@@ -461,6 +488,9 @@ There are several things that need to be remembered:
 				else if((DIGITIGRADE in dna.species.species_traits) && S.mutantrace_variation & STYLE_DIGITIGRADE && !(S.mutantrace_variation & STYLE_NO_ANTHRO_ICON)) //not a taur, but digitigrade legs.
 					worn_icon = S.anthro_mob_worn_overlay || 'icons/mob/clothing/suit_digi.dmi'
 					variation_flag |= STYLE_DIGITIGRADE
+
+			if(dna.species.id in S.species_alternative)
+				worn_icon = text2path("icons/mob/clothing/species/[dna.species.id]/suit.dmi")
 
 			overlays_standing[SUIT_LAYER] = S.build_worn_icon(SUIT_LAYER, worn_icon, FALSE, NO_FEMALE_UNIFORM, worn_state, variation_flag, FALSE)
 			var/mutable_appearance/suit_overlay = overlays_standing[SUIT_LAYER]
@@ -529,6 +559,9 @@ There are several things that need to be remembered:
 			if(muzzled && M.mutantrace_variation & STYLE_MUZZLE && !(M.mutantrace_variation & STYLE_NO_ANTHRO_ICON))
 				alt_icon = M.anthro_mob_worn_overlay || 'icons/mob/clothing/mask_muzzled.dmi'
 				variation_flag |= STYLE_MUZZLE
+
+			if(dna.species.id in M.species_alternative)
+				alt_icon = text2path("icons/mob/clothing/species/[dna.species.id]/mask.dmi")
 
 			var/mutable_appearance/mask_overlay = M.build_worn_icon(FACEMASK_LAYER, alt_icon, FALSE, NO_FEMALE_UNIFORM, wear_mask.icon_state, variation_flag, FALSE)
 

@@ -58,6 +58,10 @@
 //unlockable items
 #define LOADOUT_CATEGORY_UNLOCKABLE	"Unlockable"
 
+//xenowear
+#define LOADOUT_CATEGORY_XENOWEAR 				"Xenowear"
+#define LOADOUT_SUBCATEGORY_XENOWEAR_TESHARI	"Teshari"
+
 //how many prosthetics can we have
 #define MAXIMUM_LOADOUT_PROSTHETICS	2
 

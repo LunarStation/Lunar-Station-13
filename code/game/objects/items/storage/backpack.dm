@@ -20,6 +20,8 @@
 	slot_flags = ITEM_SLOT_BACK	//ERROOOOO
 	resistance_flags = NONE
 	max_integrity = 300
+	// Lunar Station Edit (see /human/update_icons)
+	var/list/species_alternative = list()
 
 /obj/item/storage/backpack/ComponentInitialize()
 	. = ..()
