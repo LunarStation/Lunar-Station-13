@@ -21,7 +21,7 @@
 	resistance_flags = NONE
 	max_integrity = 300
 	// Lunar Station Edit (see /human/update_icons)
-	var/list/species_alternative = list()
+	var/list/species_alternative = list("teshari")
 
 /obj/item/storage/backpack/ComponentInitialize()
 	. = ..()
@@ -49,6 +49,7 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 50)
 	component_type = /datum/component/storage/concrete/bluespace/bag_of_holding
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	species_alternative = list("teshari")
 
 /obj/item/storage/backpack/holding/satchel
 	name = "satchel of holding"
@@ -56,12 +57,14 @@
 	icon_state = "holdingsat"
 	item_state = "holdingsat"
 	species_exception = list(/datum/species/angel)
+	species_alternative = list()
 
 /obj/item/storage/backpack/holding/duffel
 	name = "duffel bag of holding"
 	desc = "A duffel bag that opens into a localized pocket of Blue Space."
 	icon_state = "holdingduffel"
 	item_state = "holdingduffel"
+	species_alternative = list()
 
 /obj/item/storage/backpack/holding/ComponentInitialize()
 	. = ..()
@@ -91,6 +94,7 @@
 	item_state = "giftbag"
 	w_class = WEIGHT_CLASS_BULKY
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	species_alternative = list()
 
 /obj/item/storage/backpack/santabag/ComponentInitialize()
 	. = ..()
@@ -107,36 +111,42 @@
 	desc = "It's useful for both carrying extra gear and proudly declaring your insanity."
 	icon_state = "cultpack"
 	item_state = "backpack"
+	species_alternative = list("teshari")
 
 /obj/item/storage/backpack/clown
 	name = "Giggles von Honkerton"
 	desc = "It's a backpack made by Honk! Co."
 	icon_state = "clownpack"
 	item_state = "clownpack"
+	species_alternative = list()
 
 /obj/item/storage/backpack/explorer
 	name = "explorer bag"
 	desc = "A robust backpack for stashing your loot."
 	icon_state = "explorerpack"
 	item_state = "explorerpack"
+	species_alternative = list()
 
 /obj/item/storage/backpack/mime
 	name = "Parcel Parceaux"
 	desc = "A silent backpack made for those silent workers. Silence Co."
 	icon_state = "mimepack"
 	item_state = "mimepack"
+	species_alternative = list()
 
 /obj/item/storage/backpack/medic
 	name = "medical backpack"
 	desc = "It's a backpack especially designed for use in a sterile environment."
 	icon_state = "medicalpack"
 	item_state = "medicalpack"
+	species_alternative = list("teshari")
 
 /obj/item/storage/backpack/security
 	name = "security backpack"
 	desc = "It's a very robust backpack."
 	icon_state = "securitypack"
 	item_state = "securitypack"
+	species_alternative = list("teshari")
 
 /obj/item/storage/backpack/captain
 	name = "captain's backpack"
@@ -145,6 +155,7 @@
 	item_state = "captainpack"
 	resistance_flags = FIRE_PROOF
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	species_alternative = list("teshari")
 
 /obj/item/storage/backpack/industrial
 	name = "industrial backpack"
@@ -153,6 +164,7 @@
 	item_state = "engiepack"
 	resistance_flags = FIRE_PROOF
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	species_alternative = list("teshari")
 
 /obj/item/storage/backpack/botany
 	name = "botany backpack"
@@ -165,24 +177,28 @@
 	desc = "A backpack specially designed to repel stains and hazardous liquids."
 	icon_state = "chempack"
 	item_state = "chempack"
+	species_alternative = list()
 
 /obj/item/storage/backpack/genetics
 	name = "genetics backpack"
 	desc = "A bag designed to be super tough, just in case someone hulks out on you."
 	icon_state = "genepack"
 	item_state = "genepack"
+	species_alternative = list()
 
 /obj/item/storage/backpack/science
 	name = "science backpack"
 	desc = "A specially designed backpack. It's fire resistant and smells vaguely of plasma."
 	icon_state = "toxpack"
 	item_state = "toxpack"
+	species_alternative = list()
 
 /obj/item/storage/backpack/virology
 	name = "virology backpack"
 	desc = "A backpack made of hypo-allergenic fibers. It's designed to help prevent the spread of disease. Smells like monkey."
 	icon_state = "viropack"
 	item_state = "viropack"
+	species_alternative = list()
 
 /*
  * Satchel Types
@@ -193,11 +209,13 @@
 	desc = "A trendy looking satchel."
 	icon_state = "satchel-norm"
 	species_exception = list(/datum/species/angel) //satchels can be equipped since they are on the side, not back
+	species_alternative = list()
 
 /obj/item/storage/backpack/satchel/leather
 	name = "leather satchel"
 	desc = "It's a very fancy satchel made with fine leather."
 	icon_state = "satchel"
+	species_alternative = list("teshari")
 
 /obj/item/storage/backpack/satchel/leather/withwallet/PopulateContents()
 	new /obj/item/storage/wallet/random(src)
@@ -209,12 +227,14 @@
 	item_state = "engiepack"
 	resistance_flags = FIRE_PROOF
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	species_alternative = list("teshari")
 
 /obj/item/storage/backpack/satchel/med
 	name = "medical satchel"
 	desc = "A sterile satchel used in medical departments."
 	icon_state = "satchel-med"
 	item_state = "medicalpack"
+	species_alternative = list("teshari")
 
 /obj/item/storage/backpack/satchel/vir
 	name = "virologist satchel"
@@ -251,6 +271,7 @@
 	desc = "A robust satchel for security related needs."
 	icon_state = "satchel-sec"
 	item_state = "securitypack"
+	species_alternative = list()
 
 /obj/item/storage/backpack/satchel/explorer
 	name = "explorer satchel"
@@ -278,6 +299,7 @@
 	item_state = "captainpack"
 	resistance_flags = FIRE_PROOF
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	species_alternative = list("teshari")
 
 /obj/item/storage/backpack/satchel/flat
 	name = "smuggler's satchel"
@@ -342,6 +364,7 @@
 	icon_state = "duffel"
 	item_state = "duffel"
 	slowdown = 1
+	species_alternative = list()
 
 /obj/item/storage/backpack/duffelbag/ComponentInitialize()
 	. = ..()
@@ -659,3 +682,4 @@
 	desc = "Worn by snails as armor and storage compartment."
 	icon_state = "snailshell"
 	item_state = "snailshell"
+	species_alternative = list()

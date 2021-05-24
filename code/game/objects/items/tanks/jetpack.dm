@@ -13,6 +13,7 @@
 	var/stabilizers = FALSE
 	var/full_speed = TRUE // If the jetpack will have a speedboost in space/nograv or not
 	var/datum/effect_system/trail_follow/ion/ion_trail
+	species_alternative = list("teshari")
 
 /obj/item/tank/jetpack/Initialize()
 	. = ..()
@@ -104,6 +105,7 @@
 	volume = 30 //normal jetpacks have 70 volume
 	gas_type = null //it starts empty
 	full_speed = FALSE //moves at hardsuit jetpack speeds
+	species_alternative = list()
 
 /obj/item/tank/jetpack/improvised/allow_thrust(num, mob/living/user)
 	if(!on)
@@ -133,12 +135,14 @@
 	icon_state = "jetpack-void"
 	item_state =  "jetpack-void"
 	full_speed = FALSE //Old pre-hardsuit tech
+	species_alternative = list()
 
 /obj/item/tank/jetpack/oxygen
 	name = "jetpack (oxygen)"
 	desc = "A tank of compressed oxygen for use as propulsion in zero-gravity areas. Use with caution."
 	icon_state = "jetpack"
 	item_state = "jetpack"
+	species_alternative = list("teshari")
 
 /obj/item/tank/jetpack/oxygen/harness
 	name = "jet harness (oxygen)"
@@ -148,6 +152,7 @@
 	volume = 50
 	throw_range = 7
 	w_class = WEIGHT_CLASS_NORMAL
+	species_alternative = list()
 
 /obj/item/tank/jetpack/oxygen/captain
 	name = "\improper Captain's jetpack"
@@ -157,6 +162,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	volume = 90
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF //steal objective items are hard to destroy.
+	species_alternative = list()
 
 /obj/item/tank/jetpack/oxygen/security
 	name = "security jetpack (oxygen)"
@@ -164,6 +170,7 @@
 	icon_state = "jetpack-sec"
 	item_state = "jetpack-sec"
 	full_speed = FALSE
+	species_alternative = list()
 
 /obj/item/tank/jetpack/carbondioxide
 	name = "jetpack (carbon dioxide)"
@@ -172,6 +179,7 @@
 	item_state =  "jetpack-black"
 	distribute_pressure = 0
 	gas_type = /datum/gas/carbon_dioxide
+	species_alternative = list("teshari")
 
 /obj/item/tank/jetpack/carbondioxide/eva
 	name = "surplus jetpack (carbon dioxide)"

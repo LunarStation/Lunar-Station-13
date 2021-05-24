@@ -17,22 +17,23 @@
 	distribute_pressure = TANK_DEFAULT_RELEASE_PRESSURE
 	force = 10
 	dog_fashion = /datum/dog_fashion/back
-
+	species_alternative = list("teshari")
 
 /obj/item/tank/internals/oxygen/populate_gas()
 	air_contents.set_moles(/datum/gas/oxygen, (6*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C))
 	return
 
-
 /obj/item/tank/internals/oxygen/yellow
 	desc = "A tank of oxygen, this one is yellow."
 	icon_state = "oxygen_f"
 	dog_fashion = null
+	species_alternative = list("teshari")
 
 /obj/item/tank/internals/oxygen/red
 	desc = "A tank of oxygen, this one is red."
 	icon_state = "oxygen_fr"
 	dog_fashion = null
+	species_alternative = list("teshari")
 
 /obj/item/tank/internals/oxygen/empty/populate_gas()
 	return
@@ -46,6 +47,7 @@
 	icon_state = "anesthetic"
 	item_state = "an_tank"
 	force = 10
+	species_alternative = list("teshari")
 
 /obj/item/tank/internals/anesthetic/populate_gas()
 	air_contents.set_moles(/datum/gas/oxygen, (3*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C) * O2STANDARD)

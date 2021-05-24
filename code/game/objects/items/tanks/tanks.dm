@@ -22,6 +22,7 @@
 	var/volume = 70
 	/// Icon state when in a tank holder. Null makes it incompatible with tank holder.
 	var/tank_holder_icon_state = "holder_generic"
+	var/list/species_alternative
 
 /obj/item/tank/ui_action_click(mob/user)
 	toggle_internals(user)

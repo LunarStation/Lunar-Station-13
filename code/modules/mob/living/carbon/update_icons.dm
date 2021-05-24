@@ -133,6 +133,10 @@
 			var/obj/item/storage/backpack/B = back
 			if(dna.species.id in B.species_alternative)
 				back_icon = text2path("icons/mob/clothing/species/[dna.species.id]/back.dmi")
+		if(istype(back, /obj/item/tank))
+			var/obj/item/tank/T = back
+			if(dna.species.id in T.species_alternative)
+				back_icon = text2path("icons/mob/clothing/species/[dna.species.id]/back.dmi")
 
 		overlays_standing[BACK_LAYER] = back.build_worn_icon(default_layer = BACK_LAYER, default_icon_file = back_icon, override_state = back.icon_state)
 		update_hud_back(back)
