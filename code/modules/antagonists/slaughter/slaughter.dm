@@ -84,12 +84,9 @@
 	if(slam_cooldown + slam_cooldown_time > world.time)
 		to_chat(src, "<span class='warning'>Your slam ability is still on cooldown!</span>")
 		return
-<<<<<<< HEAD
-=======
 	if(!isopenturf(loc))
 		to_chat(src, "<span class='warning'>You need to be on open flooring to do that!")
 		return
->>>>>>> ef7a611baa... Merge pull request #14769 from Citadel-Station-13/silicons-patch-34
 
 	face_atom(A)
 	var/mob/living/victim = A
