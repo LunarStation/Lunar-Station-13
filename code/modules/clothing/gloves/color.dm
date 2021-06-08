@@ -12,6 +12,7 @@
 	var/can_be_cut = 1
 	custom_price = PRICE_EXPENSIVE
 	custom_premium_price = PRICE_ALMOST_ONE_GRAND
+	species_alternative = list("teshari")
 
 /obj/item/toy/sprayoncan
 	name = "spray-on insulation applicator"
@@ -43,6 +44,7 @@
 	permeability_coefficient = 0
 	resistance_flags = ACID_PROOF
 	var/shocks_remaining = 10
+	species_alternative = list()
 
 /obj/item/clothing/gloves/color/yellow/sprayon/Initialize()
 	.=..()
@@ -70,6 +72,7 @@
 	permeability_coefficient = 0.05
 	resistance_flags = NONE
 	var/can_be_cut = 1
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/fyellow/New()
 	..()
@@ -128,6 +131,7 @@
 	resistance_flags = NONE
 	var/can_be_cut = TRUE
 	strip_mod = 1.2
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/black/attackby(obj/item/I, mob/user, params)
 	if(I.tool_behaviour == TOOL_WIRECUTTER)
@@ -143,12 +147,14 @@
 	desc = "A pair of gloves, they don't look special in any way."
 	icon_state = "orange"
 	item_state = "orangegloves"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/red
 	name = "red gloves"
 	desc = "A pair of gloves, they don't look special in any way."
 	icon_state = "red"
 	item_state = "redgloves"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/red/insulated
 	name = "insulated gloves"
@@ -162,42 +168,49 @@
 	desc = "A pair of gloves, they don't look special in any way."
 	icon_state = "rainbow"
 	item_state = "rainbowgloves"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/blue
 	name = "blue gloves"
 	desc = "A pair of gloves, they don't look special in any way."
 	icon_state = "blue"
 	item_state = "bluegloves"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/purple
 	name = "purple gloves"
 	desc = "A pair of gloves, they don't look special in any way."
 	icon_state = "purple"
 	item_state = "purplegloves"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/green
 	name = "green gloves"
 	desc = "A pair of gloves, they don't look special in any way."
 	icon_state = "green"
 	item_state = "greengloves"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/grey
 	name = "grey gloves"
 	desc = "A pair of gloves, they don't look special in any way."
 	icon_state = "gray"
 	item_state = "graygloves"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/light_brown
 	name = "light brown gloves"
 	desc = "A pair of gloves, they don't look special in any way."
 	icon_state = "lightbrown"
 	item_state = "lightbrowngloves"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/brown
 	name = "brown gloves"
 	desc = "A pair of gloves, they don't look special in any way."
 	icon_state = "brown"
 	item_state = "browngloves"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/captain
 	desc = "Regal blue gloves, with a nice gold trim, a diamond anti-shock coating, and an integrated thermal barrier. Swanky."
@@ -223,6 +236,7 @@
 	transfer_prints = TRUE
 	resistance_flags = NONE
 	var/carrytrait = TRAIT_QUICK_CARRY
+	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/color/latex/equipped(mob/user, slot)
 	..()
