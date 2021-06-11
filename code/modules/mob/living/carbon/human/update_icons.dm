@@ -297,6 +297,10 @@ There are several things that need to be remembered:
 				var/obj/item/clothing/ears/E = ears
 				if(dna.species.id in E.species_alternative)
 					ears_icon = text2path("icons/mob/clothing/species/[dna.species.id]/ears.dmi")
+			if(istype(ears, /obj/item/radio))
+				var/obj/item/radio/R = ears
+				if(dna.species.id in R.species_alternative)
+					ears_icon = text2path("icons/mob/clothing/species/[dna.species.id]/ears.dmi")
 			overlays_standing[EARS_LAYER] = ears.build_worn_icon(default_layer = EARS_LAYER, default_icon_file = ears_icon)
 			var/mutable_appearance/ears_overlay = overlays_standing[EARS_LAYER]
 			if(OFFSET_EARS in dna.species.offset_features)
