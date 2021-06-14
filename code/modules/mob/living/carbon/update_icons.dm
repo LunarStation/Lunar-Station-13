@@ -163,7 +163,10 @@
 /mob/living/carbon/update_inv_handcuffed()
 	remove_overlay(HANDCUFF_LAYER)
 	if(handcuffed)
-		var/mutable_appearance/cuffs = mutable_appearance('icons/mob/clothing/restraints.dmi', handcuffed.item_state, -HANDCUFF_LAYER)
+		var/handcuff_file = 'icons/mob/clothing/restraints.dmi'
+		if(dna.species_id in handcuffed.species_alternative)
+			handcuff_file = text2path("icons/mob/clothing/species/[dna.species.id]/restraints.dmi")
+		var/mutable_appearance/cuffs = mutable_appearance(handcuff_file, handcuffed.item_state, -HANDCUFF_LAYER)
 		cuffs.color = handcuffed.color
 
 		overlays_standing[HANDCUFF_LAYER] = cuffs
@@ -173,7 +176,10 @@
 	remove_overlay(LEGCUFF_LAYER)
 	clear_alert("legcuffed")
 	if(legcuffed)
-		var/mutable_appearance/legcuffs = mutable_appearance('icons/mob/clothing/restraints.dmi', legcuffed.item_state, -LEGCUFF_LAYER)
+		var/legcuff_file = 'icons/mob/clothing/restraints.dmi'
+		if(dna.species_id in handcuffed.species_alternative)
+			legcuff_file = text2path("icons/mob/clothing/species/[dna.species.id]/restraints.dmi")
+		var/mutable_appearance/legcuffs = mutable_appearance(leggcuff_file, legcuffed.item_state, -LEGCUFF_LAYER)
 		legcuffs.color = legcuffed.color
 
 		overlays_standing[LEGCUFF_LAYER] = legcuffs
