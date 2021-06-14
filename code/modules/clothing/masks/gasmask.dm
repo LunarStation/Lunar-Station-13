@@ -13,6 +13,7 @@
 	mutantrace_variation = STYLE_MUZZLE
 	visor_flags_inv = HIDEFACE
 	var/flavor_adjust = TRUE //can it do the heehoo alt click to hide/show identity
+	species_alternative = list("teshari")
 
 /obj/item/clothing/mask/gas/examine(mob/user)
 	. = ..()
@@ -30,6 +31,7 @@
 	icon_state = "gas_clear"
 	flags_inv = HIDEEYES
 	flavor_adjust = FALSE
+	species_alternative = list()
 
 
 // **** Welding gas mask ****
@@ -49,6 +51,7 @@
 	visor_flags_cover = MASKCOVERSEYES
 	resistance_flags = FIRE_PROOF
 	flavor_adjust = FALSE
+
 
 /obj/item/clothing/mask/gas/welding/attack_self(mob/user)
 	weldingvisortoggle(user)
@@ -88,6 +91,7 @@
 	actions_types = list(/datum/action/item_action/adjust)
 	dog_fashion = /datum/dog_fashion/head/clown
 	var/static/list/clownmask_designs
+	species_alternative = list("teshari")
 
 /obj/item/clothing/mask/gas/clown_hat/Initialize(mapload)
 	.=..()

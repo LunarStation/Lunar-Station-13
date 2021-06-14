@@ -32,6 +32,7 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 25, "rad" = 0, "fire" = 0, "acid" = 0)
 	actions_types = list(/datum/action/item_action/adjust)
 	mutantrace_variation = STYLE_MUZZLE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/mask/surgical/aesthetic
 	name = "aesthetic sterile mask"
@@ -52,6 +53,7 @@
 	icon_state = "fake-moustache"
 	flags_inv = HIDEFACE
 	mutantrace_variation = STYLE_MUZZLE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/mask/fakemoustache/italian
 	name = "italian moustache"
@@ -203,6 +205,7 @@
 	flags_inv = HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDEEYES|HIDEEARS
 	w_class = WEIGHT_CLASS_SMALL
 	clothing_flags = VOICEBOX_TOGGLABLE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/mask/horsehead/handle_speech(datum/source, list/speech_args)
 	if(!CHECK_BITFIELD(clothing_flags, VOICEBOX_DISABLED))
