@@ -10,46 +10,56 @@
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
 	heat_protection = FEET
 	max_heat_protection_temperature = SHOES_MAX_TEMP_PROTECT
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/sneakers/brown
 	name = "brown shoes"
 	desc = "A pair of brown shoes."
 	icon_state = "brown"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/sneakers/blue
 	name = "blue shoes"
 	icon_state = "blue"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/sneakers/green
 	name = "green shoes"
 	icon_state = "green"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/sneakers/yellow
 	name = "yellow shoes"
 	icon_state = "yellow"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/sneakers/purple
 	name = "purple shoes"
 	icon_state = "purple"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/sneakers/brown
 	name = "brown shoes"
 	icon_state = "brown"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/sneakers/red
 	name = "red shoes"
 	desc = "Stylish red shoes."
 	icon_state = "red"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/sneakers/white
 	name = "white shoes"
 	icon_state = "white"
 	permeability_coefficient = 0.01
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/sneakers/rainbow
 	name = "rainbow shoes"
 	desc = "Very gay shoes."
 	icon_state = "rain_bow"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/sneakers/poly/polychromic
 	name = "polychromic shoes"
@@ -65,6 +75,7 @@
 /obj/item/clothing/shoes/sneakers/orange
 	name = "orange shoes"
 	icon_state = "orange"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/sneakers/orange/attack_self(mob/user)
 	if (src.chained)

@@ -4,6 +4,7 @@
 /obj/item/clothing/shoes/sneakers/mime
 	name = "mime shoes"
 	icon_state = "mime"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/combat //basic syndicate combat boots for nuke ops and mob corpses
 	name = "combat boots"
@@ -76,11 +77,13 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 40, "acid" = 75)
 	custom_price = PRICE_ABOVE_EXPENSIVE
 	can_be_tied = FALSE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/galoshes/dry
 	name = "absorbent galoshes"
 	desc = "A pair of orange rubber boots, designed to prevent slipping on wet surfaces while also drying them."
 	icon_state = "galoshes_dry"
+	species_alternative = list()
 
 /obj/item/clothing/shoes/sneakers/noslip
 	desc = "A pair of black shoes, they have the soles of galoshes making them unable to be slipped on a wet surface."
@@ -91,6 +94,7 @@
 	strip_delay = 50
 	equip_delay_other = 50
 	resistance_flags = NONE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/galoshes/dry/step_action()
 	var/turf/open/t_loc = get_turf(src)
@@ -105,6 +109,7 @@
 	lace_time = 20 SECONDS // how the hell do these laces even work??
 	var/datum/component/waddle
 	var/enabled_waddle = TRUE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/clown_shoes/Initialize()
 	. = ..()
@@ -154,6 +159,7 @@
 	permeability_coefficient = 0.05 //Thick soles, and covers the ankle
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
 	lace_time = 12 SECONDS
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/jackboots/fast
 	slowdown = -1
@@ -245,6 +251,7 @@
 	desc = "The height of fashion, and they're pre-polished!"
 	icon_state = "laceups"
 	equip_delay_other = 50
+	species_alternative = list("teshari")
 
 /obj/item/clothing/shoes/roman
 	name = "roman sandals"
