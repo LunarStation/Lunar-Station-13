@@ -52,6 +52,7 @@
 	icon_state = "healthhud"
 	hud_type = DATA_HUD_MEDICAL_ADVANCED
 	glass_colour_type = /datum/client_colour/glass_colour/lightblue
+	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/hud/health/prescription
 	name = "prescription health scanner HUD"
@@ -70,6 +71,7 @@
 	flash_protect = -2
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 	glass_colour_type = /datum/client_colour/glass_colour/green
+	species_alternative = list()
 
 /obj/item/clothing/glasses/hud/health/night/syndicate
 	name = "combat night vision health scanner HUD"
@@ -85,6 +87,7 @@
 	flash_protect = 1
 	tint = 1
 	glass_colour_type = /datum/client_colour/glass_colour/blue
+	species_alternative = list()
 
 /obj/item/clothing/glasses/hud/health/sunglasses/prescription
 	name = "prescription medical HUDSunglasses"
@@ -152,6 +155,7 @@
 	icon_state = "securityhud"
 	hud_type = DATA_HUD_SECURITY_ADVANCED
 	glass_colour_type = /datum/client_colour/glass_colour/red
+	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/hud/security/prescription
 	name = "prescription security HUD"
@@ -192,6 +196,7 @@
 	flash_protect = 1
 	tint = 1
 	glass_colour_type = /datum/client_colour/glass_colour/darkred
+	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/hud/security/sunglasses/eyepatch // why was this defined *before* the sunglasses it is a subtype of.
 	name = "eyepatch HUD"
@@ -210,6 +215,7 @@
 	flash_protect = -2 //You either are flashproof or you can see in the dark, pick one.
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 	glass_colour_type = /datum/client_colour/glass_colour/green
+	species_alternative = list()
 
 /obj/item/clothing/glasses/hud/security/sunglasses/gars
 	name = "\improper HUD gar glasses"
@@ -222,6 +228,7 @@
 	attack_verb = list("sliced")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
+	species_alternative = list()
 
 /obj/item/clothing/glasses/hud/security/sunglasses/gars/supergars
 	name = "giga HUD gar glasses"
