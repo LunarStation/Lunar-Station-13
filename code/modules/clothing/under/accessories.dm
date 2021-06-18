@@ -89,26 +89,31 @@
 	icon_state = "waistcoat"
 	item_state = "waistcoat"
 	minimize_when_attached = FALSE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/waistcoat/red
 	name = "red waistcoat"
 	icon_state = "waistcoat_red"
 	item_state = "waistcoat_red"
+	species_alternative = list()
 
 /obj/item/clothing/accessory/waistcoat/grey
 	name = "grey waistcoat"
 	icon_state = "waistcoat_grey"
 	item_state = "waistcoat_grey"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/waistcoat/brown
 	name = "red waistcoat"
 	icon_state = "waistcoat_brown"
 	item_state = "waistcoat_brown"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/waistcoat/sweatervest
 	name = "black sweatervest"
 	icon_state = "sweatervest"
 	item_state = "sweatervest"
+	species_alternative = list()
 
 /obj/item/clothing/accessory/waistcoat/sweatervest/blue
 	name = "blue sweatervest"
@@ -135,26 +140,31 @@
 	name = "pink sweater"
 	icon_state = "sweater_pink"
 	item_state = "sweater_pink"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/sweater/heart
 	name = "heart sweater"
 	icon_state = "sweater_heart"
 	item_state = "sweater_heart"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/sweater/blue
 	name = "blue sweater"
 	icon_state = "sweater_blue"
 	item_state = "sweater_blue"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/sweater/nt
 	name = "nanotrasen sweater"
 	icon_state = "sweater_nt"
 	item_state = "sweater_nt"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/sweater/mint
 	name = "mint sweater"
 	icon_state = "sweater_mint"
 	item_state = "sweater_mint"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/sweater/shoulderless
 	name = "shoulderless sweater"
@@ -181,6 +191,7 @@
 	icon_state = "jacket_tan"
 	item_state = "jacket_tan"
 	minimize_when_attached = FALSE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/suitjacket/charcoal
 	name = "charcoal suit jacket"
@@ -331,6 +342,7 @@
 	name = "ribbon"
 	desc = "A ribbon"
 	icon_state = "cargo"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/medal/ribbon/cargo
 	name = "\"cargo tech of the shift\" award"
@@ -404,6 +416,7 @@
 	name = "red armband"
 	desc = "An fancy red armband!"
 	icon_state = "redband"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/armband/deputy
 	name = "security deputy armband"
@@ -413,11 +426,13 @@
 	name = "cargo bay guard armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is brown."
 	icon_state = "cargoband"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/armband/engine
 	name = "engineering guard armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is orange with a reflective strip!"
 	icon_state = "engieband"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/armband/science
 	name = "science guard armband"
@@ -428,16 +443,19 @@
 	name = "hydroponics guard armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is green and blue."
 	icon_state = "hydroband"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/armband/med
 	name = "medical guard armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is white."
 	icon_state = "medband"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/accessory/armband/medblue
 	name = "medical guard armband"
 	desc = "An armband, worn by the station's security forces to display which department they're assigned to. This one is white and blue."
 	icon_state = "medblueband"
+	species_alternative = list("teshari")
 
 //////////////
 //OBJECTION!//
