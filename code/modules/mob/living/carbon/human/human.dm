@@ -840,7 +840,11 @@
 		override = dna.species.override_float
 	..()
 
+<<<<<<< HEAD
 /mob/living/carbon/human/vomit(lost_nutrition = 10, blood = 0, stun = 1, distance = 0, message = 1, toxic = 0)
+=======
+/mob/living/carbon/human/vomit(lost_nutrition = 10, blood = FALSE, stun = TRUE, distance = 1, message = TRUE, vomit_type = VOMIT_TOXIC, harm = TRUE, force = FALSE, purge_ratio = 0.1)
+>>>>>>> 0a25792663... Merge pull request #14880 from DeltaFire15/14860-fixes
 	if(blood && dna?.species && (NOBLOOD in dna.species.species_traits))
 		if(message)
 			visible_message("<span class='warning'>[src] dry heaves!</span>", \

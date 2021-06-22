@@ -273,6 +273,10 @@
 		type = rand(1,is_permanent()? 4 : 5)
 	switch(type)
 		if(1)
+<<<<<<< HEAD
+=======
+			host_mob.investigate_log("[src] nanite program was deleted by software error.", INVESTIGATE_NANITES)
+>>>>>>> 0a25792663... Merge pull request #14880 from DeltaFire15/14860-fixes
 			self_destruct() //kill switch
 			return
 		if(2) //deprogram codes
@@ -286,6 +290,10 @@
 				toggle() //enable/disable
 		if(4)
 			if(error_flicking && can_trigger)
+<<<<<<< HEAD
+=======
+				host_mob.investigate_log("[src] nanite program was triggered by software error.", INVESTIGATE_NANITES)
+>>>>>>> 0a25792663... Merge pull request #14880 from DeltaFire15/14860-fixes
 				trigger()
 		if(5) //Program is scrambled and does something different
 			if(corruptable)
