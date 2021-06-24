@@ -2614,3 +2614,4 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	taste_description = flavor
 	if(holder.my_atom)
 		holder.my_atom.on_reagent_change()
+	
