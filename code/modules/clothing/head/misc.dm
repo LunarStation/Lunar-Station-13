@@ -8,12 +8,14 @@
 	flags_inv = 0
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	strip_delay = 80
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/powdered_wig
 	name = "powdered wig"
 	desc = "A powdered wig."
 	icon_state = "pwig"
 	item_state = "pwig"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/that
 	name = "top-hat"
@@ -21,6 +23,7 @@
 	icon_state = "tophat"
 	item_state = "that"
 	throwforce = 1
+	species_alternative = list("teshari")
 
 	dog_fashion = /datum/dog_fashion/head
 	beepsky_fashion = /datum/beepsky_fashion/tophat
@@ -116,18 +119,21 @@
 	icon_state = "bunny"
 	dynamic_hair_suffix = ""
 	dog_fashion = /datum/dog_fashion/head/rabbit
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/flatcap
 	name = "flat cap"
 	desc = "A working man's cap."
 	icon_state = "flat_cap"
 	item_state = "detective"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/pirate
 	name = "pirate hat"
 	desc = "Yarr."
 	icon_state = "pirate"
 	item_state = "pirate"
+	species_alternative = list("teshari")
 
 	dog_fashion = /datum/dog_fashion/head/pirate
 	beepsky_fashion = /datum/beepsky_fashion/pirate
@@ -177,6 +183,7 @@
 	desc = "Fuzzy."
 	icon_state = "bearpelt"
 	item_state = "bearpelt"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/xenos
 	name = "xenos helmet"
@@ -345,6 +352,7 @@
 	desc = "A quality beret, infused with the aroma of chain-smoking, wine-swilling Parisians. You feel less inclined to engage military conflict, for some reason."
 	icon_state = "beretblack"
 	dynamic_hair_suffix = ""
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/frenchberet/equipped(mob/M, slot)
 	. = ..()

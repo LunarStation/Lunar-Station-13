@@ -13,6 +13,7 @@
 	strip_delay = 10
 	equip_delay_other = 10
 	dynamic_hair_suffix = ""
+	species_alternative = list("teshari")
 
 	dog_fashion = /datum/dog_fashion/head/chef
 	beepsky_fashion = /datum/beepsky_fashion/chef
@@ -35,6 +36,7 @@
 	flags_inv = 0
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	strip_delay = 60
+	species_alternative = list("teshari")
 
 	dog_fashion = /datum/dog_fashion/head/captain
 	beepsky_fashion = /datum/beepsky_fashion/captain
@@ -59,6 +61,7 @@
 	name = "captain's white beret"
 	desc = "A white beret fit for a leader."
 	icon_state = "beret_captain_white"
+	species_alternative = list()
 
 //Head of Personnel
 /obj/item/clothing/head/hopcap
@@ -67,6 +70,7 @@
 	desc = "The symbol of true bureaucratic micromanagement."
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	dog_fashion = /datum/dog_fashion/head/hop
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/hopcap/beret
 	name = "head of personnel's beret"
@@ -80,6 +84,7 @@
 	name = "head of personnel's white beret"
 	desc = "The symbol of true bureaucratic micromanagement, although in a fancy form."
 	icon_state = "beret_white_hop"
+	species_alternative = list()
 
 //Chaplain
 /obj/item/clothing/head/nun_hood
@@ -88,6 +93,7 @@
 	icon_state = "nun_hood"
 	flags_inv = HIDEHAIR
 	flags_cover = HEADCOVERSEYES
+	species_alternative = list("teshari")
 
 //Detective
 /obj/item/clothing/head/fedora/det_hat
@@ -98,6 +104,7 @@
 	var/candy_cooldown = 0
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/detective
 	dog_fashion = /datum/dog_fashion/head/detective
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/fedora/det_hat/Initialize()
 	. = ..()
@@ -127,6 +134,7 @@
 	icon_state = "beret"
 	dog_fashion = /datum/dog_fashion/head/beret
 	dynamic_hair_suffix = ""
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/beret/black
 	name = "black beret"
@@ -137,6 +145,7 @@
 	name = "purple beret"
 	desc = "A purple beret."
 	icon_state = "beret_purple"
+	species_alternative = list()
 
 /obj/item/clothing/head/beret/blue
 	name = "blue beret"
@@ -160,6 +169,7 @@
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 10, "rad" = 0, "fire" = 50, "acid" = 60)
 	strip_delay = 80
 	dynamic_hair_suffix = ""
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/HoS/syndicate
 	name = "syndicate cap"
@@ -186,6 +196,7 @@
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 60)
 	strip_delay = 60
 	dog_fashion = /datum/dog_fashion/head/warden
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/warden/drill
 	name = "warden's campaign hat"
@@ -194,6 +205,7 @@
 	item_state = "wardendrill"
 	dog_fashion = null
 	var/mode = DRILL_DEFAULT
+	species_alternative = list()
 
 /obj/item/clothing/head/warden/drill/screwdriver_act(mob/living/carbon/human/user, obj/item/I)
 	if(..())
@@ -261,6 +273,7 @@
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 30,"energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	strip_delay = 60
 	dog_fashion = null
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/beret/sec/navyhos
 	name = "head of security's beret"
@@ -286,12 +299,14 @@
 	name = "treasure hunter's fedora"
 	desc = "You got red text today kid, but it doesn't mean you have to like it."
 	icon_state = "curator"
+	species_alternative = list()
 
 //Chief Medical Officer
 /obj/item/clothing/head/beret/cmo
 	name = "chief medical officer's beret"
 	desc = "A fancy beret with a green cross, signifying your status in the station's medbay."
 	icon_state = "cmoberet"
+	species_alternative = list()
 
 /obj/item/clothing/head/beret/cmo/blue
 	name = "chief medical officer's blue beret"
@@ -303,72 +318,81 @@
 	name = "medical officer's beret"
 	desc = "A fancy beret with a blue cross, smells sterile"
 	icon_state = "beret_med"
+	species_alternative = list()
 
 /obj/item/clothing/head/beret/chem
 	name = "chemist's beret"
 	desc = "A fancy beret with a orange beaker, you're not sure if you should smell it"
 	icon_state = "beret_chem"
+	species_alternative = list()
 
 /obj/item/clothing/head/beret/viro
 	name = "virologist's beret"
 	desc = "A fancy beret with a green gross, hopefully it's virus free!"
 	icon_state = "beret_viro"
+	species_alternative = list()
 
 //Research Director
 /obj/item/clothing/head/beret/rd
 	name = "research director's beret"
 	desc = "A beret worn only by highly intelligent people."
 	icon_state = "rdberet"
-
-
+	species_alternative = list()
 
 //Scientist
 /obj/item/clothing/head/beret/sci
 	name = "scientist's beret"
 	desc = "A Scientist's beret, looks like it's covered in slime."
 	icon_state = "beret_sci"
+	species_alternative = list()
 
 //Roboticist
 /obj/item/clothing/head/beret/robo
 	name = "roboticist's beret"
 	desc = "A Roboticist's beret, almost more oil than hat."
 	icon_state = "beret_robot"
-
+	species_alternative = list()
 
 //Chief Engineer
 /obj/item/clothing/head/beret/ce
 	name = "chief engineer's beret"
 	desc = "A beret that will surely make you look way cooler than a hard hat, although lack of protection is the price."
 	icon_state = "ceberet"
+	species_alternative = list()
 
 /obj/item/clothing/head/beret/ce/white
 	name = "chief engineer's white beret"
 	desc = "A beret that will surely make you look way cooler than a hard hat, although lack of protection is the price."
 	icon_state = "beret_ce_white"
+	species_alternative = list()
 
 //Atmos
 /obj/item/clothing/head/beret/atmos
 	name = "atmospheric technician's beret"
 	desc = "An Atmospheric Technician's beret. Smells like plasma fire."
 	icon_state = "beret_atmos"
+	species_alternative = list()
 
 //Engineer
 /obj/item/clothing/head/beret/eng
 	name = "engineer's beret"
 	desc = "An Engineer's beret, try not to lose it to space wind."
 	icon_state = "beret_engineering"
+	species_alternative = list()
 
 //Quartermaster
 /obj/item/clothing/head/beret/qm
 	name = "quartermaster's beret"
 	desc = "This headwear shows off your Cargonian leadership"
 	icon_state = "qmberet"
+	species_alternative = list()
 
 /obj/item/clothing/head/beret/durathread
 	name = "durathread beret"
 	desc =  "A beret made from durathread, its resilient fibres provide some protection to the wearer."
 	icon_state = "beretdurathread"
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 20,"energy" = 10, "bomb" = 30, "bio" = 15, "rad" = 20, "fire" = 100, "acid" = 50)
+	species_alternative = list()
 
 #undef DRILL_DEFAULT
 #undef DRILL_SHOUTING
