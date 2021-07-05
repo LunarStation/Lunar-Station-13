@@ -37,6 +37,7 @@
 	desc = "A Type I armored vest that provides decent protection against most types of damage."
 	icon_state = "armor"
 	item_state = "armor"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/armor/vest/old
 	name = "degrading armor vest"
@@ -44,6 +45,7 @@
 	icon_state = "armor"
 	item_state = "armor"
 	slowdown = 1
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/armor/vest/blueshirt
 	name = "large armor vest"
@@ -63,6 +65,7 @@
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 	strip_delay = 80
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/armor/hos/navyblue
 	name = "head of security's jacket"
@@ -72,6 +75,7 @@
 	body_parts_covered = CHEST|ARMS
 	cold_protection = CHEST|ARMS
 	heat_protection = CHEST|ARMS
+	species_alternative = list()
 
 /obj/item/clothing/suit/armor/hos/trenchcoat
 	name = "armored trenchcoat"
@@ -83,6 +87,7 @@
 	unique_reskin = list("Coat" = "hostrench",
 						"Cloak" = "trenchcloak"
 						)
+	species_alternative = list()
 
 /obj/item/clothing/suit/armor/vest/warden
 	name = "warden's jacket"
@@ -96,6 +101,7 @@
 	resistance_flags = FLAMMABLE
 	dog_fashion = null
 	mutantrace_variation = STYLE_DIGITIGRADE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/armor/vest/warden/alt
 	name = "warden's armored jacket"
@@ -109,6 +115,7 @@
 	item_state = "wardenbluejacket"
 	body_parts_covered = CHEST|ARMS
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list()
 
 /obj/item/clothing/suit/armor/vest/leather
 	name = "security overcoat"
@@ -129,18 +136,21 @@
 	armor = list("melee" = 50, "bullet" = 40, "laser" = 50, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 90, "wound" = 10)
 	dog_fashion = null
 	resistance_flags = FIRE_PROOF
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/armor/vest/capcarapace/syndicate
 	name = "syndicate captain's vest"
 	desc = "A sinister looking vest of advanced armor worn over a black and red fireproof jacket. The gold collar and shoulders denote that this belongs to a high ranking syndicate officer."
 	icon_state = "syndievest"
 	mutantrace_variation = STYLE_DIGITIGRADE
+	species_alternative = list()
 
 /obj/item/clothing/suit/armor/vest/capcarapace/alt
 	name = "captain's parade jacket"
 	desc = "For when an armoured vest isn't fashionable enough."
 	icon_state = "capformal"
 	item_state = "capspacesuit"
+	species_alternative = list()
 
 /obj/item/clothing/suit/armor/riot
 	name = "riot suit"
@@ -154,6 +164,7 @@
 	blocks_shove_knockdown = TRUE
 	strip_delay = 80
 	equip_delay_other = 60
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/armor/bone
 	name = "bone armor"
@@ -174,6 +185,7 @@
 	strip_delay = 70
 	equip_delay_other = 50
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/armor/laserproof
 	name = "reflector vest"
@@ -199,6 +211,7 @@
 	icon_state = "detective-armor"
 	resistance_flags = FLAMMABLE
 	dog_fashion = null
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/armor/vest/det_suit/Initialize()
 	. = ..()
