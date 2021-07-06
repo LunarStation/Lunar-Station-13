@@ -177,6 +177,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/engine
 	resistance_flags = FIRE_PROOF
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
+	species_alternative = list("teshari")
 
 	//Atmospherics
 /obj/item/clothing/head/helmet/space/hardsuit/engine/atmos
@@ -199,6 +200,7 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS					//Uncomment to enable firesuit protection
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/engine/atmos
+	species_alternative = list("teshari")
 
 	//Chief Engineer's hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/engine/elite
@@ -222,6 +224,7 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/engine/elite
 	jetpack = /obj/item/tank/jetpack/suit
+	species_alternative = list("teshari")
 
 	//Mining hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/mining
@@ -254,6 +257,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/mining
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/hardsuit/mining/Initialize()
 	. = ..()
@@ -350,6 +354,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi
 	jetpack = /obj/item/tank/jetpack/suit
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
+	species_alternative = list("teshari")
 
 //Elite Syndie suit
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite
@@ -381,6 +386,7 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_SNEK_TAURIC|STYLE_PAW_TAURIC
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite/debug
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug
@@ -478,6 +484,7 @@
 	armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 10, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 75, "wound" = 10)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/medical
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
+	species_alternative = list("teshari")
 
 	//Research Director hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/rd
@@ -529,6 +536,7 @@
 	item_state = "sec_helm"
 	hardsuit_type = "sec"
 	armor = list("melee" = 35, "bullet" = 15, "laser" = 30,"energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20)
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/hardsuit/security
 	icon_state = "hardsuit-sec"
@@ -538,6 +546,7 @@
 	armor = list("melee" = 35, "bullet" = 15, "laser" = 30, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/hardsuit/security/Initialize()
 	. = ..()
@@ -550,6 +559,7 @@
 	icon_state = "hardsuit0-hos"
 	hardsuit_type = "hos"
 	armor = list("melee" = 45, "bullet" = 25, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 100, "rad" = 50, "fire" = 95, "acid" = 95, "wound" = 25)
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/hardsuit/security/hos
 	icon_state = "hardsuit-hos"
@@ -558,6 +568,7 @@
 	armor = list("melee" = 45, "bullet" = 25, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 100, "rad" = 50, "fire" = 95, "acid" = 95, "wound" = 25)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/hos
 	jetpack = /obj/item/tank/jetpack/suit
+	species_alternative = list("teshari")
 
 	//Captain
 /obj/item/clothing/head/helmet/space/hardsuit/captain
