@@ -2196,7 +2196,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 		if(prob(10))
 			stored_teleports += rand(2,6)
 			if(prob(70))
-				M.vomit()
+				M.vomit(vomit_type = VOMIT_PURPLE)
 	return ..()
 
 /datum/reagent/consumable/ethanol/planet_cracker
@@ -2593,7 +2593,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 			alcohol_description = "sweet"
 		else
 			alcohol_description = "watery" //How the hell did you get negative boozepwr?
-
+			
 	var/list/fruits = list()
 	if(names_in_order.len <= 3)
 		fruits = names_in_order
@@ -2614,3 +2614,4 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	taste_description = flavor
 	if(holder.my_atom)
 		holder.my_atom.on_reagent_change()
+	

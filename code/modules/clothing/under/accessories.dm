@@ -266,6 +266,13 @@
 	item_state = "maidapron"
 	minimize_when_attached = FALSE
 
+/obj/item/clothing/accessory/sleevecrop
+	name = "one sleeved crop top"
+	desc = "Off the shoulder crop top, for those nights out partying."
+	icon_state = "sleevecrop"
+	item_state = "sleevecrop"
+	minimize_when_attached = FALSE
+
 //////////
 //Medals//
 //////////
@@ -484,6 +491,7 @@
 ////////////////
 //HA HA! NERD!//
 ////////////////
+
 /obj/item/clothing/accessory/pocketprotector
 	name = "pocket protector"
 	desc = "Can protect your clothing from ink stains, but you'll look like a nerd if you're using one."
