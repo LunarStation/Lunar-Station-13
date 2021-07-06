@@ -135,6 +135,7 @@
 	resistance_flags = NONE
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 	mutantrace_variation = STYLE_MUZZLE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/radiation
 	name = "radiation suit"
@@ -155,3 +156,4 @@
 	resistance_flags = NONE
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_ALL_TAURIC
+	species_alternative = list("teshari")

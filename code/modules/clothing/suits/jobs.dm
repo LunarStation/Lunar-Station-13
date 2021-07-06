@@ -11,7 +11,7 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN
 	allowed = list(/obj/item/reagent_containers/spray/plantbgone, /obj/item/plant_analyzer, /obj/item/seeds, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/cultivator, /obj/item/reagent_containers/spray/pestspray, /obj/item/hatchet, /obj/item/storage/bag/plants)
-
+	species_alternative = list("teshari")
 
 //Captain
 /obj/item/clothing/suit/captunic
@@ -22,6 +22,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	flags_inv = HIDEJUMPSUIT
 	allowed = list(/obj/item/disk, /obj/item/stamp, /obj/item/reagent_containers/food/drinks/flask, /obj/item/melee, /obj/item/storage/lockbox/medal, /obj/item/assembly/flash/handheld, /obj/item/storage/box/matches, /obj/item/lighter, /obj/item/clothing/mask/cigarette, /obj/item/storage/fancy/cigarettes, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
+	species_alternative = list("teshari")
 
 //Chaplain
 /obj/item/clothing/suit/chaplain
@@ -83,6 +84,7 @@
 	allowed = list(/obj/item/kitchen)
 	togglename = "sleeves"
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list("teshari")
 
 //Cook
 /obj/item/clothing/suit/apron/chef
@@ -93,6 +95,7 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN
 	allowed = list(/obj/item/kitchen)
+	species_alternative = list("teshari")
 
 //Detective
 /obj/item/clothing/suit/det_suit
@@ -106,6 +109,7 @@
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/det_suit/Initialize()
 	. = ..()
@@ -116,11 +120,13 @@
 	desc = "A hard-boiled private investigator's grey trenchcoat."
 	icon_state = "greydet"
 	item_state = "greydet"
+	species_alternative = list()
 
 /obj/item/clothing/suit/det_suit/forensicsred
 	name = "red forensics coat"
 	icon_state = "forensics_red"
 	item_state = "forensics_red"
+	species_alternative = list()
 
 /obj/item/clothing/suit/det_suit/forensicsred/long
 	name = "long red forensics coat"
@@ -132,6 +138,7 @@
 	name = "blue forensics coat"
 	icon_state = "forensics_blue"
 	item_state = "forensics_blue"
+	species_alternative = list()
 
 /obj/item/clothing/suit/det_suit/forensicsblue/long
 	name = "long blue forensics coat"
@@ -150,6 +157,7 @@
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/t_scanner, /obj/item/radio)
 	resistance_flags = NONE
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list("teshari")
 
 //Lawyer
 /obj/item/clothing/suit/toggle/lawyer
@@ -194,6 +202,7 @@
 	desc = "A sterile blue surgical apron."
 	icon_state = "surgical"
 	allowed = list(/obj/item/scalpel, /obj/item/surgical_drapes, /obj/item/cautery, /obj/item/hemostat, /obj/item/retractor)
+	species_alternative = list()
 
 //Curator
 /obj/item/clothing/suit/curator

@@ -240,24 +240,28 @@
 	item_state = "classicponcho"
 	body_parts_covered = CHEST|GROIN
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/poncho/green
 	name = "green poncho"
 	desc = "Your classic, non-racist poncho. This one is green."
 	icon_state = "greenponcho"
 	item_state = "greenponcho"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/poncho/red
 	name = "red poncho"
 	desc = "Your classic, non-racist poncho. This one is red."
 	icon_state = "redponcho"
 	item_state = "redponcho"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/poncho/ponchoshame
 	name = "poncho of shame"
 	desc = "Forced to live on your shameful acting as a fake Mexican, you and your poncho have grown inseparable. Literally."
 	icon_state = "ponchoshame"
 	item_state = "ponchoshame"
+	species_alternative = list()
 
 /obj/item/clothing/suit/poncho/ponchoshame/Initialize()
 	. = ..()
@@ -338,6 +342,7 @@
 	actions_types = list(/datum/action/item_action/toggle_human_head)
 	hoodtype = /obj/item/clothing/head/hooded/human_head
 	mutantrace_variation = NONE
+	species_alternative = list("teshari")
 
 /obj/item/clothing/head/hooded/human_head
 	name = "bloated human head"
@@ -346,6 +351,7 @@
 	body_parts_covered = HEAD
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/armor/navyblue/russian
 	name = "\improper Russian officer's jacket"
@@ -386,6 +392,7 @@
 	equip_delay_self = 50
 	strip_delay = 60
 	breakouttime = 3000
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/ianshirt
 	name = "worn shirt"
@@ -394,6 +401,7 @@
 	item_state = "ianshirt"
 	body_parts_covered = CHEST|GROIN
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/nerdshirt
 	name = "gamer shirt"
@@ -421,6 +429,7 @@
 	cold_protection = CHEST|GROIN|ARMS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/jacket/flannel
 	name = "black flannel jacket"
@@ -454,6 +463,7 @@
 	resistance_flags = NONE
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/toy, /obj/item/storage/fancy/cigarettes, /obj/item/lighter, /obj/item/gun/ballistic/automatic/pistol, /obj/item/gun/ballistic/revolver, /obj/item/gun/ballistic/revolver/detective, /obj/item/radio)
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/jacket/leather/overcoat
 	name = "leather overcoat"
@@ -462,6 +472,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	cold_protection = CHEST|GROIN|ARMS|LEGS
 	mutantrace_variation = STYLE_DIGITIGRADE
+	species_alternative = list()
 
 /obj/item/clothing/suit/jacket/puffer
 	name = "puffer jacket"
