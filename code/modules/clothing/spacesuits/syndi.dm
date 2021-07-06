@@ -27,7 +27,6 @@
 	icon_state = "syndicate-green"
 	item_state = "syndicate-green"
 
-
 //Dark green syndicate space suit
 /obj/item/clothing/head/helmet/space/syndicate/green/dark
 	name = "dark green space helmet"
@@ -38,7 +37,6 @@
 	name = "dark green space suit"
 	icon_state = "syndicate-green-dark"
 	item_state = "syndicate-green-dark"
-
 
 //Orange syndicate space suit
 /obj/item/clothing/head/helmet/space/syndicate/orange
@@ -69,6 +67,7 @@
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black"
 	item_state = "syndicate-helm-black"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black
 	name = "black space suit"
@@ -97,6 +96,7 @@
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black-green"
 	item_state = "syndicate-helm-black-green"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black/green
 	name = "black and green space suit"
@@ -109,6 +109,7 @@
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black-blue"
 	item_state = "syndicate-helm-black-blue"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black/blue
 	name = "black and blue space suit"
@@ -126,6 +127,7 @@
 	name = "green space suit"
 	icon_state = "syndicate-black-med"
 	item_state = "syndicate-black"
+	species_alternative = list("teshari")
 
 
 //Black-orange syndicate space suit
@@ -133,6 +135,7 @@
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black-orange"
 	item_state = "syndicate-helm-black"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black/orange
 	name = "black and orange space suit"
@@ -145,6 +148,7 @@
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black-red"
 	item_state = "syndicate-helm-black-red"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black/red
 	name = "black and red space suit"
@@ -152,12 +156,12 @@
 	item_state = "syndicate-black-red"
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_SNEK_TAURIC|STYLE_PAW_TAURIC
 
-
 //Black with yellow/red engineering syndicate space suit
 /obj/item/clothing/head/helmet/space/syndicate/black/engie
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black-engie"
 	item_state = "syndicate-helm-black"
+	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black/engie
 	name = "black engineering space suit"
