@@ -411,16 +411,19 @@
 	name = "Teshari"
 	icon_state = "teshari"
 	matrixed_sections = MATRIX_RED_GREEN
+	recommended_species = list("teshari")
 
 /datum/sprite_accessory/ears/mam_ears/tesharilow
 	name = "Teshari (Low)"
 	icon_state = "tesharilow"
 	matrixed_sections = MATRIX_RED_GREEN
+	recommended_species = list("teshari")
 
 /datum/sprite_accessory/ears/mam_ears/tesharihigh
 	name = "Teshari (High)"
 	icon_state = "tesharihigh"
 	matrixed_sections = MATRIX_RED_GREEN
+	recommended_species = list("teshari")
 
 /datum/sprite_accessory/ears/mam_ears/wolf
 	name = "Wolf"

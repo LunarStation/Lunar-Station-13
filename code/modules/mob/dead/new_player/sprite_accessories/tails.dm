@@ -983,6 +983,7 @@
 	name = "Teshari"
 	icon_state = "teshari"
 	matrixed_sections = MATRIX_RED_GREEN
+	recommended_species = list("teshari")
 
 /datum/sprite_accessory/tails/mam_tails/triple_kitsune
 	name = "Triple Kitsune Tails"
