@@ -492,6 +492,9 @@ ROUNDSTART_RACES guilmon
 ROUNDSTART_RACES ipc
 ROUNDSTART_RACES arachnid
 
+## LUNAR races
+ROUNDSTART_RACES teshari
+
 ##-------------------------------------------------------------------------------------------
 
 ## Uncomment to give players the choice of joining as a human with mutant bodyparts before they join the game
