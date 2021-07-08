@@ -1,5 +1,5 @@
 /obj/item/clothing/under/teshari
-	species_restricted = list(SPECIES_TESHARI)
+	species_restricted = list("Teshari")
 
 /obj/item/clothing/under/teshari/red_seromi
 	name = "small red smock"
