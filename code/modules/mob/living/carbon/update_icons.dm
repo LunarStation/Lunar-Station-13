@@ -113,7 +113,7 @@
 		if(istype(wear_neck, /obj/item/clothing/neck))
 			var/obj/item/clothing/neck/N = wear_neck
 			if(dna.species.id in N.species_alternative)
-				neck_icon = text2path("icons/mob/clothing/species/[dna.species.id]/neck.dmi")
+				neck_icon = file("icons/mob/clothing/species/[dna.species.id]/neck.dmi")
 		if(!(head && (head.flags_inv & HIDENECK)))
 			overlays_standing[NECK_LAYER] = wear_neck.build_worn_icon(default_layer = NECK_LAYER, default_icon_file = neck_icon, override_state = wear_neck.icon_state)
 		update_hud_neck(wear_neck)
@@ -132,11 +132,11 @@
 		if(istype(back, /obj/item/storage/backpack))
 			var/obj/item/storage/backpack/B = back
 			if(dna.species.id in B.species_alternative)
-				back_icon = text2path("icons/mob/clothing/species/[dna.species.id]/back.dmi")
+				back_icon = file("icons/mob/clothing/species/[dna.species.id]/back.dmi")
 		if(istype(back, /obj/item/tank))
 			var/obj/item/tank/T = back
 			if(dna.species.id in T.species_alternative)
-				back_icon = text2path("icons/mob/clothing/species/[dna.species.id]/back.dmi")
+				back_icon = file("icons/mob/clothing/species/[dna.species.id]/back.dmi")
 
 		overlays_standing[BACK_LAYER] = back.build_worn_icon(default_layer = BACK_LAYER, default_icon_file = back_icon, override_state = back.icon_state)
 		update_hud_back(back)
@@ -167,7 +167,7 @@
 		if(ishuman(src))
 			var/mob/living/carbon/human/H = src
 			if(H.dna.species.id in handcuffed.species_alternative)
-				handcuff_file = text2path("icons/mob/clothing/species/[H.dna.species.id]/restraints.dmi")
+				handcuff_file = file("icons/mob/clothing/species/[H.dna.species.id]/restraints.dmi")
 		var/mutable_appearance/cuffs = mutable_appearance(handcuff_file, handcuffed.item_state, -HANDCUFF_LAYER)
 		cuffs.color = handcuffed.color
 
@@ -182,7 +182,7 @@
 		if(ishuman(src))
 			var/mob/living/carbon/human/H = src
 			if(H.dna.species.id in handcuffed.species_alternative)
-				legcuff_file = text2path("icons/mob/clothing/species/[H.dna.species.id]/restraints.dmi")
+				legcuff_file = file("icons/mob/clothing/species/[H.dna.species.id]/restraints.dmi")
 		var/mutable_appearance/legcuffs = mutable_appearance(legcuff_file, legcuffed.item_state, -LEGCUFF_LAYER)
 		legcuffs.color = legcuffed.color
 
