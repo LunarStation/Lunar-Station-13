@@ -1874,6 +1874,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
+								continue
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_antenna_list[S.name] = path
 					var/new_ipc_antenna
@@ -1917,6 +1919,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
+								continue
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_tails_list[S.name] = path
 					var/new_tail
@@ -1935,6 +1939,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if(istype(instance, /datum/sprite_accessory))
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
+								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_tails_list[S.name] = path
@@ -1961,6 +1967,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
+								continue
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_snouts_list[S.name] = path
 					var/new_snout
@@ -1977,6 +1985,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if(istype(instance, /datum/sprite_accessory))
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
+								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_mam_snouts_list[S.name] = path
@@ -2102,6 +2112,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
+								continue
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_taur_list[S.name] = path
 					var/new_taur
@@ -2123,6 +2135,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
+								continue
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_ears_list[S.name] = path
 					var/new_ears
@@ -2137,6 +2151,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if(istype(instance, /datum/sprite_accessory))
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
+								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_ears_list[S.name] = path

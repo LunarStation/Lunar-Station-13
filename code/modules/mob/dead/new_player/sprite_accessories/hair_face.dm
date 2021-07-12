@@ -146,3 +146,19 @@
 /datum/sprite_accessory/facial_hair/elvis
 	name = "Sideburns (Elvis)"
 	icon_state = "facial_elvis"
+
+// teshari facial hair
+/datum/sprite_accessory/facial_hair/teshari
+	name = "Teshari Beard"
+	icon_state = "teshari_chin"
+	recommended_species = list(SPECIES_TESHARI)
+	excluded_species = list()
+	gender = NEUTER
+
+/datum/sprite_accessory/facial_hair/teshari/scraggly
+	name = "Teshari Scraggly"
+	icon_state = "teshari_scraggly"
+
+/datum/sprite_accessory/facial_hair/teshari/chops
+	name = "Teshari Chops"
+	icon_state = "teshari_gap"

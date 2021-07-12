@@ -77,6 +77,9 @@
 	//For soft-restricting markings to species IDs
 	var/list/recommended_species
 
+	//For hard-restricting accessories FROM species IDs, by default this is teshari
+	var/list/excluded_species = list(SPECIES_TESHARI)
+
 /datum/sprite_accessory/proc/is_not_visible(var/mob/living/carbon/human/H, var/tauric) //return if the accessory shouldn't be shown
 	return FALSE
 
