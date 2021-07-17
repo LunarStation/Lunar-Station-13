@@ -1706,7 +1706,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 								continue
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_hair_list[S.name] = path
-					hair_style = next_list_item(hair_style, GLOB.snowflake_hair_list)
+					hair_style = next_list_item(hair_style, snowflake_hair_list)
 
 				if("previous_hair_style")
 					var/list/snowflake_hair_list = list()
@@ -1740,7 +1740,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_hair_list[S.name] = path
 					var/new_facial_hair_style
-					new_facial_hair_style = input(user, "Choose your character's facial-hair style:", "Character Preference")  as null|anything in GLOB.snowflake_hair_list
+					new_facial_hair_style = input(user, "Choose your character's facial-hair style:", "Character Preference")  as null|anything in snowflake_hair_list
 					if(new_facial_hair_style)
 						facial_hair_style = new_facial_hair_style
 
@@ -1870,6 +1870,15 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if(pref_species.id == "felinid")
 							features["mam_tail"] = "Cat"
 							features["mam_ears"] = "Cat"
+						if(pref_species.id == "teshari")
+							features["mam_tail"] = "Teshari"
+							features["mam_ears"] = "Teshari"
+							hair_style = "Bald"
+							facial_hair_style = "Shaved"
+							underwear = "Nude"
+							undershirt = "Nude"
+							socks = "Nude"
+
 
 						//Now that we changed our species, we must verify that the mutant colour is still allowed.
 						var/temp_hsv = RGBtoHSV(features["mcolor"])
