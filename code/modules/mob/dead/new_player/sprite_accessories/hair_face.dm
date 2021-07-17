@@ -10,6 +10,7 @@
 	name = "Shaved"
 	icon_state = null
 	gender = NEUTER
+	excluded_species = list() // so all species can choose no facial hair!
 
 /datum/sprite_accessory/facial_hair/threeoclock
 	name = "Beard (3 o\'Clock)"

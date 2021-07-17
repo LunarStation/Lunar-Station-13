@@ -12,6 +12,7 @@
 /datum/sprite_accessory/hair/bald //this is exempt from the alphabetical sort
 	name = "Bald"
 	icon_state = "bald"
+	excluded_species = list() //so all species can choose no hair!
 
 /datum/sprite_accessory/hair/adhara
 	name = "Adhara"
