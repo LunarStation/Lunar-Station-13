@@ -1677,16 +1677,50 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						hair_color = sanitize_hexcolor(new_hair, 6)
 
 				if("hair_style")
+					var/list/snowflake_hair_list = list()
+					for(var/path in GLOB.hair_styles_list)
+						var/datum/sprite_accessory/hair/instance = GLOB.hair_styles_list[path]
+						if(istype(instance, /datum/sprite_accessory))
+							var/datum/sprite_accessory/S = instance
+							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
+								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
+								continue
+							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
+								snowflake_hair_list[S.name] = path
+
 					var/new_hair_style
-					new_hair_style = input(user, "Choose your character's hair style:", "Character Preference")  as null|anything in GLOB.hair_styles_list
+					new_hair_style = input(user, "Choose your character's hair style:", "Character Preference")  as null|anything in snowflake_hair_list
 					if(new_hair_style)
 						hair_style = new_hair_style
 
 				if("next_hair_style")
-					hair_style = next_list_item(hair_style, GLOB.hair_styles_list)
+					var/list/snowflake_hair_list = list()
+					for(var/path in GLOB.hair_styles_list)
+						var/datum/sprite_accessory/hair/instance = GLOB.hair_styles_list[path]
+						if(istype(instance, /datum/sprite_accessory))
+							var/datum/sprite_accessory/S = instance
+							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
+								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
+								continue
+							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
+								snowflake_hair_list[S.name] = path
+					hair_style = next_list_item(hair_style, GLOB.snowflake_hair_list)
 
 				if("previous_hair_style")
-					hair_style = previous_list_item(hair_style, GLOB.hair_styles_list)
+					var/list/snowflake_hair_list = list()
+					for(var/path in GLOB.hair_styles_list)
+						var/datum/sprite_accessory/hair/instance = GLOB.hair_styles_list[path]
+						if(istype(instance, /datum/sprite_accessory))
+							var/datum/sprite_accessory/S = instance
+							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
+								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
+								continue
+							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
+								snowflake_hair_list[S.name] = path
+					hair_style = previous_list_item(hair_style, snowflake_hair_list)
 
 				if("facial")
 					var/new_facial = input(user, "Choose your character's facial-hair colour:", "Character Preference","#"+facial_hair_color) as color|null
@@ -1694,16 +1728,49 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						facial_hair_color = sanitize_hexcolor(new_facial, 6)
 
 				if("facial_hair_style")
+					var/list/snowflake_hair_list = list()
+					for(var/path in GLOB.facial_hair_styles_list)
+						var/datum/sprite_accessory/hair/instance = GLOB.facial_hair_styles_list[path]
+						if(istype(instance, /datum/sprite_accessory))
+							var/datum/sprite_accessory/S = instance
+							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
+								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
+								continue
+							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
+								snowflake_hair_list[S.name] = path
 					var/new_facial_hair_style
-					new_facial_hair_style = input(user, "Choose your character's facial-hair style:", "Character Preference")  as null|anything in GLOB.facial_hair_styles_list
+					new_facial_hair_style = input(user, "Choose your character's facial-hair style:", "Character Preference")  as null|anything in GLOB.snowflake_hair_list
 					if(new_facial_hair_style)
 						facial_hair_style = new_facial_hair_style
 
 				if("next_facehair_style")
-					facial_hair_style = next_list_item(facial_hair_style, GLOB.facial_hair_styles_list)
+					var/list/snowflake_hair_list = list()
+					for(var/path in GLOB.facial_hair_styles_list)
+						var/datum/sprite_accessory/hair/instance = GLOB.facial_hair_styles_list[path]
+						if(istype(instance, /datum/sprite_accessory))
+							var/datum/sprite_accessory/S = instance
+							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
+								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
+								continue
+							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
+								snowflake_hair_list[S.name] = path
+					facial_hair_style = next_list_item(facial_hair_style, snowflake_hair_list)
 
 				if("previous_facehair_style")
-					facial_hair_style = previous_list_item(facial_hair_style, GLOB.facial_hair_styles_list)
+					var/list/snowflake_hair_list = list()
+					for(var/path in GLOB.facial_hair_styles_list)
+						var/datum/sprite_accessory/hair/instance = GLOB.facial_hair_styles_list[path]
+						if(istype(instance, /datum/sprite_accessory))
+							var/datum/sprite_accessory/S = instance
+							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
+								continue
+							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
+								continue
+							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
+								snowflake_hair_list[S.name] = path
+					facial_hair_style = previous_list_item(facial_hair_style, snowflake_hair_list)
 
 				if("cycle_bg")
 					bgstate = next_list_item(bgstate, bgstate_options)
