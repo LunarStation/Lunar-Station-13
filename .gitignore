@@ -7,13 +7,9 @@
 #Ignore byond config folder.
 /cfg/**/*
 
-<<<<<<< HEAD
-/librust_g.so
-=======
 #Ignore rust-g and auxmos libraries which are compiled with scripts
 *.so
 /tools/build/binaries/**/*
->>>>>>> c5e5657920... Merge pull request #14908 from cadyn/makelinuxgreatagain
 
 #Ignore compiled files and other files generated during compilation.
 *.mdme
