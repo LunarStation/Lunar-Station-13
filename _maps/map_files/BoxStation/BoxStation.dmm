@@ -6158,6 +6158,7 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "alu" = (
+<<<<<<< HEAD
 /obj/machinery/nuclearbomb/selfdestruct,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -6171,6 +6172,20 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/window{
+	name = "Gateway Chamber";
+	req_access_txt = "62"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "alv" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
@@ -10470,8 +10485,13 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/closed/wall,
 /area/maintenance/fore)
+=======
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "awb" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -11031,6 +11051,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "axp" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 1
 	},
@@ -11046,6 +11067,17 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "axr" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -11056,6 +11088,12 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "axt" = (
@@ -11071,19 +11109,30 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "axu" = (
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
 /obj/structure/cable{
 	icon_state = "2-4"
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "axw" = (
@@ -11423,6 +11472,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "ayz" = (
+<<<<<<< HEAD
 /turf/closed/wall/r_wall,
 /area/maintenance/port/fore)
 "ayA" = (
@@ -11450,6 +11500,40 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"ayG" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"ayH" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "ayI" = (
@@ -11811,6 +11895,7 @@
 /turf/open/floor/wood,
 /area/maintenance/port/fore)
 "azH" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall,
 /area/service/theater)
@@ -11838,6 +11923,50 @@
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
+=======
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/service/theater/clown)
+"azK" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"azN" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"azO" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
@@ -12288,6 +12417,7 @@
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "aBa" = (
+<<<<<<< HEAD
 /turf/closed/wall/r_wall,
 /area/ai_monitored/command/nuke_storage)
 "aBb" = (
@@ -12318,6 +12448,18 @@
 "aBg" = (
 /obj/machinery/gateway/centerstation,
 /turf/open/floor/plasteel/dark,
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /area/command/gateway)
 "aBh" = (
 /obj/machinery/camera{
@@ -12327,9 +12469,12 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -12337,6 +12482,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "aBi" = (
+<<<<<<< HEAD
 /obj/machinery/power/apc{
 	areastring = "/area/command/gateway";
 	dir = 8;
@@ -12347,6 +12493,8 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
 	},
@@ -12602,6 +12750,7 @@
 /turf/closed/wall,
 /area/commons/storage/primary)
 "aBR" = (
+<<<<<<< HEAD
 /turf/closed/wall/r_wall,
 /area/commons/storage/primary)
 "aBT" = (
@@ -12685,6 +12834,37 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/closed/wall,
+/area/commons/storage/primary)
+"aBW" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+"aBX" = (
+/obj/machinery/power/apc{
+	areastring = "/area/ai_monitored/command/nuke_storage";
+	dir = 1;
+	name = "Vault APC";
+	pixel_y = 23
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/command/nuke_storage)
+"aBZ" = (
+/obj/structure/filingcabinet,
+/obj/item/folder/documents,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/effect/turf_decal/bot_white,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -12697,7 +12877,11 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
+<<<<<<< HEAD
 /area/command/gateway)
+=======
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aCa" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
@@ -12744,11 +12928,37 @@
 /turf/open/floor/plasteel,
 /area/ai_monitored/command/storage/eva)
 "aCh" = (
+<<<<<<< HEAD
 /obj/machinery/vending/autodrobe,
 /turf/open/floor/plasteel/white/side{
 	dir = 4
 	},
 /area/service/theater)
+=======
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp/bananalamp{
+	pixel_y = 3
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/requests_console{
+	department = "Theatre";
+	name = "theatre RC";
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/service/theater/clown)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aCi" = (
 /obj/structure/cable,
 /obj/effect/spawner/structure/window/reinforced,
@@ -12799,7 +13009,20 @@
 /turf/open/floor/plasteel/white/corner,
 /area/hallway/secondary/entry)
 "aCr" = (
+<<<<<<< HEAD
 /turf/closed/wall,
+=======
+/obj/structure/closet/crate{
+	name = "instrument crate"
+	},
+/obj/item/instrument/eguitar,
+/obj/item/instrument/violin,
+/obj/item/instrument/trumpet,
+/obj/item/instrument/guitar,
+/obj/item/instrument/trombone,
+/obj/item/instrument/piano_synth,
+/turf/open/floor/wood,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /area/service/theater)
 "aCs" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -13147,6 +13370,7 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
 "aDi" = (
+<<<<<<< HEAD
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/command/gateway)
@@ -13155,6 +13379,30 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/plasteel/dark,
 /area/command/gateway)
+=======
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/command/nuke_storage)
+"aDj" = (
+/obj/machinery/nuclearbomb/selfdestruct,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aDk" = (
 /obj/structure/table,
 /obj/item/assembly/igniter{
@@ -13220,6 +13468,7 @@
 /obj/machinery/vending/tool,
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
+<<<<<<< HEAD
 "aDr" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
@@ -13258,12 +13507,24 @@
 /turf/open/floor/wood,
 /area/service/theater)
 "aDw" = (
+=======
+"aDs" = (
+/obj/structure/window/reinforced,
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+"aDt" = (
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/gateway)
+<<<<<<< HEAD
 "aDx" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -13284,6 +13545,52 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/gateway)
+=======
+"aDv" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/disposalpipe/sorting/mail/flip{
+	dir = 1;
+	sortType = 18
+	},
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"aDx" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/effect/turf_decal/bot_white/left,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/airalarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/command/nuke_storage)
+"aDy" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/baguette,
+/obj/structure/mirror{
+	pixel_y = 32
+	},
+/obj/item/toy/crayon/spraycan/mimecan,
+/obj/item/toy/dummy,
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/service/theater/mime)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aDz" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/maintenance{
@@ -13709,6 +14016,7 @@
 /turf/open/floor/plasteel,
 /area/service/hydroponics/garden)
 "aEM" = (
+<<<<<<< HEAD
 /turf/open/floor/circuit,
 /area/ai_monitored/command/nuke_storage)
 "aEN" = (
@@ -13753,6 +14061,15 @@
 /turf/open/floor/plasteel,
 /area/command/gateway)
 "aER" = (
+=======
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/command/gateway)
+"aEN" = (
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/machinery/camera{
 	c_tag = "Gateway";
 	dir = 4
@@ -13765,7 +14082,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
 /area/command/gateway)
+<<<<<<< HEAD
 "aES" = (
+=======
+"aEO" = (
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/structure/table,
 /obj/item/radio/off{
 	pixel_y = 6
@@ -13781,6 +14102,7 @@
 /obj/item/radio/off,
 /turf/open/floor/plasteel,
 /area/command/gateway)
+<<<<<<< HEAD
 "aET" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -13789,6 +14111,9 @@
 /turf/open/floor/plasteel,
 /area/command/gateway)
 "aEU" = (
+=======
+"aEP" = (
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/structure/table,
 /obj/machinery/recharger,
 /obj/structure/sign/warning/biohazard{
@@ -13796,6 +14121,41 @@
 	},
 /turf/open/floor/plasteel,
 /area/command/gateway)
+<<<<<<< HEAD
+=======
+"aEQ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/circuit,
+/area/ai_monitored/command/nuke_storage)
+"aER" = (
+/turf/open/floor/circuit,
+/area/ai_monitored/command/nuke_storage)
+"aET" = (
+/obj/effect/turf_decal/bot_white/left,
+/obj/structure/closet/crate/silvercrate,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/command/nuke_storage)
+"aEU" = (
+/obj/machinery/vending/autodrobe,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/service/theater/mime)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aEV" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -14142,6 +14502,7 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
 "aFV" = (
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -14186,6 +14547,8 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
 "aGb" = (
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/effect/turf_decal/bot_white/right,
 /obj/machinery/ore_silo,
 /obj/effect/turf_decal/tile/neutral{
@@ -14200,7 +14563,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
+<<<<<<< HEAD
 "aGc" = (
+=======
+"aFW" = (
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
@@ -14216,7 +14583,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
+<<<<<<< HEAD
 "aGd" = (
+=======
+"aFX" = (
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
@@ -14226,6 +14597,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
+<<<<<<< HEAD
 "aGf" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -14233,6 +14605,68 @@
 	},
 /turf/open/floor/plasteel,
 /area/command/gateway)
+=======
+"aFY" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/commons/storage/primary)
+"aFZ" = (
+/obj/structure/table,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/commons/storage/primary)
+"aGa" = (
+/obj/structure/chair/stool,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+"aGb" = (
+/obj/item/radio/intercom{
+	name = "Station Intercom (General)";
+	pixel_x = -30
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+"aGc" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+"aGd" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+"aGf" = (
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plating,
+/area/maintenance/fore)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aGg" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -14318,6 +14752,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/ai_monitored/command/storage/eva)
+<<<<<<< HEAD
 "aGr" = (
 /obj/structure/chair/stool,
 /obj/effect/landmark/start/clown,
@@ -14336,6 +14771,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/service/theater)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aGs" = (
 /obj/machinery/suit_storage_unit/rd,
 /turf/open/floor/plasteel/cafeteria,
@@ -14352,12 +14789,15 @@
 /obj/effect/turf_decal/tile/blue,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
+<<<<<<< HEAD
 "aGv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
 /turf/closed/wall,
 /area/service/theater)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aGw" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -14437,6 +14877,7 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
+<<<<<<< HEAD
 "aGD" = (
 /obj/structure/table/wood,
 /obj/structure/mirror{
@@ -14457,6 +14898,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/service/theater)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aGE" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -14708,6 +15151,7 @@
 /turf/open/floor/wood/wood_large,
 /area/service/chapel/office)
 "aHh" = (
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -14716,6 +15160,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/command/gateway)
+=======
+/obj/structure/sign/warning/securearea,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/closed/wall/r_wall,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aHi" = (
 /obj/machinery/door/morgue{
 	name = "Confession Booth (Chaplain)";
@@ -14724,6 +15174,7 @@
 /turf/open/floor/plasteel/dark,
 /area/service/chapel/office)
 "aHj" = (
+<<<<<<< HEAD
 /obj/machinery/light_switch{
 	pixel_x = -20
 	},
@@ -14735,6 +15186,31 @@
 	},
 /turf/open/floor/plasteel,
 /area/command/gateway)
+=======
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/door/airlock/vault{
+	name = "Vault Door";
+	req_access_txt = "53"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aHk" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/structure/table/wood,
@@ -14787,12 +15263,15 @@
 	dir = 4
 	},
 /area/hallway/secondary/entry)
+<<<<<<< HEAD
 "aHv" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/command/gateway)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aHw" = (
 /obj/effect/landmark/event_spawn,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -14875,6 +15354,7 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
 "aHF" = (
+<<<<<<< HEAD
 /obj/structure/sign/warning/securearea,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall/r_wall,
@@ -14888,6 +15368,16 @@
 	},
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aHH" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
@@ -14901,6 +15391,7 @@
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "aHI" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -14942,6 +15433,39 @@
 	},
 /turf/open/floor/plasteel,
 /area/command/gateway)
+=======
+/obj/structure/chair/stool,
+/turf/open/floor/wood,
+/area/service/theater)
+"aHJ" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"aHK" = (
+/turf/open/floor/wood,
+/area/service/theater)
+"aHL" = (
+/obj/machinery/computer/bank_machine,
+/obj/effect/turf_decal/bot_white,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aHM" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 1
@@ -15431,6 +15955,7 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
 "aIV" = (
+<<<<<<< HEAD
 /obj/machinery/button/door{
 	id = "stationawaygate";
 	name = "Gateway Access Shutter Control";
@@ -15440,6 +15965,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/command/gateway)
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aIW" = (
 /obj/structure/table,
 /obj/item/crowbar,
@@ -15468,9 +16002,14 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
 /area/command/gateway)
+=======
+/turf/open/floor/plasteel,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aJb" = (
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
@@ -15481,10 +16020,22 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
 "aJe" = (
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /turf/open/floor/wood,
+=======
+/obj/structure/chair/stool{
+	pixel_y = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/carpet{
+	icon_state = "carpetsymbol"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /area/service/theater)
 "aJf" = (
 /obj/machinery/camera{
@@ -15507,6 +16058,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+<<<<<<< HEAD
 "aJh" = (
 /turf/open/floor/plasteel,
 /area/command/gateway)
@@ -15520,6 +16072,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/command/gateway)
+=======
+"aJi" = (
+/obj/machinery/light_switch{
+	pixel_y = 28
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aJj" = (
 /obj/structure/table,
 /obj/item/stack/sheet/glass/fifty,
@@ -15898,6 +16461,7 @@
 /turf/open/floor/plasteel,
 /area/commons/storage/primary)
 "aKc" = (
+<<<<<<< HEAD
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
 	name = "Gateway Access";
@@ -15918,6 +16482,35 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/command/gateway)
+=======
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/door/airlock/public/glass{
+	name = "Central Access"
+	},
+/turf/open/floor/plasteel,
+/area/ai_monitored/command/nuke_storage)
+"aKd" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aKe" = (
 /obj/structure/chair/wood/normal{
 	dir = 4
@@ -16008,6 +16601,7 @@
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/commons/storage/primary)
+<<<<<<< HEAD
 "aKu" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plasteel/dark,
@@ -16046,6 +16640,25 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
 /area/maintenance/fore)
+=======
+"aKw" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/service/theater)
+"aKy" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aKz" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 1
@@ -16053,6 +16666,7 @@
 /turf/open/floor/wood,
 /area/service/bar)
 "aKA" = (
+<<<<<<< HEAD
 /obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/shutters{
 	id = "stationawaygate";
@@ -16064,6 +16678,17 @@
 /obj/structure/sign/warning/securearea,
 /turf/closed/wall/r_wall,
 /area/command/gateway)
+=======
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/hallway/primary/port)
+"aKB" = (
+/turf/closed/wall,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aKC" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -16329,8 +16954,13 @@
 /area/hallway/primary/port)
 "aLl" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
+=======
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
@@ -16338,6 +16968,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
@@ -16349,6 +16980,12 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+=======
+/obj/machinery/door/firedoor,
+/obj/machinery/camera{
+	c_tag = "Port Hallway 2"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aLo" = (
@@ -16361,14 +16998,25 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
+=======
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aLq" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -16487,6 +17135,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aLL" = (
+<<<<<<< HEAD
 /obj/machinery/camera{
 	c_tag = "Port Hallway 2"
 	},
@@ -16505,6 +17154,23 @@
 "aLN" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 10
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/command/nuke_storage)
+"aLM" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/commons/storage/primary)
+"aLN" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	icon_state = "1-2"
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
@@ -16518,6 +17184,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "aLP" = (
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -16526,6 +17193,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+=======
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#e8eaff"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/service/theater)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aLQ" = (
 /obj/machinery/camera{
 	c_tag = "Central Hallway North-East"
@@ -16552,12 +17230,20 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "aLT" = (
+<<<<<<< HEAD
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/service/theater)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aLU" = (
 /obj/machinery/airalarm{
 	dir = 4;
@@ -16706,9 +17392,12 @@
 	},
 /turf/open/floor/wood,
 /area/service/bar)
+<<<<<<< HEAD
 "aMr" = (
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aMs" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -16843,6 +17532,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/carpet,
 /area/hallway/secondary/entry)
+<<<<<<< HEAD
 "aMQ" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -16857,6 +17547,13 @@
 	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
+=======
+"aMR" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aMS" = (
@@ -16870,6 +17567,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aMU" = (
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -16888,13 +17586,42 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+=======
+/obj/effect/turf_decal/bot_white/right,
+/obj/structure/closet/crate/goldcrate,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/command/nuke_storage)
+"aMV" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aMX" = (
 /turf/open/floor/wood/wood_large,
 /area/service/chapel/office)
 "aMY" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden,
+=======
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 1
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aMZ" = (
@@ -17151,9 +17878,12 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -17282,6 +18012,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "aOi" = (
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -17293,6 +18024,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/circuit,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aOj" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/cigarettes{
@@ -17363,23 +18099,46 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aOs" = (
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+=======
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plating,
+/area/maintenance/fore)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aOt" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/machinery/light,
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aOv" = (
@@ -17392,6 +18151,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aOw" = (
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -17404,23 +18164,43 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+=======
+/obj/machinery/light,
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aOx" = (
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
+=======
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aOy" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aOz" = (
@@ -17506,9 +18286,31 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "aOH" = (
+<<<<<<< HEAD
 /obj/structure/window/reinforced,
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/structure/safe,
+/obj/item/clothing/head/bearpelt,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
+/obj/effect/turf_decal/bot_white/left,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/item/gun/ballistic/revolver/nagant,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "aOI" = (
 /obj/structure/kitchenspike,
 /turf/open/floor/plasteel/showroomfloor,
@@ -24008,16 +24810,34 @@
 /obj/machinery/light{
 	dir = 4
 	},
+<<<<<<< HEAD
+=======
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/wood,
 /area/command/meeting_room)
 "bfs" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
+<<<<<<< HEAD
+=======
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai_upload)
 "bft" = (
 /obj/machinery/status_display/ai,
+<<<<<<< HEAD
+=======
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai_upload)
 "bfu" = (
@@ -24027,10 +24847,22 @@
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai_upload)
 "bfv" = (
+<<<<<<< HEAD
+=======
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai_upload)
 "bfw" = (
 /obj/machinery/status_display/evac,
+<<<<<<< HEAD
+=======
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai_upload)
 "bfx" = (
@@ -24059,6 +24891,12 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
+<<<<<<< HEAD
+=======
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai_upload)
 "bfA" = (
@@ -24496,11 +25334,18 @@
 /turf/open/floor/wood,
 /area/command/meeting_room)
 "bgM" = (
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/open/floor/wood,
 /area/command/meeting_room)
+=======
+/obj/structure/sign/warning/securearea,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/closed/wall/r_wall,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "bgN" = (
 /turf/open/floor/plasteel/dark,
 /area/engineering/gravity_generator)
@@ -25719,6 +26564,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bjy" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
@@ -25739,6 +26585,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/structure/window/reinforced,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "bjz" = (
 /turf/closed/wall/r_wall,
 /area/maintenance/central)
@@ -28679,6 +29533,7 @@
 /turf/open/floor/plasteel,
 /area/command/heads_quarters/hop)
 "bqD" = (
+<<<<<<< HEAD
 /obj/machinery/vending/coffee,
 /obj/machinery/light{
 	dir = 8;
@@ -28705,6 +29560,41 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
+=======
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+"bqE" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/command/gateway)
+"bqF" = (
+/obj/machinery/button/door{
+	id = "stationawaygate";
+	name = "Gateway Access Shutter Control";
+	pixel_x = -1;
+	pixel_y = -24;
+	req_access_txt = "31"
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+"bqG" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/exile,
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "bqH" = (
 /turf/closed/wall/r_wall,
 /area/command/teleporter)
@@ -29300,6 +30190,7 @@
 /turf/open/floor/plasteel,
 /area/command/heads_quarters/hop)
 "bsa" = (
+<<<<<<< HEAD
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
 "bsb" = (
@@ -29320,6 +30211,22 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
+=======
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/command{
+	name = "Gateway Access";
+	req_access_txt = "62"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel,
+/area/command/gateway)
+"bsc" = (
+/turf/open/floor/plasteel,
+/area/engineering/gravity_generator)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "bsh" = (
 /turf/closed/wall,
 /area/command/teleporter)
@@ -30515,10 +31422,13 @@
 /obj/item/hand_labeler,
 /turf/open/floor/plasteel,
 /area/command/heads_quarters/hop)
+<<<<<<< HEAD
 "buQ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "buT" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -30988,9 +31898,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -31028,6 +31941,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -31042,6 +31956,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+=======
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+"bwb" = (
+/obj/structure/chair/stool{
+	pixel_y = 8
+	},
+/turf/open/floor/carpet{
+	icon_state = "carpetsymbol"
+	},
+/area/service/theater)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "bwc" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -31093,9 +32019,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bwi" = (
@@ -32307,6 +33236,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "byS" = (
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -32315,6 +33245,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/service/theater)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "byT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -33931,6 +34869,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/service/janitor)
+<<<<<<< HEAD
 "bCx" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -33941,6 +34880,8 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/command/gateway)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "bCy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall,
@@ -47990,6 +48931,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/engineering/main)
+<<<<<<< HEAD
+=======
+"cmP" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#e8eaff"
+	},
+/obj/machinery/vending/snack/random,
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "cmU" = (
 /obj/machinery/light/small,
 /obj/machinery/atmospherics/miner/nitrogen,
@@ -52265,11 +53217,14 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
+<<<<<<< HEAD
 "cGz" = (
 /obj/structure/table/wood,
 /obj/item/instrument/violin,
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "cHf" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -52606,9 +53561,15 @@
 /turf/closed/wall,
 /area/service/lawoffice)
 "cJW" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/circuit,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/machinery/computer/gateway_control,
+/turf/open/floor/plasteel,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "cKC" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -52890,11 +53851,17 @@
 /turf/open/floor/plating,
 /area/service/abandoned_gambling_den)
 "cQT" = (
+<<<<<<< HEAD
 /obj/structure/filingcabinet,
 /obj/machinery/light{
 	dir = 8;
 	light_color = "#e8eaff"
 	},
+=======
+/obj/structure/table,
+/obj/item/hand_labeler,
+/obj/item/folder/blue,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
 "cSA" = (
@@ -53239,10 +54206,37 @@
 /area/maintenance/department/medical/morgue)
 "cTT" = (
 /obj/structure/cable{
+<<<<<<< HEAD
 	icon_state = "1-4"
 	},
 /turf/open/floor/circuit,
 /area/ai_monitored/command/nuke_storage)
+=======
+	icon_state = "0-2"
+	},
+/obj/effect/turf_decal/bot_white,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "cTX" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -53266,11 +54260,21 @@
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
 "cUx" = (
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/meeting_room)
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "cVb" = (
 /turf/closed/wall,
 /area/hallway/secondary/service)
@@ -53357,12 +54361,22 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "ddI" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
+=======
+/obj/machinery/door/airlock/public/glass{
+	name = "Central Access"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/wood,
+/area/service/theater)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "ddM" = (
 /obj/structure/sign/poster/official/the_owl{
 	pixel_x = 32
@@ -53371,6 +54385,21 @@
 	icon_state = "wood-broken6"
 	},
 /area/maintenance/starboard/aft)
+<<<<<<< HEAD
+=======
+"ddV" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plating,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "dev" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -53451,9 +54480,19 @@
 /turf/open/floor/plating,
 /area/security/range)
 "dml" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
+=======
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters{
+	id = "stationawaygate";
+	name = "Gateway Access Shutters"
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "dmX" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -53477,6 +54516,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall/r_wall,
 /area/maintenance/disposal/incinerator)
+<<<<<<< HEAD
 "dsC" = (
 /obj/structure/chair/stool{
 	pixel_y = 8
@@ -53488,6 +54528,8 @@
 	icon_state = "carpetsymbol"
 	},
 /area/service/theater)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "dsJ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/table/glass,
@@ -53559,12 +54601,15 @@
 	},
 /turf/open/floor/carpet,
 /area/commons/cryopod)
+<<<<<<< HEAD
 "dzQ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "dAe" = (
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible{
 	dir = 1
@@ -53789,7 +54834,11 @@
 /turf/open/floor/plasteel,
 /area/service/bar)
 "eih" = (
+<<<<<<< HEAD
 /obj/structure/chair{
+=======
+/obj/effect/turf_decal/stripes/corner{
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -54034,6 +55083,7 @@
 	},
 /area/maintenance/starboard/aft)
 "eEe" = (
+<<<<<<< HEAD
 /obj/machinery/door/airlock{
 	name = "Theatre Backstage";
 	req_access_txt = "46"
@@ -54044,6 +55094,21 @@
 	},
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/landmark/start/clown,
+/turf/open/floor/plasteel,
+/area/service/theater/clown)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "eFx" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -54063,6 +55128,22 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
+<<<<<<< HEAD
+=======
+"eFH" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "eFW" = (
 /obj/effect/spawner/structure/window/shuttle,
 /turf/open/floor/plating/airless,
@@ -54178,9 +55259,22 @@
 	},
 /area/maintenance/port/fore)
 "fcn" = (
+<<<<<<< HEAD
 /obj/structure/lattice,
 /turf/closed/wall/r_wall,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/maintenance/fore)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "fcG" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
@@ -54208,6 +55302,7 @@
 /turf/open/floor/wood,
 /area/service/bar)
 "fgG" = (
+<<<<<<< HEAD
 /obj/structure/table/wood,
 /obj/machinery/requests_console{
 	department = "Theatre";
@@ -54223,11 +55318,25 @@
 /obj/item/lipstick/random{
 	pixel_x = -2;
 	pixel_y = -2
+=======
+/obj/machinery/power/apc{
+	areastring = "/area/service/theater";
+	dir = 8;
+	name = "Theatre APC";
+	pixel_x = -25
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	},
 /turf/open/floor/plasteel/white/side{
 	dir = 4
 	},
+<<<<<<< HEAD
 /area/service/theater)
+=======
+/area/service/theater/mime)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "fhu" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -54295,6 +55404,7 @@
 /turf/open/floor/wood/wood_diagonal,
 /area/maintenance/port/fore)
 "fne" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
@@ -54306,6 +55416,12 @@
 	dir = 4
 	},
 /area/service/theater)
+=======
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/service/theater/mime)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "fnC" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
@@ -54604,9 +55720,14 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "fOA" = (
+<<<<<<< HEAD
 /obj/machinery/door/airlock{
 	name = "Theatre Backstage";
 	req_access_txt = "46"
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	},
 /turf/open/floor/wood,
 /area/service/theater)
@@ -54626,6 +55747,13 @@
 /obj/machinery/atmospherics/pipe/manifold/yellow/visible,
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
+<<<<<<< HEAD
+=======
+"fPM" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "fSO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
@@ -54643,11 +55771,19 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "fTC" = (
+<<<<<<< HEAD
 /obj/structure/filingcabinet,
 /obj/machinery/light{
 	dir = 4;
 	light_color = "#e8eaff"
 	},
+=======
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_y = 6
+	},
+/obj/item/pen/fountain,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
 "fZm" = (
@@ -54790,6 +55926,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "gpD" = (
+<<<<<<< HEAD
 /obj/machinery/light_switch{
 	pixel_y = 28
 	},
@@ -54799,6 +55936,24 @@
 	},
 /turf/open/floor/circuit,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/effect/turf_decal/bot_white/left,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "grc" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/maintenance{
@@ -54900,6 +56055,12 @@
 /obj/effect/landmark/carpspawn,
 /turf/open/space/basic,
 /area/space)
+<<<<<<< HEAD
+=======
+"gDO" = (
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "gDP" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -55061,6 +56222,7 @@
 /turf/open/floor/carpet,
 /area/service/library)
 "gTx" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
@@ -55070,6 +56232,21 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/effect/turf_decal/bot_white/left,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "gUu" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -55145,9 +56322,12 @@
 	icon_state = "platingdmg1"
 	},
 /area/maintenance/starboard/aft)
+<<<<<<< HEAD
 "hcb" = (
 /turf/open/floor/carpet,
 /area/service/theater)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "hcA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -55447,6 +56627,18 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+<<<<<<< HEAD
+=======
+"igi" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "ihR" = (
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/lobby)
@@ -55472,9 +56664,13 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/service/kitchen)
 "ikk" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/wood,
 /area/service/theater)
 "ikm" = (
@@ -55528,6 +56724,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "inR" = (
+<<<<<<< HEAD
 /obj/structure/chair/stool{
 	pixel_y = 8
 	},
@@ -55535,6 +56732,12 @@
 /turf/open/floor/carpet{
 	icon_state = "carpetsymbol"
 	},
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/closed/wall,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /area/service/theater)
 "iou" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -55551,6 +56754,13 @@
 /obj/item/beacon,
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
+<<<<<<< HEAD
+=======
+"iss" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/closed/wall/r_wall,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "itD" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -55751,6 +56961,7 @@
 /obj/item/storage/backpack/duffelbag/med/surgery,
 /turf/open/floor/plasteel/white/side,
 /area/medical/surgery)
+<<<<<<< HEAD
 "iTq" = (
 /obj/structure/chair/stool{
 	pixel_y = 8
@@ -55760,6 +56971,8 @@
 	icon_state = "carpetsymbol"
 	},
 /area/service/theater)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "iTU" = (
 /obj/structure/musician/piano{
 	icon_state = "piano"
@@ -55827,6 +57040,15 @@
 /obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel,
 /area/commons/fitness/pool)
+<<<<<<< HEAD
+=======
+"iZd" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 5
+	},
+/turf/closed/wall/r_wall,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "jaF" = (
 /obj/machinery/light/small,
 /obj/machinery/atmospherics/components/unary/tank/air{
@@ -55982,6 +57204,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/fitness)
+<<<<<<< HEAD
+=======
+"jnV" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "jon" = (
 /obj/machinery/atmospherics/components/binary/valve/digital{
 	name = "gas to sauna"
@@ -56687,6 +57921,7 @@
 /turf/open/floor/plating,
 /area/security/range)
 "kCo" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -56701,6 +57936,13 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+=======
+/obj/machinery/door/airlock{
+	name = "Theatre Backstage";
+	req_access_txt = "46"
+	},
+/turf/open/floor/wood,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /area/service/theater)
 "kEm" = (
 /mob/living/simple_animal/opossum/poppy,
@@ -56842,14 +58084,23 @@
 /turf/open/floor/plasteel,
 /area/cargo/miningdock)
 "kTj" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /obj/machinery/door/airlock/maintenance/abandoned{
 	req_access_txt = "12"
 	},
 /obj/structure/barricade/wooden,
 /obj/structure/girder,
+<<<<<<< HEAD
+=======
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "kUC" = (
@@ -56915,6 +58166,15 @@
 /obj/machinery/space_heater,
 /turf/open/floor/plating,
 /area/commons/storage/emergency/starboard)
+<<<<<<< HEAD
+=======
+"lcx" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/turf/closed/wall/r_wall,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "leE" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -56987,6 +58247,32 @@
 /obj/item/clothing/under/rank/civilian/lawyer/red,
 /turf/open/floor/plasteel,
 /area/commons/locker)
+<<<<<<< HEAD
+=======
+"ljV" = (
+/obj/machinery/airalarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/structure/closet/l3closet/scientist,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+"lld" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "lnk" = (
 /obj/item/radio/intercom{
 	pixel_y = 25
@@ -57002,6 +58288,7 @@
 	},
 /area/maintenance/bar)
 "lqO" = (
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -57012,6 +58299,24 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/effect/turf_decal/bot_white/right,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "lre" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/table/wood/poker,
@@ -57134,11 +58439,16 @@
 /turf/closed/wall,
 /area/maintenance/disposal/incinerator)
 "lLf" = (
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
 /area/maintenance/fore)
+=======
+/turf/closed/wall/r_wall,
+/area/ai_monitored/command/nuke_storage)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "lMg" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -57185,11 +58495,20 @@
 /turf/open/floor/plasteel,
 /area/security/range)
 "lSa" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
 /turf/open/floor/carpet,
 /area/service/theater)
+=======
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "lUP" = (
 /obj/structure/sink{
 	dir = 8;
@@ -57446,10 +58765,17 @@
 /turf/open/floor/plating,
 /area/security/office)
 "myh" = (
+<<<<<<< HEAD
 /obj/structure/musician/piano,
 /obj/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/wood,
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/closed/wall,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /area/service/theater)
 "mzv" = (
 /obj/machinery/door/morgue{
@@ -57458,10 +58784,16 @@
 /turf/open/floor/wood/wood_large,
 /area/service/chapel/main)
 "mzB" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/door/window,
 /obj/structure/cable{
 	icon_state = "1-2"
+=======
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	},
 /turf/open/floor/wood,
 /area/service/theater)
@@ -57556,9 +58888,22 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "mJG" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable{
 	icon_state = "1-2"
+=======
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/airalarm{
+	dir = 8;
+	pixel_x = 24
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	},
 /turf/open/floor/wood,
 /area/service/theater)
@@ -57688,12 +59033,31 @@
 /turf/open/space,
 /area/space/station_ruins)
 "nbr" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "nbT" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -57722,20 +59086,49 @@
 /turf/open/floor/plating,
 /area/service/abandoned_gambling_den)
 "nez" = (
+<<<<<<< HEAD
 /obj/structure/table/wood,
 /obj/item/instrument/piano_synth,
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "nfm" = (
 /obj/machinery/vending/autodrobe,
 /turf/open/floor/wood,
 /area/maintenance/bar)
 "ngs" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plating,
+/area/maintenance/fore)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "ngU" = (
 /obj/structure/rack,
 /obj/item/storage/firstaid,
@@ -57745,10 +59138,18 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "ngV" = (
+<<<<<<< HEAD
 /obj/structure/table/wood,
 /obj/item/instrument/guitar,
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "nhY" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/maintenance{
@@ -58024,6 +59425,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "nYe" = (
+<<<<<<< HEAD
 /obj/structure/safe,
 /obj/item/clothing/head/bearpelt,
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
@@ -58043,6 +59445,17 @@
 /obj/item/gun/ballistic/revolver/nagant,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "nYK" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/table/wood/poker,
@@ -58209,6 +59622,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
+<<<<<<< HEAD
+=======
+"omE" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters{
+	id = "stationawaygate";
+	name = "Gateway Access Shutters"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "omX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -58242,6 +59667,21 @@
 	},
 /turf/open/floor/mineral/titanium/blue,
 /area/commons/toilet/locker)
+<<<<<<< HEAD
+=======
+"opg" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "oqj" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -58271,11 +59711,15 @@
 /turf/open/floor/plasteel/dark,
 /area/medical/paramedic)
 "ouQ" = (
+<<<<<<< HEAD
 /obj/structure/table,
 /obj/item/paper_bin{
 	pixel_y = 6
 	},
 /obj/item/pen/fountain,
+=======
+/obj/machinery/vending/cigarette/beach,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
 "ovv" = (
@@ -58291,6 +59735,18 @@
 /obj/item/gun/energy/laser/practice,
 /turf/open/floor/plasteel,
 /area/security/range)
+<<<<<<< HEAD
+=======
+"owa" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/structure/chair{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "oxm" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -58319,12 +59775,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/locker)
+<<<<<<< HEAD
 "oyz" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "oyN" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating/airless,
@@ -58386,6 +59845,13 @@
 /obj/effect/spawner/lootdrop/keg,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+<<<<<<< HEAD
+=======
+"oGv" = (
+/obj/structure/extinguisher_cabinet,
+/turf/closed/wall/r_wall,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "oHB" = (
 /turf/open/floor/plasteel/dark,
 /area/commons/dorms)
@@ -58437,9 +59903,13 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "oNz" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
 	},
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
 "oQP" = (
@@ -58464,6 +59934,7 @@
 /turf/open/floor/plasteel,
 /area/security/range)
 "oTW" = (
+<<<<<<< HEAD
 /obj/structure/chair/stool{
 	pixel_y = 8
 	},
@@ -58474,6 +59945,17 @@
 	icon_state = "carpetsymbol"
 	},
 /area/service/theater)
+=======
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "oUh" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 1
@@ -58562,6 +60044,16 @@
 	},
 /turf/open/floor/plating,
 /area/security/range)
+<<<<<<< HEAD
+=======
+"pgZ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "pjg" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/maintenance,
@@ -58681,6 +60173,7 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
+<<<<<<< HEAD
 "psk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -58701,6 +60194,34 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
+=======
+"pst" = (
+/obj/machinery/gateway/centerstation,
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+"pub" = (
+/obj/machinery/light_switch{
+	pixel_x = -20
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/power/apc{
+	areastring = "/area/command/gateway";
+	dir = 8;
+	name = "Gateway APC";
+	pixel_x = -25;
+	pixel_y = -1
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "puh" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -58723,12 +60244,27 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
+<<<<<<< HEAD
 "pzk" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
+=======
+"pyC" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "pzG" = (
 /obj/item/radio/intercom{
 	name = "Station Intercom (General)";
@@ -58829,6 +60365,18 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
+<<<<<<< HEAD
+=======
+"pHt" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "pHO" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/structure/sign/poster/contraband/fun_police{
@@ -58837,6 +60385,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "pIf" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
@@ -58847,6 +60396,16 @@
 	dir = 4
 	},
 /area/service/theater)
+=======
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/service/theater/clown)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "pJR" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/chair/comfy/brown{
@@ -58865,6 +60424,7 @@
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "pMQ" = (
+<<<<<<< HEAD
 /obj/structure/window/reinforced,
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -58872,6 +60432,14 @@
 	},
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "pPi" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -58907,9 +60475,12 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "pQN" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
 "pRj" = (
@@ -58987,6 +60558,7 @@
 /turf/open/floor/plasteel,
 /area/service/bar)
 "qcm" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
@@ -58995,6 +60567,19 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/captain)
+=======
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "qeb" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -59150,6 +60735,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/commons/dorms)
+<<<<<<< HEAD
 "qyj" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden,
@@ -59159,6 +60745,14 @@
 /obj/structure/lattice,
 /turf/closed/wall/r_wall,
 /area/command/heads_quarters/captain)
+=======
+"qBi" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "qCR" = (
 /obj/structure/musician/piano,
 /obj/effect/decal/cleanable/cobweb,
@@ -59263,11 +60857,19 @@
 	},
 /area/commons/fitness)
 "qOB" = (
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/captain)
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 5
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "qSf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/cable{
@@ -59286,9 +60888,12 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "qTG" = (
+<<<<<<< HEAD
 /obj/machinery/light{
 	dir = 8
 	},
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/carpet,
 /area/service/theater)
 "qTV" = (
@@ -59425,10 +61030,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
 /area/security/processing)
+<<<<<<< HEAD
 "rjQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "rmN" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
@@ -59497,6 +61105,7 @@
 /turf/open/floor/wood,
 /area/service/bar)
 "rqW" = (
+<<<<<<< HEAD
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -59516,6 +61125,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/service/theater)
+=======
+/obj/structure/dresser,
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/service/theater/mime)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "rrM" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 4
@@ -59675,6 +61291,21 @@
 	},
 /turf/open/floor/plating,
 /area/construction)
+<<<<<<< HEAD
+=======
+"rML" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "rMN" = (
 /obj/structure/bed,
 /obj/item/tank/internals/anesthetic,
@@ -59701,10 +61332,24 @@
 /turf/closed/wall,
 /area/ai_monitored/command/storage/eva)
 "rPU" = (
+<<<<<<< HEAD
 /turf/open/floor/plasteel/white/side{
 	dir = 4
 	},
 /area/service/theater)
+=======
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
+/obj/effect/landmark/start/mime,
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/service/theater/mime)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "rQJ" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -59734,6 +61379,7 @@
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "rTu" = (
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -59748,6 +61394,20 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
+"rTD" = (
+/turf/open/floor/plasteel,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "rUe" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -59923,6 +61583,7 @@
 /area/maintenance/fore)
 "sqp" = (
 /obj/structure/cable{
+<<<<<<< HEAD
 	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/command{
@@ -59931,6 +61592,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/captain)
+=======
+	icon_state = "1-4"
+	},
+/turf/closed/wall/r_wall,
+/area/space/nearstation)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "srk" = (
 /turf/open/floor/light/colour_cycle/dancefloor_a,
 /area/maintenance/starboard/aft)
@@ -59982,6 +61649,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/service)
 "syJ" = (
+<<<<<<< HEAD
 /obj/machinery/light{
 	dir = 4
 	},
@@ -59994,6 +61662,14 @@
 	},
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "sAk" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -60164,12 +61840,31 @@
 	},
 /area/maintenance/starboard/aft)
 "sNK" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/structure/closet/secure_closet/freezer/cream_pie,
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/turf/open/floor/plasteel,
+/area/service/theater/clown)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "sOs" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -60331,6 +62026,15 @@
 	},
 /turf/open/floor/plating,
 /area/security/range)
+<<<<<<< HEAD
+=======
+"tnL" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "tqg" = (
 /obj/machinery/cryopod{
 	dir = 4
@@ -60407,6 +62111,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "tyX" = (
+<<<<<<< HEAD
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -60415,6 +62120,21 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/effect/turf_decal/bot_white,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "tzQ" = (
 /obj/machinery/shower{
 	dir = 4
@@ -60521,6 +62241,7 @@
 /turf/open/floor/plasteel/dark,
 /area/medical/paramedic)
 "tJi" = (
+<<<<<<< HEAD
 /obj/machinery/airalarm{
 	dir = 4;
 	pixel_x = -22
@@ -60541,6 +62262,10 @@
 	},
 /obj/item/megaphone/clown,
 /turf/open/floor/plasteel,
+=======
+/obj/structure/musician/piano,
+/turf/open/floor/wood,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /area/service/theater)
 "tJK" = (
 /obj/machinery/door/airlock/engineering{
@@ -60662,9 +62387,13 @@
 	},
 /area/maintenance/port/fore)
 "tWj" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
+=======
+/obj/structure/window/reinforced,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/wood,
 /area/service/theater)
 "tXs" = (
@@ -60775,12 +62504,19 @@
 /turf/open/floor/plasteel,
 /area/engineering/atmos)
 "ugq" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
 /obj/structure/girder,
 /obj/structure/grille,
 /turf/open/floor/plating,
+=======
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 1
+	},
+/turf/closed/wall,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /area/maintenance/port/fore)
 "ugu" = (
 /obj/effect/turf_decal/stripes/line,
@@ -60911,6 +62647,13 @@
 /obj/structure/chair/stool/bar,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+<<<<<<< HEAD
+=======
+"uwQ" = (
+/obj/structure/sign/warning/securearea,
+/turf/closed/wall/r_wall,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "uxY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable{
@@ -61101,10 +62844,15 @@
 /turf/open/floor/plasteel,
 /area/commons/dorms)
 "uJx" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
 /turf/open/floor/carpet,
+=======
+/obj/machinery/door/window,
+/turf/open/floor/wood,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /area/service/theater)
 "uNu" = (
 /obj/structure/disposalpipe/segment{
@@ -61117,6 +62865,7 @@
 /turf/open/floor/plasteel,
 /area/science/circuit)
 "uOJ" = (
+<<<<<<< HEAD
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -61137,6 +62886,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 8
+	},
+/obj/effect/landmark/event_spawn,
+/turf/open/floor/plasteel,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "uQR" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 4;
@@ -61163,6 +62923,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/maintenance/starboard/aft)
 "uRS" = (
+<<<<<<< HEAD
 /obj/structure/chair/stool{
 	pixel_y = 8
 	},
@@ -61170,6 +62931,17 @@
 	icon_state = "carpetsymbol"
 	},
 /area/service/theater)
+=======
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/maintenance/fore)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "uSC" = (
 /obj/machinery/pool/drain,
 /turf/open/pool,
@@ -61209,6 +62981,15 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+<<<<<<< HEAD
+=======
+"uWq" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "uXt" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /obj/structure/cable{
@@ -61320,10 +63101,19 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/commons/locker)
 "viF" = (
+<<<<<<< HEAD
 /obj/structure/table/wood,
 /obj/item/instrument/trumpet,
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "vjm" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/rag,
@@ -61510,6 +63300,7 @@
 /turf/open/floor/plasteel,
 /area/commons/fitness/pool)
 "vBa" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
@@ -61518,13 +63309,37 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/meeting_room)
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "vCb" = (
 /obj/machinery/rnd/production/techfab/department/service,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/service)
 "vCn" = (
+<<<<<<< HEAD
 /obj/structure/chair{
 	dir = 8
+=======
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 5
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
@@ -61695,10 +63510,18 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "vOU" = (
+<<<<<<< HEAD
 /obj/structure/sign/warning/securearea,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/closed/wall/r_wall,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "vOV" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/green/visible{
@@ -61903,9 +63726,14 @@
 /turf/open/floor/plating,
 /area/construction/mining/aux_base)
 "wql" = (
+<<<<<<< HEAD
 /obj/structure/extinguisher_cabinet,
 /turf/closed/wall/r_wall,
 /area/hallway/primary/central)
+=======
+/turf/closed/wall/r_wall,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "wqF" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -62056,11 +63884,15 @@
 /turf/open/floor/plasteel,
 /area/engineering/gravity_generator)
 "wUr" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/carpet,
+=======
+/turf/closed/wall,
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /area/service/theater)
 "wUY" = (
 /obj/structure/table,
@@ -62116,6 +63948,7 @@
 /turf/open/floor/plasteel,
 /area/security/prison)
 "wZI" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -62124,6 +63957,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/command/heads_quarters/captain)
+=======
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "xal" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
@@ -62273,6 +64113,7 @@
 /turf/open/floor/plasteel,
 /area/commons/fitness)
 "xmo" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
@@ -62284,6 +64125,25 @@
 	},
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/structure/sign/poster/contraband/clown{
+	pixel_y = -32
+	},
+/obj/structure/closet/crate/wooden/toy,
+/obj/item/toy/crayon/spraycan/lubecan,
+/turf/open/floor/plasteel,
+/area/service/theater/clown)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "xmS" = (
 /obj/structure/chair/comfy/beige{
 	dir = 8
@@ -62331,7 +64191,11 @@
 	dir = 4
 	},
 /obj/structure/cable{
+<<<<<<< HEAD
 	icon_state = "2-4"
+=======
+	icon_state = "4-8"
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -62348,6 +64212,16 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "xxp" = (
@@ -62403,6 +64277,7 @@
 /turf/open/floor/plasteel,
 /area/commons/locker)
 "xEB" = (
+<<<<<<< HEAD
 /obj/machinery/power/apc{
 	areastring = "/area/ai_monitored/command/nuke_storage";
 	dir = 1;
@@ -62421,6 +64296,24 @@
 	},
 /turf/open/floor/circuit,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/effect/turf_decal/bot_white/right,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "xEE" = (
 /obj/item/radio/intercom{
 	pixel_y = 25
@@ -62522,6 +64415,7 @@
 /turf/open/floor/wood,
 /area/commons/dorms)
 "xPY" = (
+<<<<<<< HEAD
 /obj/structure/table/wood,
 /obj/machinery/light{
 	dir = 4
@@ -62529,6 +64423,16 @@
 /obj/item/instrument/trombone,
 /turf/open/floor/wood,
 /area/service/theater)
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "xRa" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-20"
@@ -62578,6 +64482,7 @@
 /turf/open/space,
 /area/space/station_ruins)
 "xUL" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
 	},
@@ -62592,6 +64497,21 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/command/nuke_storage)
+=======
+/obj/effect/turf_decal/bot_white/right,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "xUX" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -62631,6 +64551,18 @@
 /obj/machinery/vending/clothing,
 /turf/open/floor/plasteel,
 /area/commons/fitness)
+<<<<<<< HEAD
+=======
+"xYf" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 10
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "xZD" = (
 /obj/structure/closet/lasertag/red,
 /obj/item/clothing/under/misc/pj/red,
@@ -62725,6 +64657,21 @@
 	},
 /turf/open/floor/wood/wood_diagonal,
 /area/maintenance/port/fore)
+<<<<<<< HEAD
+=======
+"ygG" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/command/gateway)
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 "yhx" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
@@ -62732,8 +64679,19 @@
 /turf/closed/wall/r_wall,
 /area/security/brig)
 "yhz" = (
+<<<<<<< HEAD
 /obj/structure/table,
 /obj/item/folder/blue,
+=======
+/obj/machinery/vending/coffee,
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#e8eaff"
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
 
@@ -82121,7 +84079,11 @@ aoX
 atJ
 aBQ
 aDq
+<<<<<<< HEAD
 aDo
+=======
+aLM
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aFZ
 aHE
 aJc
@@ -82372,6 +84334,7 @@ kiW
 alU
 amC
 ntt
+<<<<<<< HEAD
 nbr
 ayz
 ayz
@@ -82386,6 +84349,22 @@ aBR
 aLm
 aLE
 aOl
+=======
+nBI
+alU
+alU
+alU
+aBQ
+aBQ
+aBR
+aBQ
+aBQ
+aBQ
+aBQ
+aLm
+aLF
+viF
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aPA
 vJu
 aQN
@@ -82629,6 +84608,7 @@ cPb
 lZN
 amC
 jIW
+<<<<<<< HEAD
 ddI
 alU
 fgG
@@ -82643,6 +84623,22 @@ aKu
 aLM
 aLF
 aOs
+=======
+nBI
+aDy
+fgG
+rqW
+wUr
+tJi
+aLP
+tWj
+qTG
+bwb
+aKw
+aLE
+aLE
+aOl
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aPG
 aPG
 aPG
@@ -82887,6 +84883,7 @@ alU
 amC
 ntt
 ugq
+<<<<<<< HEAD
 alU
 rPU
 fne
@@ -82898,6 +84895,19 @@ oyz
 hcb
 aKu
 aLL
+=======
+aEU
+rPU
+fne
+wUr
+aHI
+fOA
+tWj
+qTG
+bwb
+aKw
+aLE
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 bDe
 aOl
 aPF
@@ -83143,12 +85153,18 @@ qGw
 alU
 aFJ
 ntt
+<<<<<<< HEAD
 aAY
 alU
+=======
+nBI
+wUr
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aCh
 pIf
 kCo
 aHK
+<<<<<<< HEAD
 aCr
 uJx
 ikk
@@ -83156,6 +85172,15 @@ hcb
 aKu
 aLN
 aLE
+=======
+aHK
+uJx
+ikk
+byS
+ddI
+aPO
+qOB
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aOl
 aPH
 aRa
@@ -83399,6 +85424,7 @@ lzk
 alU
 alU
 alU
+<<<<<<< HEAD
 atO
 axp
 aue
@@ -83413,6 +85439,22 @@ hcb
 aKu
 aLN
 aLE
+=======
+awa
+axp
+aGf
+azH
+eEe
+wUr
+aCr
+aLT
+tWj
+qTG
+aJe
+aKw
+aLE
+aMS
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aOl
 aPF
 aQZ
@@ -83658,6 +85700,7 @@ rQJ
 uUi
 avZ
 xtP
+<<<<<<< HEAD
 ayA
 sNK
 xmo
@@ -83669,6 +85712,19 @@ aHG
 aJe
 aKw
 aLP
+=======
+wUr
+sNK
+xmo
+wUr
+mzB
+mJG
+tWj
+qTG
+aJe
+aKw
+aLE
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aMR
 aNU
 aPJ
@@ -83913,6 +85969,7 @@ inw
 gzY
 rtC
 izg
+<<<<<<< HEAD
 awa
 axq
 qyj
@@ -83927,6 +85984,22 @@ hcb
 aKu
 aLN
 aMQ
+=======
+avZ
+xtP
+wUr
+wUr
+wUr
+wUr
+myh
+inR
+wUr
+wUr
+inR
+wUr
+aLE
+aMY
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aNT
 aPI
 aRb
@@ -84172,6 +86245,7 @@ aqR
 aqR
 kTj
 xxi
+<<<<<<< HEAD
 ayD
 cGz
 aMr
@@ -84184,6 +86258,20 @@ hcb
 aKu
 aLN
 aMS
+=======
+ngs
+ngs
+ngs
+ngs
+aDv
+uRS
+aOs
+ngs
+uRS
+fcn
+aLN
+rTu
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aOt
 aPK
 aPK
@@ -84428,6 +86516,7 @@ pjg
 sqg
 inq
 avZ
+<<<<<<< HEAD
 xxi
 ayD
 viF
@@ -84442,6 +86531,22 @@ aKu
 aLN
 aMS
 aOi
+=======
+ayz
+arP
+arP
+arP
+arP
+arP
+arP
+arP
+arP
+arP
+arP
+aLE
+aMS
+aOv
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 lPr
 aPK
 aSl
@@ -84685,6 +86790,7 @@ arP
 arP
 arP
 avZ
+<<<<<<< HEAD
 xxi
 ayD
 nez
@@ -84699,6 +86805,22 @@ aKu
 aLN
 aMS
 aOi
+=======
+ayz
+arP
+ktS
+gXs
+ktS
+ktS
+gXs
+ktS
+gXs
+gXs
+aKB
+ngV
+aMS
+aOv
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aLE
 aRc
 aSm
@@ -84943,6 +87065,7 @@ asQ
 aqR
 awb
 axr
+<<<<<<< HEAD
 ayE
 ayE
 ayE
@@ -84956,6 +87079,21 @@ ayE
 aLl
 aMT
 aOi
+=======
+arP
+gXs
+lLf
+lLf
+lLf
+lLf
+lLf
+lLf
+ktS
+lSa
+aLl
+aMT
+aOv
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aPL
 aPK
 aSm
@@ -85198,6 +87336,7 @@ dPq
 arP
 asP
 cya
+<<<<<<< HEAD
 awa
 axu
 ayH
@@ -85213,6 +87352,23 @@ aKy
 aLn
 aMU
 aOw
+=======
+arP
+axu
+ayH
+ktS
+lLf
+aHL
+lqO
+aMU
+aFV
+lLf
+ktS
+aKy
+aLq
+aMS
+aOv
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aPN
 aPK
 aSn
@@ -85456,6 +87612,7 @@ arP
 arP
 arP
 avZ
+<<<<<<< HEAD
 axt
 ayG
 ayG
@@ -85469,6 +87626,21 @@ ayG
 ayG
 aLm
 aMS
+=======
+azK
+ayG
+ktS
+lLf
+aJi
+aLL
+aOi
+aOw
+bgM
+cUx
+nbr
+oTW
+aMT
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aOv
 aPM
 aPQ
@@ -85713,11 +87885,19 @@ ngU
 kUC
 arP
 awc
+<<<<<<< HEAD
 axt
 ayG
 azK
 aBe
 aBe
+=======
+azK
+ayG
+ktS
+lLf
+aER
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aDj
 aER
 aFX
@@ -85970,19 +88150,32 @@ gzY
 gzY
 esK
 awb
+<<<<<<< HEAD
 axt
 ayG
 aBY
 aBf
+=======
+azK
+ayG
+ktS
+lLf
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aBX
 aDi
 aEQ
 aFW
 aHh
 aIV
+<<<<<<< HEAD
 ayG
 aLN
 aMS
+=======
+nez
+pMQ
+syJ
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aOx
 aPc
 aRe
@@ -86227,6 +88420,7 @@ iPX
 nnp
 arP
 awb
+<<<<<<< HEAD
 axt
 ayG
 aBf
@@ -86237,6 +88431,18 @@ aET
 aET
 bCx
 aHJ
+=======
+azN
+aHJ
+ktS
+lLf
+aBZ
+aDx
+aET
+aOH
+lLf
+ktS
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aKd
 aLq
 aMY
@@ -86485,6 +88691,7 @@ arP
 arP
 vgJ
 hSl
+<<<<<<< HEAD
 ayG
 aBX
 aBf
@@ -86496,6 +88703,19 @@ aHv
 aJh
 aKA
 aLN
+=======
+arP
+gXs
+lLf
+lLf
+lLf
+lLf
+lLf
+lLf
+ktS
+aKA
+qBi
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aMS
 aOz
 exP
@@ -86742,6 +88962,7 @@ sfs
 aqR
 awb
 axt
+<<<<<<< HEAD
 ayG
 azN
 aBe
@@ -86753,6 +88974,19 @@ aHL
 aJi
 aKB
 aLT
+=======
+arP
+ktS
+gXs
+ktS
+ktS
+gXs
+ktS
+gXs
+gXs
+aKB
+aLF
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aNp
 aOC
 aPQ
@@ -86999,6 +89233,7 @@ aqR
 aqR
 awb
 axt
+<<<<<<< HEAD
 ayG
 ayG
 ayG
@@ -87009,6 +89244,18 @@ ayG
 ayG
 ayG
 ayG
+=======
+arP
+arP
+arP
+arP
+arP
+arP
+arP
+arP
+arP
+arP
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aHP
 aNc
 aOB
@@ -90109,7 +92356,11 @@ bcc
 bdd
 cVs
 bfr
+<<<<<<< HEAD
 bgM
+=======
+bbX
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 bif
 aZM
 aZM
@@ -90366,6 +92617,7 @@ bbk
 bfu
 bbk
 bfs
+<<<<<<< HEAD
 rTu
 aZM
 aZM
@@ -90377,6 +92629,19 @@ ktS
 aaf
 ktS
 aaf
+=======
+ctv
+ctv
+ctv
+ktS
+gXs
+ktS
+ktS
+gXs
+ktS
+ktS
+gXs
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 ktS
 fxV
 aXf
@@ -90622,6 +92887,7 @@ bbj
 bce
 bdf
 beb
+<<<<<<< HEAD
 aYv
 cUx
 fcn
@@ -90631,6 +92897,17 @@ ktS
 ktS
 aaf
 fxV
+=======
+xPY
+ktS
+ktS
+ktS
+ktS
+gXs
+ktS
+ktS
+gXs
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 fxV
 fxV
 fxV
@@ -90879,6 +93156,7 @@ aZR
 aZR
 bbm
 bec
+<<<<<<< HEAD
 bfu
 vBa
 aBa
@@ -90889,6 +93167,18 @@ aBa
 aBa
 fxV
 bsb
+=======
+lld
+vBa
+aBa
+pyC
+iZd
+wql
+wql
+wql
+wql
+wql
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 yhz
 ouQ
 cQT
@@ -91137,6 +93427,7 @@ aZR
 aZR
 aZR
 bft
+<<<<<<< HEAD
 psk
 aBa
 aBT
@@ -91151,6 +93442,22 @@ dzQ
 bsa
 nbT
 byS
+=======
+wZI
+gDO
+aBW
+aDs
+aEN
+aGb
+pub
+bqD
+bsa
+vCn
+pQN
+pHt
+nbT
+aXf
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aJq
 wTf
 bCs
@@ -91395,17 +93702,30 @@ bdh
 bee
 bfv
 xUL
+<<<<<<< HEAD
 aBb
 gpD
 aDr
+=======
+tyX
+gpD
+aDt
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 cJW
 aGa
 aHF
 bqF
+<<<<<<< HEAD
 buQ
 buQ
 pzk
 buQ
+=======
+wql
+rML
+pQN
+uWq
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 bxI
 bwa
 bAg
@@ -91659,10 +93979,17 @@ aEM
 aGd
 uOJ
 bqE
+<<<<<<< HEAD
 bqE
 bqE
 bqE
 bqE
+=======
+omE
+eFH
+pgZ
+jnV
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 knx
 bvW
 bAf
@@ -91909,7 +94236,11 @@ bdh
 bef
 bfv
 gTx
+<<<<<<< HEAD
 aBc
+=======
+tyX
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 xEB
 aDt
 aEO
@@ -91917,9 +94248,15 @@ aGc
 vOU
 rTD
 dml
+<<<<<<< HEAD
 dml
 oNz
 dml
+=======
+xYf
+oNz
+tnL
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 bxK
 bwh
 bAh
@@ -92166,11 +94503,16 @@ aZR
 aZR
 bfw
 wZI
+<<<<<<< HEAD
 aBa
+=======
+gDO
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aBW
 bjy
 aEP
 nYe
+<<<<<<< HEAD
 aBa
 bqG
 bsa
@@ -92179,6 +94521,16 @@ pQN
 bsa
 nbT
 bwb
+=======
+ljV
+bqG
+uwQ
+eih
+pQN
+owa
+nbT
+aNs
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 aJq
 bBr
 bCv
@@ -92421,6 +94773,7 @@ aZR
 aZR
 bbm
 beh
+<<<<<<< HEAD
 bfx
 qcm
 aBa
@@ -92433,6 +94786,20 @@ wql
 bsg
 yhz
 ouQ
+=======
+opg
+qcm
+ddV
+ygG
+iss
+iss
+lcx
+wql
+wql
+wql
+cmP
+fPM
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 fTC
 nbT
 aJq
@@ -92678,6 +95045,7 @@ bbn
 bcg
 aZU
 beg
+<<<<<<< HEAD
 aYB
 qOB
 qBi
@@ -92690,6 +95058,20 @@ fxV
 fxV
 fxV
 fxV
+=======
+igi
+ktS
+ktS
+ktS
+ktS
+gXs
+ktS
+ktS
+gXs
+fxV
+fxV
+oGv
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 fxV
 fxV
 aJq
@@ -92937,6 +95319,7 @@ bfx
 bbp
 bfz
 sqp
+<<<<<<< HEAD
 aZV
 aZV
 aaf
@@ -92947,6 +95330,18 @@ ktS
 aaf
 ktS
 aaf
+=======
+ctv
+ctv
+ktS
+gXs
+ktS
+ktS
+gXs
+ktS
+ktS
+gXs
+>>>>>>> 06cd2e3b51... Merge pull request #14952 from silicons/why
 ktS
 fxV
 aJq
