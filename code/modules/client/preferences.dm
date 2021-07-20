@@ -1783,8 +1783,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							if(modification_type == LOADOUT_LIMB_PROSTHETIC)
 								//LUNAR CHANGES START
 								var/list/prosthetic_list
-								if(pref_species.no_prosthetic_icons)
-									prosthetic_list = list("prosthetic")
+								if(length(pref_species.custom_prosthetics))
+									prosthetic_list = pref_species.custom_prosthetics
 								else
 									prosthetic_list = list("prosthetic") + GLOB.prosthetic_limb_types
 								//LUNAR CHANGES END
@@ -3196,8 +3196,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(BODY_ZONE_R_LEG)
 						new_limb = new/obj/item/bodypart/r_leg/robot/surplus(character)
 				var/prosthetic_type = modified_limbs[modified_limb][2]
-				if(prosthetic_type != "prosthetic") //lets just leave the old sprites as they are
+				if(prosthetic_type != "prosthetic" && prosthetic_type != "DSI") //lets just leave the old sprites as they are, LUNAR EDIT: DSI prosthetic support
 					new_limb.icon = file("icons/mob/augmentation/cosmetic_prosthetic/[prosthetic_type].dmi")
+				// LUNAR EDIT: DSI prosthetic support
+				if(prosthetic_type == "DSI")
+					new_limb.is_iconless_prosthetic = TRUE
 				new_limb.replace_limb(character)
 			qdel(old_part)
 

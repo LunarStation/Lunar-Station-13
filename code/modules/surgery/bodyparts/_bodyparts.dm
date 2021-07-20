@@ -106,6 +106,8 @@
 	// see code\modules\surgery\limb_augmentation.dm, or code\game\machinery\limbgrower.dm
 	var/forcereplace = FALSE
 
+	var/is_iconless_prosthetic = FALSE //LUNAR EDIT: support for DSI prosthetics
+
 /obj/item/bodypart/examine(mob/user)
 	. = ..()
 	if(brute_dam > DAMAGE_PRECISION)
@@ -780,7 +782,7 @@
 			if(burnstate)
 				. += image('icons/mob/dam_mob.dmi', "[dmg_overlay_type]_[body_zone]_0[burnstate]", -DAMAGE_LAYER, image_dir)
 
-		if(!isnull(body_markings) && (is_organic_limb(FALSE) || (owner && owner.dna.species.no_prosthetic_icons))) //LUNAR CHANGE
+		if(!isnull(body_markings) && (is_organic_limb(FALSE) || is_iconless_prosthetic))
 			for(var/list/marking_list in body_markings_list)
 				// marking stores icon and value for the specific bodypart
 				if(!use_digitigrade)
@@ -813,7 +815,7 @@
 		should_draw_gender = FALSE
 
 	var/list/markings_list = list()
-	if((is_organic_limb(FALSE) || (owner && owner.dna.species.no_prosthetic_icons))) //LUNAR CHANGE
+	if(is_organic_limb(FALSE) || is_iconless_prosthetic)
 		limb.icon = base_bp_icon || 'icons/mob/human_parts.dmi'
 		if(should_draw_gender)
 			limb.icon_state = "[species_id]_[body_zone]_[icon_gender]"

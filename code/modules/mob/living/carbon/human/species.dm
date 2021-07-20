@@ -213,8 +213,8 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	///For custom overrides for species ass images
 	var/icon/ass_image
 
-	//if the species has no prosthetic icons and thus it just uses its regular limbs
-	var/no_prosthetic_icons = FALSE
+	//LUNAR CHANGE: species specific prosthetics
+	var/list/custom_prosthetics
 
 ///////////
 // PROCS //
