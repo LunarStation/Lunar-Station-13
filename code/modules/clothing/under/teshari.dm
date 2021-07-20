@@ -59,7 +59,7 @@
 	name = "small command smock"
 	desc = "A captain seromi, for Teshari."
 	icon_state = "teshari_captain"
-	item_state = "teshari_captain"
+	item_state = "seromi_captain"
 
 /obj/item/clothing/under/teshari/teshari_dress_grey
 	name = "small grey dress"
