@@ -14,7 +14,7 @@
 	max_health = 50
 	eye_type = "teshari"
 
-	custom_prosthetics = list("DSI", "Unbranded", "Cenilimi")
+	custom_prosthetics = list("DSI", "unbranded", "cenilimi")
 
 /datum/species/teshari/before_equip_job(datum/job/J, mob/living/carbon/human/H, visualsOnly = FALSE)
 	var/datum/outfit/teshari/O = new /datum/outfit/teshari

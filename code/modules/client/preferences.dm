@@ -129,7 +129,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/custom_speech_verb = "default" //if your say_mod is to be something other than your races
 	var/custom_tongue = "default" //if your tongue is to be something other than your races
 	var/additional_language = "None" //additional language your character has
-	var/modified_limbs = list() //prosthetic/amputated limbs
+	var/list/modified_limbs = list() //prosthetic/amputated limbs
 	var/chosen_limb_id //body sprite selected to load for the users limbs, null means default, is sanitized when loaded
 
 	/// Security record note section
@@ -1900,11 +1900,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						eye_type = pref_species.eye_type
 
 						//LUNAR CHANGE START
-						//if we have no prosthetic icons, convert any existing prosthetics into the regular 'prosthetic' type which is handled accordingly
-						if(pref_species.no_prosthetic_icons)
+						//if we have custom prosthetic icons, remove any existing prosthetics
+						if(pref_species.custom_prosthetics)
 							for(var/limb in LOADOUT_LIMBS)
 								if(modified_limbs[limb])
-									modified_limbs[limb] = list(LOADOUT_LIMB_PROSTHETIC, "prosthetic")
+									modified_limbs.Remove(modified_limbs[limb])
 						//LUNAR CHANGE END
 
 				if("custom_species")
