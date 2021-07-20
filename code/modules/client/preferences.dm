@@ -1781,7 +1781,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						var/modification_type = input(user, "Choose the modification to the limb:", "Character Preference") as null|anything in LOADOUT_LIMBS
 						if(modification_type)
 							if(modification_type == LOADOUT_LIMB_PROSTHETIC)
-								var/prosthetic_type = input(user, "Choose the type of prosthetic", "Character Preference") as null|anything in (list("prosthetic") + GLOB.prosthetic_limb_types)
+								//LUNAR CHANGES START
+								var/list/prosthetic_list
+								if(pref_species.no_prosthetic_icons)
+									prosthetic_list = list("prosthetic")
+								else
+									prosthetic_list = list("prosthetic") + GLOB.prosthetic_limb_types
+								//LUNAR CHANGES END
+								var/prosthetic_type = input(user, "Choose the type of prosthetic", "Character Preference") as null|anything in prosthetic_list
 								if(prosthetic_type)
 									var/number_of_prosthetics = 0
 									for(var/modified_limb in modified_limbs)
@@ -1891,6 +1898,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 						//switch to the type of eyes the species uses
 						eye_type = pref_species.eye_type
+
+						//LUNAR CHANGE START
+						//if we have no prosthetic icons, convert any existing prosthetics into the regular 'prosthetic' type which is handled accordingly
+						if(pref_species.no_prosthetic_icons)
+							for(var/limb in LOADOUT_LIMBS)
+								if(modified_limbs[limb])
+									modified_limbs[limb] = list(LOADOUT_LIMB_PROSTHETIC, "prosthetic")
+						//LUNAR CHANGE END
 
 				if("custom_species")
 					var/new_species = reject_bad_name(input(user, "Choose your species subtype, if unique. This will show up on examinations and health scans. Do not abuse this:", "Character Preference", custom_species) as null|text)

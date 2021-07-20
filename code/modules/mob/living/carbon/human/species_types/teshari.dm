@@ -14,6 +14,8 @@
 	max_health = 50
 	eye_type = "teshari"
 
+	no_prosthetic_icons = TRUE // they have no prosthetic icons and so use their regular limbs for them
+
 /datum/species/teshari/before_equip_job(datum/job/J, mob/living/carbon/human/H, visualsOnly = FALSE)
 	var/datum/outfit/teshari/O = new /datum/outfit/teshari
 	if(J)
