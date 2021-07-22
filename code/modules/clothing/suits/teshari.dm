@@ -222,31 +222,6 @@
 	desc = "A soft Teshari cloak made for the Service department"
 	icon_state = "tesh_cloak_serv"
 
-//Misc
-
-/obj/item/clothing/suit/toggle/labcoat/teshari
-	name = "Teshari labcoat"
-	desc = "A small suit that protects against minor chemical spills. This one is a good fit on Teshari."
-	icon = 'icons/obj/clothing/teshari.dmi'
-	icon_state = "tesh_labcoat"
-	species_restricted = list(SPECIES_TESHARI)
-
-/obj/item/clothing/suit/toggle/tesharicoat
-	name = "small black coat"
-	desc = "A coat that seems too small to fit a human."
-	icon = 'icons/obj/clothing/teshari.dmi'
-	icon_state = "tesharicoat"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
-	species_restricted = list(SPECIES_TESHARI)
-
-/obj/item/clothing/suit/toggle/tesharicoatwhite
-	name = "small coat"
-	desc = "A coat that seems too small to fit a human."
-	icon = 'icons/obj/clothing/teshari.dmi'
-	icon_state = "tesharicoatwhite"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
-	species_restricted = list(SPECIES_TESHARI)
-
 //Hooded teshari cloaks
 
 /obj/item/clothing/suit/hooded/teshari
