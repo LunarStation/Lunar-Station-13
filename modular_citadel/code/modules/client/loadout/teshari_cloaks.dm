@@ -184,7 +184,7 @@
 /datum/gear/xenowear/tesh/cloak/science
 	name = "Scientist cloak"
 	path = /obj/item/clothing/suit/teshari/cloak/jobs/sci
-	restricted_roles = list("Research Director", "Scientist")
+	restricted_roles = list("Research Director", "Scientist", "Roboticist")
 	restricted_desc = "Scientist"
 
 /datum/gear/xenowear/tesh/cloak/roboticist
@@ -499,7 +499,7 @@
 	name = "Science belted cloak"
 	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/sci
 	restricted_desc = "Science"
-	restricted_roles = list("Research Director", "Scientist")
+	restricted_roles = list("Research Director", "Scientist", "Roboticist")
 
 /datum/gear/xenowear/tesh/cloak/belt/robo
 	name = "Roboticist belted cloak"
