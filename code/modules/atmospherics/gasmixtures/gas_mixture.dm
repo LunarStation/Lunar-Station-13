@@ -216,6 +216,10 @@ we use a hook instead
 /datum/gas_mixture/proc/react(datum/holder)
 	//Performs various reactions such as combustion or fusion (LOL)
 	//Returns: 1 if any reaction took place; 0 otherwise
+	
+/datum/gas_mixture/proc/react_unhooked(datum/holder)
+	//Literally just calls react, but this allows auxmos on linux to actually call one of its own functions through BYOND.
+	react(holder)
 
 /datum/gas_mixture/proc/adjust_heat(amt)
 	//Adjusts the thermal energy of the gas mixture, rather than having to do the full calculation.
