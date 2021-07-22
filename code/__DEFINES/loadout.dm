@@ -58,13 +58,6 @@
 //unlockable items
 #define LOADOUT_CATEGORY_UNLOCKABLE	"Unlockable"
 
-//xenowear
-#define LOADOUT_CATEGORY_XENOWEAR 				"Xenowear"
-#define LOADOUT_SUBCATEGORY_XENOWEAR_TESHARI	"Teshari"
-#define LOADOUT_SUBCATEGORY_XENOWEAR_CLOAK_S	"Standard"
-#define LOADOUT_SUBCATEGORY_XENOWEAR_CLOAK_H	"Hooded"
-#define LOADOUT_SUBCATEGORY_XENOWEAR_CLOAK_B	"Beltcloak"
-
 //how many prosthetics can we have
 #define MAXIMUM_LOADOUT_PROSTHETICS	2
 
