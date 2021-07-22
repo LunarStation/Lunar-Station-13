@@ -219,7 +219,7 @@
 /datum/gear/xenowear/tesh/cloak/service
 	name = "Service cloak"
 	path = /obj/item/clothing/suit/teshari/cloak/jobs/service
-	restricted_roles = list("Head of Personnel", "Assistant", "Botanist", "Mime", "Clown", "Cook", "Curator", "Chaplain")
+	restricted_roles = list("Head of Personnel", "Assistant", "Botanist", "Mime", "Clown", "Cook", "Curator", "Chaplain", "Janitor")
 
 // hooded cloaks
 /datum/gear/xenowear/tesh/cloak/hooded
@@ -461,6 +461,90 @@
 
 /datum/gear/xenowear/tesh/cloak/belt/atmos
 	name = "Atmospherics belted cloak"
-	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/engineer
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/atmos
 	restricted_desc = "Atmospheric Technician"
 	restricted_roles = list("Chief Engineer", "Atmospheric Technician")
+
+/datum/gear/xenowear/tesh/cloak/belt/cmo
+	name = "Chief Medical Officer belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/cmo
+	restricted_desc = "Chief Medical Officer"
+	restricted_roles = list("Chief Medical Officer")
+
+/datum/gear/xenowear/tesh/cloak/belt/medical
+	name = "Medical belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/medical
+	restricted_desc = "Medical"
+	restricted_roles = list("Medical Doctor", "Chief Medical Officer", "Geneticist", "Chemist", "Virologist", "Paramedic")
+
+/datum/gear/xenowear/tesh/cloak/belt/chemistry
+	name = "Chemistry belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/chemistry
+	restricted_desc = "Chemistry"
+	restricted_roles = list("Chief Medical Officer", "Chemist")
+
+/datum/gear/xenowear/tesh/cloak/belt/viro
+	name = "Virology belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/viro
+	restricted_desc = "Virology"
+	restricted_roles = list("Chief Medical Officer", "Virologist")
+
+/datum/gear/xenowear/tesh/cloak/belt/para
+	name = "Paramedic belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/para
+	restricted_desc = "Paramedic"
+	restricted_roles = list("Chief Medical Officer", "Paramedic")
+
+/datum/gear/xenowear/tesh/cloak/belt/sci
+	name = "Science belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/sci
+	restricted_desc = "Science"
+	restricted_roles = list("Research Director", "Scientist")
+
+/datum/gear/xenowear/tesh/cloak/belt/robo
+	name = "Roboticist belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/robo
+	restricted_desc = "Roboticist"
+	restricted_roles = list("Research Director", "Roboticist")
+
+/datum/gear/xenowear/tesh/cloak/belt/sec
+	name = "Security belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/sec
+	restricted_desc = "Security"
+	restricted_roles = list("Head of Security", "Security Officer", "Warden")
+
+/datum/gear/xenowear/tesh/cloak/belt/hos
+	name = "Head of Security belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/hos
+	restricted_desc = "Head of Security"
+	restricted_roles = list("Head of Security")
+
+/datum/gear/xenowear/tesh/cloak/belt/wrdn
+	name = "Warden belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/wrdn
+	restricted_desc = "Warden"
+	restricted_roles = list("Head of Security", "Warden")
+
+/datum/gear/xenowear/tesh/cloak/belt/iaa
+	name = "IAA belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/wrdn
+	restricted_desc = "Warden"
+	restricted_roles = list("Head of Security", "Warden")
+
+/datum/gear/xenowear/tesh/cloak/belt/qm
+	name = "Quartermaster belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/qm
+	restricted_desc = "Quartermaster"
+	restricted_roles = list("Quartermaster")
+
+/datum/gear/xenowear/tesh/cloak/belt/service
+	name = "Service belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/service
+	restricted_desc = "Service"
+	restricted_roles = list("Head of Personnel", "Assistant", "Botanist", "Mime", "Clown", "Cook", "Curator", "Chaplain", "Janitor")
+
+/datum/gear/xenowear/tesh/cloak/belt/qm
+	name = "Janitor belted cloak"
+	path = /obj/item/clothing/suit/teshari/beltcloak/jobs/jani
+	restricted_desc = "Janitor"
+	restricted_roles = list("Janitor")
