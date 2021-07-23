@@ -23,7 +23,6 @@
 	icon_state = "atmos"
 	item_state = "atmos_suit"
 	resistance_flags = NONE
-	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/engineering/atmospheric_technician/skirt
 	name = "atmospheric technician's jumpskirt"
@@ -42,7 +41,6 @@
 	item_state = "engi_suit"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 5)
 	resistance_flags = NONE
-	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/engineering/engineer/mechanic
 	name = "mechanic's jumpsuit"

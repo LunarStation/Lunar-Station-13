@@ -47,7 +47,6 @@
 
 	var/outfit = null
 	var/plasma_outfit = null //the outfit given to plasmamen
-	var/tesh_outfit = null //the outfit given to teshari
 
 	var/exp_requirements = 0
 

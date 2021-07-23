@@ -6,7 +6,6 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 15)
 	sensor_mode = SENSOR_COORDS
 	sensor_flags = NONE
-	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/captain/util
 	name = "command utility uniform"

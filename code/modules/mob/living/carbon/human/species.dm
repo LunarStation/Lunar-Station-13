@@ -21,8 +21,6 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	var/name
 	// Default color. If mutant colors are disabled, this is the color that will be used by that race.
 	var/default_color = "#FFF"
-	// Max health of the species
-	var/max_health = 100
 
 	///Whether or not the race has sexual characteristics (biological genders). At the moment this is only FALSE for skeletons and shadows
 	var/sexes = TRUE
@@ -212,9 +210,6 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 	///For custom overrides for species ass images
 	var/icon/ass_image
-
-	//LUNAR CHANGE: species specific prosthetics
-	var/list/custom_prosthetics
 
 ///////////
 // PROCS //

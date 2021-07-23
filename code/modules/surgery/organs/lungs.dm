@@ -523,18 +523,9 @@
 
 	maxHealth = 250
 
-/obj/item/organ/lungs/teshari
-	name = "teshari lungs"
-	desc = "A pair of lungs belonging to a teshari. They are particularly fragile."
-
-	cold_level_1_threshold = 180
-	cold_level_2_threshold = 130
-	cold_level_3_threshold = 70
-
 /obj/item/organ/lungs/ashwalker/populate_gas_info()
 	..()
 	gas_max -= GAS_PLASMA
-
 
 /obj/item/organ/lungs/slime/check_breath(datum/gas_mixture/breath, mob/living/carbon/human/H)
 	. = ..()

@@ -10,32 +10,26 @@
 /obj/item/clothing/under/shorts/red
 	name = "red athletic shorts"
 	icon_state = "redshorts"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/under/shorts/green
 	name = "green athletic shorts"
 	icon_state = "greenshorts"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/under/shorts/blue
 	name = "blue athletic shorts"
 	icon_state = "blueshorts"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/under/shorts/black
 	name = "black athletic shorts"
 	icon_state = "blackshorts"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/under/shorts/grey
 	name = "grey athletic shorts"
 	icon_state = "greyshorts"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/under/shorts/purple
 	name = "purple athletic shorts"
 	icon_state = "purpleshorts"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/under/shorts/polychromic
 	name = "polychromic athletic shorts"

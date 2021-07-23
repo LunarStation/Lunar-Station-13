@@ -106,8 +106,6 @@
 	// see code\modules\surgery\limb_augmentation.dm, or code\game\machinery\limbgrower.dm
 	var/forcereplace = FALSE
 
-	var/is_iconless_prosthetic = FALSE //LUNAR EDIT: support for DSI prosthetics
-
 /obj/item/bodypart/examine(mob/user)
 	. = ..()
 	if(brute_dam > DAMAGE_PRECISION)
