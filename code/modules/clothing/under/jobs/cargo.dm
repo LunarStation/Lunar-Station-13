@@ -4,7 +4,6 @@
 	desc = "It's a jumpsuit worn by the quartermaster. It's specially designed to prevent back injuries caused by pushing paper."
 	icon_state = "qm"
 	item_state = "lb_suit"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/cargo/qm/skirt
 	name = "quartermaster's jumpskirt"
@@ -23,7 +22,6 @@
 	item_state = "lb_suit"
 	body_parts_covered = CHEST|GROIN|ARMS
 	alt_covers_chest = TRUE
-	species_alternative = list("teshari")
 
 /obj/item/clothing/under/rank/cargo/util
 	name = "cargo utility uniform"

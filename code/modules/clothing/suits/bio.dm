@@ -10,7 +10,6 @@
 	resistance_flags = ACID_PROOF
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	mutantrace_variation = STYLE_MUZZLE
-	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/bio_suit
 	name = "bio suit"
@@ -30,7 +29,6 @@
 	equip_delay_other = 70
 	resistance_flags = ACID_PROOF
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_SNEK_TAURIC|STYLE_PAW_TAURIC
-	species_alternative = list("teshari")
 
 //Standard biosuit, orange stripe
 /obj/item/clothing/head/bio_hood/general
@@ -90,4 +88,3 @@
 	item_state = "bio_suit"
 	strip_delay = 40
 	equip_delay_other = 20
-	species_alternative = list()
