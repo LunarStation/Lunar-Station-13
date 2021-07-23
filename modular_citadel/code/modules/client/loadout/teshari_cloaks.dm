@@ -167,7 +167,7 @@
 	name = "Paramedic cloak"
 	path = /obj/item/clothing/suit/teshari/cloak/jobs/para
 	restricted_roles = list("Chief Medical Officer", "Paramedic")
-	restricted_roles = "Paramedic"
+	restricted_desc = "Paramedic"
 
 /datum/gear/xenowear/tesh/cloak/psych //we don't have this job on cit so it's just available to all medical players
 	name = "Psychiatrist cloak"
@@ -203,6 +203,7 @@
 	name = "Security cloak"
 	path = /obj/item/clothing/suit/teshari/cloak/jobs/sec
 	restricted_roles = list("Head of Security", "Security Officer", "Warden")
+	restricted_desc = "Security"
 
 /datum/gear/xenowear/tesh/cloak/iaa
 	name = "IAA cloak" // we don't have IAA as a job role, so i'll just give this to the warden!
@@ -220,6 +221,7 @@
 	name = "Service cloak"
 	path = /obj/item/clothing/suit/teshari/cloak/jobs/service
 	restricted_roles = list("Head of Personnel", "Assistant", "Botanist", "Mime", "Clown", "Cook", "Curator", "Chaplain", "Janitor")
+	restricted_desc = "Service"
 
 // hooded cloaks
 /datum/gear/xenowear/tesh/cloak/hooded
