@@ -1,7 +1,6 @@
 /obj/item/restraints
 	breakouttime = 600
 	var/demoralize_criminals = TRUE // checked on carbon/carbon.dm to decide wheter to apply the handcuffed negative moodlet or not.
-	var/list/species_alternative = list()
 	/// allow movement at all during breakout
 	var/allow_breakout_movement = FALSE
 
