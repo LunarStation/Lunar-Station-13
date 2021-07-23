@@ -1,4 +1,3 @@
-
 //Regular syndicate space suit
 /obj/item/clothing/head/helmet/space/syndicate
 	name = "red space helmet"
@@ -28,6 +27,7 @@
 	icon_state = "syndicate-green"
 	item_state = "syndicate-green"
 
+
 //Dark green syndicate space suit
 /obj/item/clothing/head/helmet/space/syndicate/green/dark
 	name = "dark green space helmet"
@@ -38,6 +38,7 @@
 	name = "dark green space suit"
 	icon_state = "syndicate-green-dark"
 	item_state = "syndicate-green-dark"
+
 
 //Orange syndicate space suit
 /obj/item/clothing/head/helmet/space/syndicate/orange
@@ -150,6 +151,7 @@
 	icon_state = "syndicate-black-red"
 	item_state = "syndicate-black-red"
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_SNEK_TAURIC|STYLE_PAW_TAURIC
+
 
 //Black with yellow/red engineering syndicate space suit
 /obj/item/clothing/head/helmet/space/syndicate/black/engie

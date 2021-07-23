@@ -50,7 +50,6 @@
 	resistance_flags = FIRE_PROOF
 	flavor_adjust = FALSE
 
-
 /obj/item/clothing/mask/gas/welding/attack_self(mob/user)
 	weldingvisortoggle(user)
 
