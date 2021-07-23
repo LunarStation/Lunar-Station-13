@@ -11,9 +11,6 @@
 	max_integrity = 300
 	var/content_overlays = FALSE //If this is true, the belt will gain overlays based on what it's holding
 	var/onmob_overlays = FALSE //worn counterpart of the above.
-	// Lunar Station Edit
-	// for species alt sprites (see human/update_icons.dm)
-	var/list/species_alternative = list()
 
 /obj/item/storage/belt/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] begins belting [user.p_them()]self with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -48,7 +45,6 @@
 	content_overlays = TRUE
 	custom_premium_price = 300
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE //because this is easier than trying to have showers wash all contents.
-	species_alternative = list("teshari")
 
 /obj/item/storage/belt/utility/ComponentInitialize()
 	. = ..()
@@ -133,7 +129,6 @@
 	icon_state = "medicalbelt"
 	item_state = "medical"
 	content_overlays = TRUE
-	species_alternative = list("teshari")
 
 /obj/item/storage/belt/medical/ComponentInitialize()
 	. = ..()
@@ -215,7 +210,6 @@
 	icon_state = "securitybelt"
 	item_state = "security"//Could likely use a better one.
 	content_overlays = TRUE
-	species_alternative = list("teshari")
 
 /obj/item/storage/belt/security/ComponentInitialize()
 	. = ..()

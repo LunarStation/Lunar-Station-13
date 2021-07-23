@@ -1684,8 +1684,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_hair_list[S.name] = path
 
@@ -1702,8 +1704,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_hair_list[S.name] = path
 					hair_style = next_list_item(hair_style, snowflake_hair_list)
@@ -1716,8 +1720,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_hair_list[S.name] = path
 					hair_style = previous_list_item(hair_style, snowflake_hair_list)
@@ -1735,8 +1741,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_hair_list[S.name] = path
 					var/new_facial_hair_style
@@ -1752,8 +1760,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_hair_list[S.name] = path
 					facial_hair_style = next_list_item(facial_hair_style, snowflake_hair_list)
@@ -1766,8 +1776,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_hair_list[S.name] = path
 					facial_hair_style = previous_list_item(facial_hair_style, snowflake_hair_list)
@@ -1781,14 +1793,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						var/modification_type = input(user, "Choose the modification to the limb:", "Character Preference") as null|anything in LOADOUT_LIMBS
 						if(modification_type)
 							if(modification_type == LOADOUT_LIMB_PROSTHETIC)
-								//LUNAR CHANGES START
+								//LUNAR CHANGES START, SPECIES-SPECIFIC PROSTHETIC SUPPORT
 								var/list/prosthetic_list
 								if(length(pref_species.custom_prosthetics))
 									prosthetic_list = pref_species.custom_prosthetics
 								else
 									prosthetic_list = list("prosthetic") + GLOB.prosthetic_limb_types
-								//LUNAR CHANGES END
 								var/prosthetic_type = input(user, "Choose the type of prosthetic", "Character Preference") as null|anything in prosthetic_list
+								//LUNAR CHANGES END
 								if(prosthetic_type)
 									var/number_of_prosthetics = 0
 									for(var/modified_limb in modified_limbs)
@@ -1877,6 +1889,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if(pref_species.id == "felinid")
 							features["mam_tail"] = "Cat"
 							features["mam_ears"] = "Cat"
+						//LUNAR CHANGE START: ADD TESHARI
 						if(pref_species.id == "teshari")
 							features["mam_tail"] = "Teshari"
 							features["mam_ears"] = "Teshari"
@@ -1885,7 +1898,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							underwear = "Nude"
 							undershirt = "Nude"
 							socks = "Nude"
-
+						//LUNAR CHANGE END
 
 						//Now that we changed our species, we must verify that the mutant colour is still allowed.
 						var/temp_hsv = RGBtoHSV(features["mcolor"])
@@ -1899,7 +1912,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						//switch to the type of eyes the species uses
 						eye_type = pref_species.eye_type
 
-						//LUNAR CHANGE START
+						//LUNAR CHANGE START: SPECIES-SPECIFIC PROSTHETIC SUPPORT
 						//if we have custom prosthetic icons, remove any existing prosthetics
 						if(pref_species.custom_prosthetics)
 							for(var/limb in LOADOUT_LIMBS)
@@ -1965,8 +1978,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_antenna_list[S.name] = path
 					var/new_ipc_antenna
@@ -2010,8 +2025,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_tails_list[S.name] = path
 					var/new_tail
@@ -2031,8 +2048,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_tails_list[S.name] = path
 					var/new_tail
@@ -2058,8 +2077,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_snouts_list[S.name] = path
 					var/new_snout
@@ -2077,8 +2098,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_mam_snouts_list[S.name] = path
 					var/new_mam_snouts
@@ -2203,8 +2226,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_taur_list[S.name] = path
 					var/new_taur
@@ -2226,8 +2251,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_ears_list[S.name] = path
 					var/new_ears
@@ -2243,8 +2270,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							var/datum/sprite_accessory/S = instance
 							if(!show_mismatched_markings && S.recommended_species && !S.recommended_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE START: ACCESSORIES EXCLUDED_SPECIES SUPPORT
 							if(S.excluded_species && S.excluded_species.Find(pref_species.id))
 								continue
+							//LUNAR CHANGE END
 							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
 								snowflake_ears_list[S.name] = path
 					var/new_ears
@@ -3196,11 +3225,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(BODY_ZONE_R_LEG)
 						new_limb = new/obj/item/bodypart/r_leg/robot/surplus(character)
 				var/prosthetic_type = modified_limbs[modified_limb][2]
-				if(prosthetic_type != "prosthetic" && prosthetic_type != "DSI") //lets just leave the old sprites as they are, LUNAR EDIT: DSI prosthetic support
+				//LUNAR CHANGE START: DSI PROSTHETIC SUPPORT
+				if(prosthetic_type != "prosthetic" && prosthetic_type != "DSI")
 					new_limb.icon = file("icons/mob/augmentation/cosmetic_prosthetic/[prosthetic_type].dmi")
-				// LUNAR EDIT: DSI prosthetic support
 				if(prosthetic_type == "DSI")
 					new_limb.is_iconless_prosthetic = TRUE
+				// LUNAR EDIT: DSI prosthetic support
 				new_limb.replace_limb(character)
 			qdel(old_part)
 
