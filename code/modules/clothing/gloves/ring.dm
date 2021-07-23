@@ -10,7 +10,6 @@
 	attack_verb = list("proposed")
 	transfer_prints = TRUE
 	strip_delay = 40
-	species_alternative = list("teshari")
 
 /obj/item/clothing/gloves/ring/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>\[user] is putting the [src] in [user.p_their()] mouth! It looks like [user] is trying to choke on the [src]!</span>")
