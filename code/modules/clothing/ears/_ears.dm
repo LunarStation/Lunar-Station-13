@@ -16,7 +16,6 @@
 	strip_delay = 15
 	equip_delay_other = 25
 	resistance_flags = FLAMMABLE
-	species_alternative = list("teshari")
 
 /obj/item/clothing/ears/earmuffs/ComponentInitialize()
 	. = ..()
@@ -33,7 +32,6 @@
 	actions_types = list(/datum/action/item_action/toggle_headphones)
 	var/headphones_on = FALSE
 	custom_price = PRICE_ALMOST_CHEAP
-	species_alternative = list("teshari")
 
 /obj/item/clothing/ears/headphones/Initialize()
 	. = ..()
