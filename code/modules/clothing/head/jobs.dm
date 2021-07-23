@@ -320,6 +320,8 @@
 	desc = "A beret worn only by highly intelligent people."
 	icon_state = "rdberet"
 
+
+
 //Scientist
 /obj/item/clothing/head/beret/sci
 	name = "scientist's beret"
@@ -331,6 +333,7 @@
 	name = "roboticist's beret"
 	desc = "A Roboticist's beret, almost more oil than hat."
 	icon_state = "beret_robot"
+
 
 //Chief Engineer
 /obj/item/clothing/head/beret/ce
