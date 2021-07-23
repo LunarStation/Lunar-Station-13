@@ -50,7 +50,6 @@
 	icon_state = "redsoft"
 	soft_type = "red"
 	dog_fashion = null
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/soft/blue
 	name = "blue cap"
@@ -58,7 +57,6 @@
 	icon_state = "bluesoft"
 	soft_type = "blue"
 	dog_fashion = null
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/soft/green
 	name = "green cap"
@@ -66,7 +64,6 @@
 	icon_state = "greensoft"
 	soft_type = "green"
 	dog_fashion = null
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/soft/yellow
 	name = "yellow cap"
@@ -74,7 +71,6 @@
 	icon_state = "yellowsoft"
 	soft_type = "yellow"
 	dog_fashion = null
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/soft/grey
 	name = "grey cap"
@@ -89,7 +85,6 @@
 	icon_state = "orangesoft"
 	soft_type = "orange"
 	dog_fashion = null
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/soft/mime
 	name = "white cap"
@@ -97,7 +92,6 @@
 	icon_state = "mimesoft"
 	soft_type = "mime"
 	dog_fashion = null
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/soft/purple
 	name = "purple cap"
@@ -105,7 +99,6 @@
 	icon_state = "purplesoft"
 	soft_type = "purple"
 	dog_fashion = null
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/soft/black
 	name = "black cap"
@@ -120,7 +113,6 @@
 	icon_state = "rainbowsoft"
 	soft_type = "rainbow"
 	dog_fashion = null
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/soft/sec
 	name = "security cap"

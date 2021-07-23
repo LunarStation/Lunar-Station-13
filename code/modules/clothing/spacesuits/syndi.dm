@@ -68,7 +68,6 @@
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black"
 	item_state = "syndicate-helm-black"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black
 	name = "black space suit"
@@ -97,7 +96,6 @@
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black-green"
 	item_state = "syndicate-helm-black-green"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black/green
 	name = "black and green space suit"
@@ -110,7 +108,6 @@
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black-blue"
 	item_state = "syndicate-helm-black-blue"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black/blue
 	name = "black and blue space suit"
@@ -128,7 +125,6 @@
 	name = "green space suit"
 	icon_state = "syndicate-black-med"
 	item_state = "syndicate-black"
-	species_alternative = list("teshari")
 
 
 //Black-orange syndicate space suit
@@ -136,7 +132,6 @@
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black-orange"
 	item_state = "syndicate-helm-black"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black/orange
 	name = "black and orange space suit"
@@ -149,7 +144,6 @@
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black-red"
 	item_state = "syndicate-helm-black-red"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black/red
 	name = "black and red space suit"
@@ -162,7 +156,6 @@
 	name = "black space helmet"
 	icon_state = "syndicate-helm-black-engie"
 	item_state = "syndicate-helm-black"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/suit/space/syndicate/black/engie
 	name = "black engineering space suit"

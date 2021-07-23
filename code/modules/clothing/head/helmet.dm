@@ -22,7 +22,6 @@
 
 /obj/item/clothing/head/helmet/sec
 	can_flashlight = 1
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/helmet/sec/attackby(obj/item/I, mob/user, params)
 	if(issignaler(I))
@@ -53,7 +52,6 @@
 	name = "degrading helmet"
 	desc = "Standard issue security helmet. Due to degradation the helmet's visor obstructs the users ability to see long distances."
 	tint = 2
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/helmet/blueshirt
 	name = "blue helmet"
@@ -140,7 +138,6 @@
 	desc = "An extremely robust, space-worthy helmet with the Nanotrasen logo emblazoned on the top."
 	icon_state = "swat"
 	item_state = "swat"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/helmet/thunderdome
 	name = "\improper Thunderdome helmet"
@@ -155,7 +152,6 @@
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
 	strip_delay = 80
 	dog_fashion = null
-	species_alternative = list("teshari")
 
 /obj/item/clothing/head/helmet/roman
 	name = "\improper Roman helmet"
@@ -396,4 +392,3 @@
 	desc = "A police officer's Hat. This hat emphasizes that you are THE LAW."
 	icon_state = "policehelm"
 	dynamic_hair_suffix = ""
-	species_alternative = list("teshari")
