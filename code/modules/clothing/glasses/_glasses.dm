@@ -66,7 +66,6 @@
 	vision_flags = SEE_TURFS
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 	glass_colour_type = /datum/client_colour/glass_colour/lightgreen
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/meson/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] is putting \the [src] to [user.p_their()] eyes and overloading the brightness! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -86,7 +85,6 @@
 	flash_protect = -2
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
 	glass_colour_type = /datum/client_colour/glass_colour/green
-	species_alternative = list()
 
 /obj/item/clothing/glasses/meson/gar
 	name = "gar mesons"
@@ -99,7 +97,6 @@
 	attack_verb = list("sliced")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
-	species_alternative = list()
 
 /obj/item/clothing/glasses/meson/eyepatch
 	name = "eyepatch mesons"
@@ -116,7 +113,6 @@
 	glass_colour_type = /datum/client_colour/glass_colour/purple
 	resistance_flags = ACID_PROOF
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 100)
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/science/item_action_slot_check(slot, mob/user, datum/action/A)
 	if(slot == SLOT_GLASSES)
@@ -131,7 +127,6 @@
 	flash_protect = -2
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
 	glass_colour_type = /datum/client_colour/glass_colour/green
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/night/prescription
 	name = "prescription night vision goggles"
@@ -153,7 +148,6 @@
 	desc = "Yarr."
 	icon_state = "eyepatch"
 	item_state = "eyepatch"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/eyepatch/syndicate
 	name = "cybernetic eyepatch"
@@ -184,7 +178,6 @@
 	desc = "Such a dapper eyepiece!"
 	icon_state = "monocle"
 	item_state = "headset" // lol
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/material
 	name = "optical material scanner"
@@ -193,7 +186,6 @@
 	item_state = "glasses"
 	vision_flags = SEE_OBJS
 	glass_colour_type = /datum/client_colour/glass_colour/lightblue
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/material/mining
 	name = "optical material scanner"
@@ -215,7 +207,6 @@
 	sharpness = SHARP_EDGED
 	vision_correction = 1
 	glass_colour_type = /datum/client_colour/glass_colour/lightgreen
-	species_alternative = list()
 
 /obj/item/clothing/glasses/regular
 	name = "prescription glasses"
@@ -223,7 +214,6 @@
 	icon_state = "glasses"
 	item_state = "glasses"
 	vision_correction = 1 //corrects nearsightedness
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/regular/jamjar
 	name = "jamjar glasses"
@@ -236,7 +226,6 @@
 	desc = "Made by Uncool. Co."
 	icon_state = "hipster_glasses"
 	item_state = "hipster_glasses"
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/regular/circle
 	name = "circle glasses"
@@ -256,7 +245,6 @@
 	tint = 1
 	glass_colour_type = /datum/client_colour/glass_colour/gray
 	dog_fashion = /datum/dog_fashion/head
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/sunglasses/reagent
 	name = "beer goggles"
@@ -274,7 +262,6 @@
 	attack_verb = list("sliced")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
-	species_alternative = list()
 
 /obj/item/clothing/glasses/sunglasses/garb/supergarb
 	name = "black giga gar glasses"
@@ -296,7 +283,6 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
 	glass_colour_type = /datum/client_colour/glass_colour/orange
-	species_alternative = list()
 
 /obj/item/clothing/glasses/sunglasses/gar/supergar
 	name = "giga gar glasses"
@@ -350,7 +336,6 @@
 	flags_cover = GLASSESCOVERSEYES
 	visor_flags_inv = HIDEEYES
 	glass_colour_type = /datum/client_colour/glass_colour/gray
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/welding/attack_self(mob/user)
 	weldingvisortoggle(user)
@@ -420,7 +405,6 @@
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 	flash_protect = 0
 	glass_colour_type = /datum/client_colour/glass_colour/red
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/thermal/emp_act(severity)
 	. = ..()
@@ -488,7 +472,6 @@
 	icon_state = "orangeglasses"
 	item_state = "orangeglasses"
 	glass_colour_type = /datum/client_colour/glass_colour/lightorange
-	species_alternative = list("teshari")
 
 /obj/item/clothing/glasses/red
 	name = "red glasses"
