@@ -232,6 +232,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS
 	flags_inv = HIDENECK
 	hoodtype = /obj/item/clothing/head/tesh_hood
+	species_alternative = list("teshari") //technically it's not an alternative in this case but it reroutes to use the correct dmi file so it's fine
 
 /obj/item/clothing/head/tesh_hood
 	name = "Cloak Hood"
@@ -476,6 +477,7 @@
 	icon_state = "tesh_beltcloak_bo"
 	species_restricted = list("Teshari")
 	body_parts_covered = CHEST|ARMS
+	species_alternative = list("teshari") //technically it's not an alternative in this case but it reroutes to use the correct dmi file so it's fine
 
 /obj/item/clothing/suit/teshari/beltcloak/standard/black_orange
 	name = "black belted cloak (orange)"
