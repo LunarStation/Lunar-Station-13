@@ -3,7 +3,7 @@
 	desc = "It drapes over a Teshari's shoulders and closes at the neck with pockets convienently placed inside."
 	icon = 'icons/obj/clothing/teshari.dmi'
 	icon_state = "tesh_cloak_bn"
-	species_restricted = list(SPECIES_TESHARI)
+	species_restricted = list("Teshari")
 	body_parts_covered = CHEST|ARMS
 	species_alternative = list("teshari") //technically it's not an alternative in this case but it reroutes to use the correct dmi file so it's fine
 
@@ -474,7 +474,7 @@
 	desc = "A more ridged and stylized Teshari cloak."
 	icon = 'icons/obj/clothing/teshari.dmi'
 	icon_state = "tesh_beltcloak_bo"
-	species_restricted = list(SPECIES_TESHARI)
+	species_restricted = list("Teshari")
 	body_parts_covered = CHEST|ARMS
 
 /obj/item/clothing/suit/teshari/beltcloak/standard/black_orange
