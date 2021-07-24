@@ -233,6 +233,7 @@
 	flags_inv = HIDENECK
 	hoodtype = /obj/item/clothing/head/hooded/tesh_hood
 	species_alternative = list("teshari") //technically it's not an alternative in this case but it reroutes to use the correct dmi file so it's fine
+	species_restricted = list("Teshari")
 
 /obj/item/clothing/head/hooded/tesh_hood
 	name = "Cloak Hood"
@@ -242,6 +243,7 @@
 	flags_inv = HIDEHAIR
 	body_parts_covered = HEAD
 	species_alternative = list("teshari")
+	species_restricted = list("Teshari")
 
 /obj/item/clothing/suit/hooded/teshari/standard/black_orange
 	name = "black and orange hooded cloak"
