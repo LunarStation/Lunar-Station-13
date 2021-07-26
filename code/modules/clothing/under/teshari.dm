@@ -1,5 +1,7 @@
 /obj/item/clothing/under/teshari
 	species_restricted = list("Teshari")
+	species_alternative = list("teshari")
+	icon = 'icons/obj/clothing/teshari.dmi'
 
 /obj/item/clothing/under/teshari/red_seromi
 	name = "small red smock"
