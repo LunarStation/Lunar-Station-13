@@ -4,6 +4,7 @@
 // teshari facial hair
 /datum/sprite_accessory/facial_hair/teshari
 	name = "Teshari Beard"
+	icon = 'icons/mob/hair_lr.dmi'
 	icon_state = "teshari_chin"
 	recommended_species = list(SPECIES_TESHARI)
 	excluded_species = list()

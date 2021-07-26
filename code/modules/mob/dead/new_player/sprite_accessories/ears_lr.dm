@@ -1,5 +1,6 @@
 /datum/sprite_accessory/ears/mam_ears/teshari
 	name = "Teshari"
+	icon = 'modular_citadel/icons/mob/mam_ears_lr.dmi'
 	icon_state = "teshari"
 	matrixed_sections = MATRIX_RED_GREEN
 	recommended_species = list("teshari")

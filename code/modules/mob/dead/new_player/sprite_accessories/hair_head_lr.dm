@@ -4,6 +4,7 @@
 // teshari hair
 /datum/sprite_accessory/hair/teshari
 	name = "Teshari Default"
+	icon = 'icons/mob/hair_lr.dmi'
 	icon_state = "teshari_default"
 	recommended_species = list(SPECIES_TESHARI)
 	excluded_species = list()
