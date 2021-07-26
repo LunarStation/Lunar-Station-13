@@ -16,6 +16,8 @@
 
 	custom_prosthetics = list("DSI", "unbranded", "cenilimi")
 
+	icon_limbs = 'icons/mobs/human_parts_greyscale_lr.dmi'
+
 /datum/species/teshari/before_equip_job(datum/job/J, mob/living/carbon/human/H, visualsOnly = FALSE)
 	var/datum/outfit/teshari/O = new /datum/outfit/teshari
 	if(J)
