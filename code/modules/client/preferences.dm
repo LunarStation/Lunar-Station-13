@@ -1737,6 +1737,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				if("facial_hair_style")
 					var/list/snowflake_hair_list = list()
+					// shaved is a snowflake option for this specific weird case
+					snowflake_hair_list["Shaved"] = /datum/sprite_accessory/facial_hair/shaved
 					for(var/path in GLOB.facial_hair_styles_list)
 						var/datum/sprite_accessory/hair/instance = GLOB.facial_hair_styles_list[path]
 						if(istype(instance, /datum/sprite_accessory))
