@@ -47,10 +47,6 @@
 	name = "black and white cloak"
 	icon_state = "tesh_cloak_bw"
 
-/obj/item/clothing/suit/teshari/cloak/standard/white
-	name = "white cloak"
-	icon_state = "tesh_cloak_wn"
-
 /obj/item/clothing/suit/teshari/cloak/standard/white_grey
 	name = "white and grey cloak"
 	icon_state = "tesh_cloak_wg"
