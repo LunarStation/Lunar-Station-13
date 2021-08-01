@@ -53150,6 +53150,17 @@
 /obj/machinery/power/rad_collector/anchored,
 /turf/open/floor/engine,
 /area/engineering/supermatter)
+<<<<<<< HEAD
+=======
+"daQ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/turf/open/water/decorative,
+/area/hallway/secondary/entry)
+>>>>>>> 9ed9fbcc73... Merge pull request #14973 from TripleShades/pubbyyyy
 "daY" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
@@ -57645,6 +57656,12 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
+<<<<<<< HEAD
+=======
+"mJR" = (
+/turf/open/water/decorative,
+/area/hallway/secondary/entry)
+>>>>>>> 9ed9fbcc73... Merge pull request #14973 from TripleShades/pubbyyyy
 "mKc" = (
 /obj/structure/bookcase/random/nonfiction,
 /turf/open/floor/plasteel/dark,
@@ -58346,6 +58363,16 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
+<<<<<<< HEAD
+=======
+"osY" = (
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_x = -2;
+	pixel_y = 13
+	},
+/turf/open/water/decorative,
+/area/hallway/secondary/entry)
+>>>>>>> 9ed9fbcc73... Merge pull request #14973 from TripleShades/pubbyyyy
 "ous" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/button/door{
@@ -59636,6 +59663,22 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
+<<<<<<< HEAD
+=======
+"qUD" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/rock/pile/largejungle{
+	pixel_x = -50;
+	pixel_y = -50
+	},
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_x = -60;
+	pixel_y = -60
+	},
+/turf/open/water/decorative,
+/area/hallway/secondary/entry)
+>>>>>>> 9ed9fbcc73... Merge pull request #14973 from TripleShades/pubbyyyy
 "qVk" = (
 /obj/machinery/door/poddoor/incinerator_atmos_aux,
 /obj/structure/lattice/catwalk,
@@ -61108,6 +61151,18 @@
 /obj/structure/lattice,
 /turf/open/space/basic,
 /area/space/nearstation)
+<<<<<<< HEAD
+=======
+"upz" = (
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 4
+	},
+/area/hallway/secondary/entry)
+"upX" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/water/decorative,
+/area/hallway/secondary/entry)
+>>>>>>> 9ed9fbcc73... Merge pull request #14973 from TripleShades/pubbyyyy
 "uqJ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -62241,6 +62296,17 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/security/brig)
+<<<<<<< HEAD
+=======
+"wSX" = (
+/obj/structure/flora/junglebush/large{
+	pixel_x = -15;
+	pixel_y = -4
+	},
+/obj/structure/flora/rock/pile,
+/turf/open/water/decorative,
+/area/hallway/secondary/entry)
+>>>>>>> 9ed9fbcc73... Merge pull request #14973 from TripleShades/pubbyyyy
 "wTD" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
