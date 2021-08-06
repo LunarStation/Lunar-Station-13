@@ -2,7 +2,7 @@
 	name = "Supermatter Surge"
 	typepath = /datum/round_event/supermatter_surge
 	weight = 20
-	max_occurrences = 4
+	max_occurrences = 0 //Lunarstation Edit
 	earliest_start = 10 MINUTES
 
 /datum/round_event_control/supermatter_surge/canSpawnEvent()
