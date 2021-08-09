@@ -176,7 +176,7 @@
 	restricted_desc = "Medical"
 
 /datum/gear/xenowear/tesh/cloak/rd
-	name = "White and grey cloak"
+	name = "Research director cloak"
 	path = /obj/item/clothing/suit/teshari/cloak/jobs/rd
 	restricted_roles = list("Research Director")
 	restricted_desc = "Research Director"
