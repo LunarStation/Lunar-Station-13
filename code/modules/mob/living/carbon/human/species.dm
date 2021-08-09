@@ -516,7 +516,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		for(var/obj/item/bodypart/B in C.bodyparts)
 			B.change_bodypart_status(BODYPART_HYBRID, FALSE, TRUE) // Makes all Bodyparts 'robotic'.
 
-	if(max_health)
+	if(max_health) // LUNAR EDIT
 		// if someone is already below 0 health, just ignore their health
 		if(C.health <= 0)
 			return
