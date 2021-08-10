@@ -7,7 +7,7 @@
 		message_admins("[mob_occupant] died and could not be autocloned because no ckey could be associated")
 		log_admin("[mob_occupant] died and could not be autocloned because no ckey could be associated")
 		return FALSE
-	if(!istype(bank_account)) //This is to prevent non-crew members from being autocloned
+	if(!istype(account)) //This is to prevent non-crew members from being autocloned
 		message_admins("[key_name(mob_occupant)] died and could not be autocloned because no bank account could be associated")
 		log_admin("[key_name(mob_occupant)] died and could not be autocloned because no bank account could be associated")
 		return FALSE
@@ -15,7 +15,7 @@
 
 /mob/living/carbon/human/proc/get_bank_account_robust() //We are going to find that bank account one way or another, if it exists
 	var/datum/bank_account/bank_acc = src.get_bank_account() //This checks their ID card to find a linked bank account
-	if(istype(bank_acc) && account.account_id == src.account_id) //Make sure the bank account actually belongs to them
+	if(istype(bank_acc) && bank_acc.account_id == src.account_id) //Make sure the bank account actually belongs to them
 		return bank_acc
 	else //If we can't get one from their ID, or they don't have an ID, we'll check all the bank accounts to see if they belong
 		for(var/datum/bank_account/account in SSeconomy.bank_accounts)
