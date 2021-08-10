@@ -7,9 +7,23 @@
 		message_admins("[mob_occupant] died and could not be autocloned because no ckey could be associated")
 		log_admin("[mob_occupant] died and could not be autocloned because no ckey could be associated")
 		return FALSE
+	if(!istype(bank_account)) //This is to prevent non-crew members from being autocloned
+		message_admins("[key_name(mob_occupant)] died and could not be autocloned because no bank account could be associated")
+		log_admin("[key_name(mob_occupant)] died and could not be autocloned because no bank account could be associated")
+		return FALSE
 	return TRUE
 
-/mob/living/carbon/human/death(gibbed)
+/mob/living/carbon/human/proc/get_bank_account_robust() //We are going to find that bank account one way or another, if it exists
+	var/datum/bank_account/bank_acc = src.get_bank_account() //This checks their ID card to find a linked bank account
+	if(istype(bank_acc) && account.account_id == src.account_id) //Make sure the bank account actually belongs to them
+		return bank_acc
+	else //If we can't get one from their ID, or they don't have an ID, we'll check all the bank accounts to see if they belong
+		for(var/datum/bank_account/account in SSeconomy.bank_accounts)
+			if(account.account_id == src.account_id) //This pretty much guaruntees they are the account owner
+				return account
+	
+
+/mob/living/carbon/human/proc/attempt_autoclone()
 	var/mob/living/mob_occupant = get_mob_or_brainmob(src)
 	var/datum/dna/dna
 	var/datum/bank_account/has_bank_account
@@ -20,9 +34,7 @@
 
 	if(ishuman(mob_occupant))
 		dna = C.has_dna()
-		var/obj/item/card/id/I = C.get_idcard()
-		if(I)
-			has_bank_account = I.registered_account
+		has_bank_account = get_bank_account_robust()
 	if(isbrain(mob_occupant))
 		dna = B.stored_dna
 
@@ -72,5 +84,13 @@
 			imp.implant(mob_occupant)
 		R.fields["imp"] = "[REF(imp)]"
 		SSautoclone.add_to_queue(R)
+
+/mob/living/carbon/human/death(gibbed)
+	attempt_autoclone()
+
+	. = ..()
+
+/mob/living/carbon/human/Destroy()
+	attempt_autoclone()
 
 	. = ..()

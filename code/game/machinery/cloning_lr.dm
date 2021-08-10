@@ -22,6 +22,9 @@
 /obj/machinery/clonepod/autocloner/power_change() //Do not be bothered by changes in the power
 	return
 
+/obj/machinery/clonepod/autocloner/emag_act()
+	return
+
 /obj/machinery/clonepod/autocloner/growclone(ckey, clonename, ui, mutation_index, mindref, blood_type, datum/species/mrace, list/features, factions, list/quirks, datum/bank_account/insurance, list/traumas)
 	if(panel_open)
 		return FALSE
@@ -46,8 +49,8 @@
 			var/mob/dead/observer/G = clonemind.get_ghost()
 			if(!G)
 				return FALSE
-			if(G.suiciding) // The ghost came from a body that is suiciding.
-				return FALSE
+			//if(G.suiciding) // The ghost came from a body that is suiciding.
+			//	return FALSE
 		if(clonemind.damnation_type) //Can't clone the damned.
 			INVOKE_ASYNC(src, .proc/horrifyingsound)
 			mess = TRUE
