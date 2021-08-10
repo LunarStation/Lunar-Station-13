@@ -3098,7 +3098,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				var/new_description = stripped_input(user, "Enter new description for item. Maximum 500 characters.", "Loadout Item Redescribing", null, 500)
 				if(new_description)
 					user_gear[LOADOUT_CUSTOM_DESCRIPTION] = new_description
-
+	user.regenerate_icons() // LUNAR EDIT (until i do this upstream)
 	ShowChoices(user)
 	return 1
 
