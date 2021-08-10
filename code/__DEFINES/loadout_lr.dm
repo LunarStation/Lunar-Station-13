@@ -4,6 +4,3 @@
 #define LOADOUT_SUBCATEGORY_XENOWEAR_CLOAK_S	"Standard"
 #define LOADOUT_SUBCATEGORY_XENOWEAR_CLOAK_H	"Hooded"
 #define LOADOUT_SUBCATEGORY_XENOWEAR_CLOAK_B	"Beltcloak"
-
-//teshari species define
-#define SPECIES_TESHARI				"teshari"
