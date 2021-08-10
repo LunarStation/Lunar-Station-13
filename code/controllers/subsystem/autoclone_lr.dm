@@ -60,3 +60,6 @@ SUBSYSTEM_DEF(autoclone)
 			R.fields["current_wait"] = 5
 		if("Stop asking me")
 			running.Remove(R)
+		else //Something went wrong, wait a couple minutes and send the prompt again
+			R.fields["waiting_for_response"]=0
+			R.fields["current_wait"] = 1
