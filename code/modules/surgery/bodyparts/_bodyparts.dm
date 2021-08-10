@@ -814,7 +814,7 @@
 		should_draw_gender = FALSE
 
 	var/list/markings_list = list()
-	if(is_organic_limb(FALSE) || is_iconless_prosthetic) //LUNAR EDIT
+	if(is_organic_limb() || is_iconless_prosthetic) //LUNAR EDIT
 		limb.icon = base_bp_icon || 'icons/mob/human_parts.dmi'
 		if(should_draw_gender)
 			limb.icon_state = "[species_id]_[body_zone]_[icon_gender]"
