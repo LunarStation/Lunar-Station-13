@@ -1,4 +1,0 @@
-author: "cadyn"
-delete-after: True
-changes: 
-  - rscadd: "Added autocloner to automatically clone dead crew members"
