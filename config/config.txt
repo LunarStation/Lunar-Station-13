@@ -39,3 +39,6 @@ $include entries/urls.txt
 $include entries/vote.txt
 
 $include plushies/defines.txt
+
+# Lunar config
+$include lunar_config.txt

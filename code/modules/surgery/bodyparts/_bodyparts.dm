@@ -780,7 +780,7 @@
 			if(burnstate)
 				. += image('icons/mob/dam_mob.dmi', "[dmg_overlay_type]_[body_zone]_0[burnstate]", -DAMAGE_LAYER, image_dir)
 
-		if(!isnull(body_markings) && is_organic_limb(FALSE))
+		if(!isnull(body_markings) && (is_organic_limb(FALSE) || is_iconless_prosthetic)) //LUNAR EDIT
 			for(var/list/marking_list in body_markings_list)
 				// marking stores icon and value for the specific bodypart
 				if(!use_digitigrade)
@@ -814,7 +814,7 @@
 		should_draw_gender = FALSE
 
 	var/list/markings_list = list()
-	if(is_organic_limb())
+	if(is_organic_limb() || is_iconless_prosthetic) //LUNAR EDIT
 		limb.icon = base_bp_icon || 'icons/mob/human_parts.dmi'
 		if(should_draw_gender)
 			limb.icon_state = "[species_id]_[body_zone]_[icon_gender]"
