@@ -109,8 +109,15 @@
 		inv.update_icon()
 
 	if(wear_neck)
+		//LUNAR CHANGE START
+		var/neck_icon = 'icons/mob/clothing/neck.dmi'
+		if(istype(wear_neck, /obj/item/clothing/neck))
+			var/obj/item/clothing/neck/N = wear_neck
+			if(dna.species.id in N.species_alternative)
+				neck_icon = file("icons/mob/clothing/species/[dna.species.id]/neck.dmi")
+		//LUNAR CHANGE END
 		if(!(head && (head.flags_inv & HIDENECK)))
-			overlays_standing[NECK_LAYER] = wear_neck.build_worn_icon(default_layer = NECK_LAYER, default_icon_file = 'icons/mob/clothing/neck.dmi', override_state = wear_neck.icon_state)
+			overlays_standing[NECK_LAYER] = wear_neck.build_worn_icon(default_layer = NECK_LAYER, default_icon_file = neck_icon, override_state = wear_neck.icon_state) //LUNAR EDIT
 		update_hud_neck(wear_neck)
 
 	apply_overlay(NECK_LAYER)
@@ -123,7 +130,19 @@
 		inv?.update_icon()
 
 	if(back)
-		overlays_standing[BACK_LAYER] = back.build_worn_icon(default_layer = BACK_LAYER, default_icon_file = 'icons/mob/clothing/back.dmi', override_state = back.icon_state)
+		//LUNAR CHANGE START
+		var/back_icon = 'icons/mob/clothing/back.dmi'
+		if(istype(back, /obj/item/storage/backpack))
+			var/obj/item/storage/backpack/B = back
+			if(dna.species.id in B.species_alternative)
+				back_icon = file("icons/mob/clothing/species/[dna.species.id]/back.dmi")
+		if(istype(back, /obj/item/tank))
+			var/obj/item/tank/T = back
+			if(dna.species.id in T.species_alternative)
+				back_icon = file("icons/mob/clothing/species/[dna.species.id]/back.dmi")
+
+		overlays_standing[BACK_LAYER] = back.build_worn_icon(default_layer = BACK_LAYER, default_icon_file = back_icon, override_state = back.icon_state)
+		//LUNAR CHANGE END
 		update_hud_back(back)
 
 	apply_overlay(BACK_LAYER)
@@ -148,7 +167,14 @@
 /mob/living/carbon/update_inv_handcuffed()
 	remove_overlay(HANDCUFF_LAYER)
 	if(handcuffed)
-		var/mutable_appearance/cuffs = mutable_appearance('icons/mob/clothing/restraints.dmi', handcuffed.item_state, -HANDCUFF_LAYER)
+		//LUNAR CHANGE START
+		var/handcuff_file = 'icons/mob/clothing/restraints.dmi'
+		if(ishuman(src))
+			var/mob/living/carbon/human/H = src
+			if(H.dna.species.id in handcuffed.species_alternative)
+				handcuff_file = file("icons/mob/clothing/species/[H.dna.species.id]/restraints.dmi")
+		var/mutable_appearance/cuffs = mutable_appearance(handcuff_file, handcuffed.item_state, -HANDCUFF_LAYER)
+		//LUNAR CHANGE END
 		cuffs.color = handcuffed.color
 
 		overlays_standing[HANDCUFF_LAYER] = cuffs
@@ -158,7 +184,14 @@
 	remove_overlay(LEGCUFF_LAYER)
 	clear_alert("legcuffed")
 	if(legcuffed)
-		var/mutable_appearance/legcuffs = mutable_appearance('icons/mob/clothing/restraints.dmi', legcuffed.item_state, -LEGCUFF_LAYER)
+		//LUNAR CHANGE START
+		var/legcuff_file = 'icons/mob/clothing/restraints.dmi'
+		if(ishuman(src))
+			var/mob/living/carbon/human/H = src
+			if(H.dna.species.id in handcuffed.species_alternative)
+				legcuff_file = file("icons/mob/clothing/species/[H.dna.species.id]/restraints.dmi")
+		var/mutable_appearance/legcuffs = mutable_appearance(legcuff_file, legcuffed.item_state, -LEGCUFF_LAYER)
+		//LUNAR CHANGE END
 		legcuffs.color = legcuffed.color
 
 		overlays_standing[LEGCUFF_LAYER] = legcuffs

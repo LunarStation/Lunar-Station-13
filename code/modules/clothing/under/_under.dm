@@ -154,7 +154,14 @@
 			if((flags_inv & HIDEACCESSORY) || (A.flags_inv & HIDEACCESSORY))
 				return TRUE
 
-			accessory_overlay = mutable_appearance('icons/mob/clothing/accessories.dmi', attached_accessory.icon_state)
+			//LUNAR CHANGE START
+			var/accessory_file = 'icons/mob/clothing/accessories.dmi'
+			if(ishuman(user))
+				var/mob/living/carbon/human/H = user
+				if(H.dna.species.id in A.species_alternative)
+					accessory_file = text2path("icons/mob/clothing/species/[H.dna.species.id]/accessories.dmi")
+			accessory_overlay = mutable_appearance(accessory_file, attached_accessory.icon_state)
+			//LUNAR CHANGE END
 			accessory_overlay.alpha = attached_accessory.alpha
 			accessory_overlay.color = attached_accessory.color
 

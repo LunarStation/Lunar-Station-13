@@ -517,6 +517,15 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		for(var/obj/item/bodypart/B in C.bodyparts)
 			B.change_bodypart_status(BODYPART_HYBRID, FALSE, TRUE) // Makes all Bodyparts 'robotic'.
 
+	if(max_health) // LUNAR EDIT
+		// if someone is already below 0 health, just ignore their health
+		if(C.health <= 0)
+			return
+		var/health_percentage = C.health/100
+		var/new_health = max_health * health_percentage
+		C.maxHealth = max_health
+		C.health = new_health
+
 	SEND_SIGNAL(C, COMSIG_SPECIES_GAIN, src, old_species)
 
 /datum/species/proc/update_species_slowdown(mob/living/carbon/human/H)
