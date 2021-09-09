@@ -1,9 +1,15 @@
 ## Lunar Station 13
 Based and maintained from Citadel Station.
 
+<<<<<<< HEAD
 [![Build Status](https://api.travis-ci.org/Citadel-Station-13/Citadel-Station-13.png)](https://travis-ci.org/Citadel-Station-13/Citadel-Station-13) 
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/LunarStation/Lunar-Station-13.svg)](http://isitmaintained.com/project/LunarStation/Lunar-Station-13 "Percentage of issues still open")
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/LunarStation/Lunar-Station-13.svg)](http://isitmaintained.com/project/LunarStation/Lunar-Station-13 "Average time to resolve an issue")
+=======
+[![Build Status](https://github.com/Citadel-Station-13/Citadel-Station-13/workflows/CI%20Suite/badge.svg)](https://github.com/Citadel-Station-13/Citadel-Station-13/actions?query=workflow%3A%22CI+Suite%22)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/Citadel-Station-13/Citadel-Station-13.svg)](http://isitmaintained.com/project/Citadel-Station-13/Citadel-Station-13 "Percentage of issues still open")  
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/Citadel-Station-13/Citadel-Station-13.svg)](http://isitmaintained.com/project/Citadel-Station-13/Citadel-Station-13 "Average time to resolve an issue")
+>>>>>>> 6b503904a7... Merge pull request #15093 from LetterN/patch-9
 
 [![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/pretty-risque.svg)](https://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
@@ -94,6 +100,14 @@ place should work fine), copy your /config and /data folders back into the new
 install, overwriting when prompted except if we've specified otherwise, and
 recompile the game.  Once you start the server up again, you should be running
 the new version.
+
+## :exclamation: How to compile :exclamation:
+
+On **2021-01-04** we have changed the way to compile the codebase.
+
+Find `Build.cmd` in this folder, and double click it to initiate the build. It consists of multiple steps and might take around 1-5 minutes to compile. If it closes, it means it has finished its job. You can then setup the server normally by opening `tgstation.dmb` in DreamDaemon.
+
+**Building tgstation in DreamMaker directly is now deprecated and might produce errors**, such as `'tgui.bundle.js': cannot find file`.
 
 ## HOSTING
 
