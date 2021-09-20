@@ -1,4 +1,0 @@
-author: "Lunarbotss13"
-delete-after: True
-changes: 
-  - bugfix: "removes passkey from access circuits as its not used anymore"
