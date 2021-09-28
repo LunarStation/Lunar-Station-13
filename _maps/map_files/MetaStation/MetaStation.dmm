@@ -471,12 +471,17 @@
 	icon_state = "right";
 	name = "Unisex Showers"
 	},
+<<<<<<< HEAD
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/freezer,
 /area/security/prison)
 "abC" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+=======
+/turf/open/floor/plasteel/dark/side{
+	dir = 4
+>>>>>>> 0a97913ce1... Merge pull request #15218 from zeroisthebiggay/NI
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -60992,6 +60997,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engineering/atmos)
+<<<<<<< HEAD
+=======
+"kGI" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/turf/open/floor/plasteel/cafeteria,
+/area/security/prison/upper)
+>>>>>>> 0a97913ce1... Merge pull request #15218 from zeroisthebiggay/NI
 "kGY" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 27
