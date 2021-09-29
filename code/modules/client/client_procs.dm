@@ -155,7 +155,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 
 /client/proc/is_content_unlocked()
 	if(!prefs.unlock_content)
-		to_chat(src, "Become a BYOND member to access member-perks and features, as well as support the engine that makes this game possible. Only 10 bucks for 3 months! <a href=\"https://secure.byond.com/membership\">Click Here to find out more</a>.")
+		to_chat(src, "Become a donator to access donator perks and features, as well as support the continued development and hosting of Lunar Station.") // "Only 10 bucks for 3 months!<a href=\"https://secure.byond.com/membership\">Click Here to find out more</a>." To be replaced with a new link and price) LUNAR EDIT
 		return 0
 	return 1
 /*
