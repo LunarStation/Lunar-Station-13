@@ -1,0 +1,4 @@
+author: "Lunarbotss13"
+delete-after: True
+changes: 
+  - rscdel: "Minesweeper's \"play on same board\""
