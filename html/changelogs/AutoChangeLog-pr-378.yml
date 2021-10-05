@@ -1,0 +1,6 @@
+author: "Lunarbotss13"
+delete-after: True
+changes: 
+  - bugfix: "Canisters now update their sprite when broken"
+  - bugfix: "Autolathe now have both Cafeteria and Serving tray"
+  - bugfix: "Spray cans now make the spray sound again"
