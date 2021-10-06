@@ -1,0 +1,5 @@
+author: "Lunarbotss13"
+delete-after: True
+changes: 
+  - bugfix: "phobias no longer delete trigger words from a heard message.
+tweak: phobias will now highlight all trigger words in a heard message when there's multiple."
