@@ -1,0 +1,5 @@
+author: "Lunarbotss13"
+delete-after: True
+changes: 
+  - balance: "Nanite defibbing now somewhat cures oxygen damage if the target would be in hardcrit (or worse) after revival."
+  - balance: "Nanite defibbing now cares about the revival policies (memory loss and stuff), same values as regular defibs."
