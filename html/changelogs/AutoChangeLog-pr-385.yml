@@ -1,0 +1,4 @@
+author: "Lunarbotss13"
+delete-after: True
+changes: 
+  - bugfix: "computer boards disappearing on decon"
