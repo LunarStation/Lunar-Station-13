@@ -1,0 +1,5 @@
+author: "Lunarbotss13"
+delete-after: True
+changes: 
+  - bugfix: "Fixed 2 HAS_TRAITs pointing to wrong places."
+  - bugfix: "`if(. && (movement_type & FLOATING)) //floating is easy` This makes it only proceed if you are flying, thus floating is very fucking hard."
