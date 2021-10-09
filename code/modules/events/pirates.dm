@@ -22,8 +22,11 @@
 	var/datum/comm_message/threat_msg
 	var/payoff = 0
 	var/payoff_min = 1000
+<<<<<<< HEAD
 	var/paid_off = FALSE
 	var/pirate_type
+=======
+>>>>>>> 8cec112f65... Merge pull request #15257 from DeltaFire15/undocumented-pirate-revert
 	var/ship_template
 	var/ship_name = "Space Privateers Association"
 	var/shuttle_spawned = FALSE
