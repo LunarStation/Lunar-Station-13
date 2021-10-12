@@ -1,0 +1,4 @@
+author: "Lunarbotss13"
+delete-after: True
+changes: 
+  - bugfix: "No more getting rate limited for no reason."
