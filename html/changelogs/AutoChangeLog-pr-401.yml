@@ -1,5 +1,0 @@
-author: "Lunarbotss13"
-delete-after: True
-changes: 
-  - bugfix: "Tooltips now respect delay preferences."
-  - bugfix: "Items will no longer be glowing and showing tooltips while on the floor."

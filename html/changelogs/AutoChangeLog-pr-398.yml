@@ -1,6 +1,0 @@
-author: "Lunarbotss13"
-delete-after: True
-changes: 
-  - rscadd: "Revs winning/losing doesn't end the mode"
-  - code_imp: "Dynamic replaces secret"
-  - config: "added configs related to dynamic, removed configs from old dynamic"

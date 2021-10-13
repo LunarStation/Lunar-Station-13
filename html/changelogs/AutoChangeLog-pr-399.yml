@@ -1,4 +1,0 @@
-author: "Lunarbotss13"
-delete-after: True
-changes: 
-  - balance: "Reverts an undocumented change to pirate minimum payoff (10k back to 1k)"
