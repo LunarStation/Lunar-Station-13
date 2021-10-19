@@ -2,12 +2,7 @@
 	name = "Lone Operative"
 	typepath = /datum/round_event/ghost_role/operative
 	weight = 0 //Admin only
-<<<<<<< HEAD
 	max_occurrences = 0 //Lunarstation Edit
-	dynamic_should_hijack = TRUE
-=======
-	max_occurrences = 1
->>>>>>> b593774cc9... Merge pull request #15274 from keronshb/dynamicloneophijack
 
 /datum/round_event/ghost_role/operative
 	minimum_required = 1
