@@ -7,7 +7,12 @@
     "dompurify": "^2.2.7",
     "inferno": "^7.4.8",
     "inferno-vnode-flags": "^7.4.8",
+<<<<<<< HEAD
     "marked": "^2.0.3",
+=======
+    "katex": "^0.15.1",
+    "marked": "^4.0.10",
+>>>>>>> 35c929287a (Merge pull request #15471 from Citadel-Station-13/dependabot/npm_and_yarn/tgui/marked-4.0.10)
     "tgui-dev-server": "workspace:*",
     "tgui-polyfill": "workspace:*"
   }
