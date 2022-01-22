@@ -97,6 +97,22 @@
 	fire_products = list(GAS_N2 = 0.5)
 	oxidation_temperature = FIRE_MINIMUM_TEMPERATURE_TO_EXIST - 50
 
+<<<<<<< HEAD
+=======
+/datum/gas/hydrogen
+	id = GAS_HYDROGEN
+	specific_heat = 10
+	name = "Hydrogen"
+	flags = GAS_FLAG_DANGEROUS
+	fusion_power = 0
+	powermix = 1
+	heat_penalty = 3
+	transmit_modifier = 10
+	fire_products = list(GAS_H2O = 1)
+	fire_burn_rate = 2
+	fire_temperature = FIRE_MINIMUM_TEMPERATURE_TO_EXIST - 50
+
+>>>>>>> f3332f8607 (Merge pull request #15470 from Putnam3145/trit-messed-up)
 /datum/gas/tritium
 	id = GAS_TRITIUM
 	specific_heat = 10
@@ -108,9 +124,14 @@
 	powermix = 1
 	heat_penalty = 10
 	transmit_modifier = 30
+<<<<<<< HEAD
 	/*
 	these are for when we add hydrogen, trit gets to keep its hardcoded fire for legacy reasons
 	fire_provides = list(GAS_H2O = 2)
+=======
+	fire_products = list(GAS_H2O = 1)
+	enthalpy = 40000
+>>>>>>> f3332f8607 (Merge pull request #15470 from Putnam3145/trit-messed-up)
 	fire_burn_rate = 2
 	fire_energy_released = FIRE_HYDROGEN_ENERGY_RELEASED
 	fire_temperature = FIRE_MINIMUM_TEMPERATURE_TO_EXIST - 50
