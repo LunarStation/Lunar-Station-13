@@ -201,8 +201,13 @@
 	build_path = /obj/item/storage/hypospraykit // let's not summon new hyposprays thanks
 	category = list("Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
+<<<<<<< HEAD
 	
 /datum/design/hypospray/mkii
+=======
+
+/datum/design/hypospray_mkii
+>>>>>>> f601580854 (Merge pull request #15430 from DeltaFire15/synth-coolant)
 	name = "Hypospray Mk. II"
 	id = "hypospray_mkii"
 	build_type = PROTOLATHE
@@ -210,6 +215,15 @@
 	build_path = /obj/item/hypospray/mkii
 	category = list("Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
+
+/datum/design/nanogel
+	name = "Nanogel paste"
+	id = "nanogel"
+	build_type = PROTOLATHE | MECHFAB
+	materials = list(/datum/material/iron = 800, /datum/material/titanium = 500, /datum/material/gold = 100, /datum/material/diamond = 20)
+	build_path = /obj/item/stack/medical/nanogel/one
+	category = list("Medical Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
 
 /datum/design/blood_bag
 	name = "Empty Blood Bag"
