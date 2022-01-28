@@ -4,13 +4,18 @@
  * @author Original WarlockD (https://github.com/warlockd)
  * @author Changes stylemistake
  * @author Changes ThePotato97
+<<<<<<< HEAD
+=======
+ * @author Changes Ghommie
+ * @author Changes Artur_Lang
+>>>>>>> 45662dae6f (Merge pull request #15483 from Arturlang/paperSheet)
  * @license MIT
  */
 
 import { classes } from 'common/react';
 import { Fragment } from 'inferno';
 import { Component } from 'inferno';
-import marked from 'marked';
+import { marked } from 'marked';
 import { useBackend } from '../backend';
 import { Box, Flex, Tabs, TextArea } from '../components';
 import { Window } from '../layouts';
@@ -100,7 +105,7 @@ const run_marked_default = value => {
         break;
     }
   };
-  return marked(value, {
+  return marked.parse(value, {
     breaks: true,
     smartypants: true,
     smartLists: true,
