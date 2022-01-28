@@ -38,6 +38,33 @@ export const ClockworkSlab = (props, context) => {
   && tier_infos[tab]
   || {};
 
+<<<<<<< HEAD
+=======
+  const [
+    searchText,
+    setSearchText,
+  ] = useLocalState(context, 'searchText', '');
+
+  const testSearch = createSearch(searchText, script => {
+    return script.name + script.descname;
+  });
+  
+  let bucketOfScriptures = [];
+  // merge it, no need to throw a var.
+
+  const scriptInTab = (searchText.length > 0)
+    // Flatten all categories and apply search to it
+    // truthy because WE DO NOT WANT TO RETURN THIS!
+    && !!map((v, k) => {
+      bucketOfScriptures = bucketOfScriptures.concat(v);
+    })(scripture)
+    && bucketOfScriptures.filter(testSearch)
+      .filter((item, i) => i < MAX_SEARCH_RESULTS)
+    // Return the default one
+    || scripture[tab]
+    || null; // this is nullable, it's recommended that you null it.
+
+>>>>>>> 45662dae6f (Merge pull request #15483 from Arturlang/paperSheet)
   return (
     <Window
       theme="clockcult"
