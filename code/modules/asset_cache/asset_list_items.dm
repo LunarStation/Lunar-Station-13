@@ -125,6 +125,7 @@
 		/datum/asset/simple/irv
 	)
 
+<<<<<<< HEAD
 /datum/asset/simple/namespaced/changelog
 	assets = list(
 		"88x31.png" = 'html/88x31.png',
@@ -150,6 +151,8 @@
 	parents = list("changelog.html" = 'html/changelog.html')
 
 
+=======
+>>>>>>> 7c3a541e31 (Merge pull request #15492 from SandPoot/changelogs-tgui)
 /datum/asset/simple/jquery
 	legacy = TRUE
 	assets = list(
