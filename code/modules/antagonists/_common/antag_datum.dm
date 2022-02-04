@@ -59,7 +59,11 @@ GLOBAL_LIST_EMPTY(antagonists)
 /datum/antagonist/proc/on_body_transfer(mob/living/old_body, mob/living/new_body)
 	SHOULD_CALL_PARENT(TRUE)
 	remove_innate_effects(old_body)
+<<<<<<< HEAD
 	if(old_body.stat != DEAD && !LAZYLEN(old_body.mind?.antag_datums))
+=======
+	if(!soft_antag && old_body && old_body.stat != DEAD && !length(old_body.mind?.antag_datums))
+>>>>>>> 08b38a7e70 (Ashwalker Update (#15466))
 		old_body.remove_from_current_living_antags()
 	apply_innate_effects(new_body)
 	if(new_body.stat != DEAD)
