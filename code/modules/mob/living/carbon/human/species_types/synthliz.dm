@@ -9,6 +9,16 @@
 	mutant_bodyparts = list("ipc_antenna" = "Synthetic Lizard - Antennae","mam_tail" = "Synthetic Lizard", "mam_snouts" = "Synthetic Lizard - Snout", "legs" = "Digitigrade", "mam_body_markings" = "Synthetic Lizard - Plates", "taur" = "None")
 	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/ipc
 	gib_types = list(/obj/effect/gibspawner/ipc, /obj/effect/gibspawner/ipc/bodypartless)
+<<<<<<< HEAD
+=======
+
+	coldmod = 0.5
+	heatmod = 1.2
+	cold_offset = SYNTH_COLD_OFFSET	//Can handle pretty cold environments, but it's still a slightly bad idea if you enter a room thats full of near-absolute-zero gas
+	blacklisted_quirks = list(/datum/quirk/coldblooded)
+	balance_point_values = TRUE
+
+>>>>>>> 531afa7d90 (Merge pull request #15487 from DeltaFire15/stabilized-orange-fix-nerf)
 	//Just robo looking parts.
 	mutant_heart = /obj/item/organ/heart/ipc
 	mutantlungs = /obj/item/organ/lungs/ipc
