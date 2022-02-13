@@ -58,7 +58,11 @@ export const MESSAGE_TYPES = [
     type: MESSAGE_TYPE_RADIO,
     name: 'Radio',
     description: 'All departments of radio messages',
+<<<<<<< HEAD
     selector: '.alert, .minorannounce, .syndradio, .airadio, .entradio, .centcomradio, .aiprivradio, .comradio, .secradio, .engradio, .medradio, .sciradio, .suppradio, .servradio, .radio, .deptradio, .binarysay, .newscaster',
+=======
+    selector: '.alert, .minorannounce, .syndradio, .centcomradio, .aiprivradio, .comradio, .secradio, .gangradio, .engradio, .medradio, .sciradio, .suppradio, .servradio, .radio, .deptradio, .binarysay, .newscaster, .resonate',
+>>>>>>> 5b75509603 (Merge pull request #15265 from keronshb/familyport)
   },
   {
     type: MESSAGE_TYPE_INFO,
