@@ -48,3 +48,8 @@
 	miss_sound = 'sound/weapons/slashmiss.ogg'
 
 	allowed_limb_ids = list("mammal","aquatic","avian", "human")
+<<<<<<< HEAD
+=======
+	species_category = SPECIES_CATEGORY_ROBOT
+	wings_icons = SPECIES_WINGS_ROBOT
+>>>>>>> 1adbf914c2 (Merge pull request #15414 from BlueWildrose/wingport)
